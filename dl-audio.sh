@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-OUTDIR="$HOME/Projects/Audio/downloads"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+OUTDIR="$SCRIPT_DIR/downloads"
 FORMAT="mp3"
 QUALITY="0"  # 0 = best for mp3 (VBR ~245kbps), 5 = good, 9 = worst
 SLEEP_MIN=3
