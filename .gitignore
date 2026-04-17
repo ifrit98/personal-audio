@@ -1,0 +1,17 @@
+# Vendored repos (clone separately, see README)
+whisper.cpp/
+yt-dlp/
+
+# Model binaries
+*.bin
+*.ggml
+
+# Build artifacts
+build/
+
+# Downloaded audio & generated transcripts
+downloads/
+transcripts/
+
+# macOS
+.DS_Store
