@@ -120,15 +120,34 @@ done
 
 # ── 5. Create output directories ────────────────────────────────────────
 
-mkdir -p downloads transcripts
+mkdir -p downloads transcripts processed
 
-# ── 6. Summary ──────────────────────────────────────────────────────────
+# ── 6. Environment config ───────────────────────────────────────────────
+
+info "Checking environment config..."
+
+if [[ -f .env ]]; then
+    ok ".env already exists"
+else
+    if [[ -f .env.example ]]; then
+        cp .env.example .env
+        ok ".env created from .env.example (edit it to add your API keys)"
+        warn "Run: \$EDITOR .env"
+    else
+        warn ".env.example not found — skipping .env creation"
+    fi
+fi
+
+# ── 7. Summary ──────────────────────────────────────────────────────────
 
 echo
 info "Setup complete!"
 echo
 echo "  Quick start:"
 echo "    ./transcribe.sh \"https://www.youtube.com/watch?v=VIDEO_ID\""
+echo
+echo "  Full pipeline (download + transcribe + LLM):"
+echo "    ./pipeline.sh \"https://www.youtube.com/watch?v=VIDEO_ID\""
 echo
 echo "  Run the test suite:"
 echo "    ./test.sh"
@@ -137,4 +156,6 @@ echo "  Available models:"
 for model in "${MODELS[@]}"; do
     echo "    - $model"
 done
+echo
+echo "  Next step: edit .env to add your OPENAI_API_KEY (or use --local for LM Studio)"
 echo

@@ -1,14 +1,15 @@
 # Personal Audio Pipeline
 
-A local-first pipeline for downloading YouTube audio and transcribing it with
-[whisper.cpp](https://github.com/ggml-org/whisper.cpp). Everything runs on your
-machine — no API keys, no cloud services, no data leaving your computer.
+A local-first pipeline for downloading YouTube audio, transcribing it with
+[whisper.cpp](https://github.com/ggml-org/whisper.cpp), and processing
+transcripts with LLMs (OpenAI API or local models via LM Studio).
 
 ## Prerequisites
 
 - **macOS** (Apple Silicon or Intel)
 - [Homebrew](https://brew.sh)
 - Git
+- An OpenAI API key **or** [LM Studio](https://lmstudio.ai) for local models
 
 Everything else is installed automatically by `setup.sh`.
 
@@ -19,13 +20,16 @@ Everything else is installed automatically by `setup.sh`.
 git clone --recurse-submodules https://github.com/ifrit98/personal-audio.git
 cd personal-audio
 
-# 2. Run setup (installs deps, builds whisper.cpp, downloads the base.en model)
+# 2. Run setup (installs deps, builds whisper.cpp, downloads model, creates .env)
 ./setup.sh
 
-# 3. Transcribe a YouTube video
-./transcribe.sh "https://www.youtube.com/watch?v=VIDEO_ID"
+# 3. Add your OpenAI API key
+$EDITOR .env
 
-# 4. (Optional) Verify everything works
+# 4. Run the full pipeline on a YouTube video
+./pipeline.sh "https://www.youtube.com/watch?v=VIDEO_ID"
+
+# 5. (Optional) Verify everything works
 ./test.sh
 ```
 
@@ -44,7 +48,8 @@ git submodule update --init --recursive
 2. **Initializes git submodules**: pulls `whisper.cpp` and `yt-dlp` source
 3. **Builds whisper.cpp** from source (uses Metal/GPU acceleration on Apple Silicon)
 4. **Downloads a whisper model** (default: `base.en`, ~141 MB)
-5. **Creates output directories**: `downloads/` and `transcripts/`
+5. **Creates `.env`** from `.env.example` for API key configuration
+6. **Creates output directories**: `downloads/`, `transcripts/`, `processed/`
 
 ### Setup Options
 
@@ -58,29 +63,50 @@ git submodule update --init --recursive
 
 ## Usage
 
-### Full Pipeline: Download + Transcribe
+### Full Pipeline: URL to Processed Summary
 
-The main script. Give it a YouTube URL and get a transcript:
+The end-to-end command. Downloads audio, transcribes it, and sends the
+transcript to an LLM:
 
 ```bash
-./transcribe.sh "https://www.youtube.com/watch?v=VIDEO_ID"
+./pipeline.sh "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-Output goes to `transcripts/<video-title>.txt`.
+With a custom prompt:
+
+```bash
+./pipeline.sh -p "Extract all actionable advice as a numbered list" "URL"
+```
+
+Using a local model instead of OpenAI:
+
+```bash
+./pipeline.sh --local "URL"
+```
+
+### Download + Transcribe Only (no LLM)
+
+```bash
+./pipeline.sh --no-process "URL"
+# or equivalently:
+./transcribe.sh "URL"
+```
 
 ### Download Audio Only
-
-Just extract the audio without transcribing:
 
 ```bash
 ./dl-audio.sh "https://www.youtube.com/watch?v=VIDEO_ID"
 ```
 
-Output goes to `downloads/<video-title>.mp3`.
+### Process an Existing Transcript
 
-### Transcribe a Local File
+```bash
+./process.sh transcripts/video.txt
+./process.sh -p "Write a blog post based on this" transcripts/video.txt
+./process.sh -b transcripts/   # batch process all transcripts
+```
 
-Already have an audio file? Skip the download:
+### Transcribe a Local Audio File
 
 ```bash
 ./transcribe.sh --no-download recording.mp3
@@ -88,14 +114,49 @@ Already have an audio file? Skip the download:
 
 ### Multiple URLs
 
-Both scripts accept multiple URLs:
+All scripts accept multiple inputs:
 
 ```bash
+./pipeline.sh "URL1" "URL2" "URL3"
 ./transcribe.sh "URL1" "URL2" "URL3"
 ./dl-audio.sh "URL1" "URL2" "URL3"
 ```
 
 ## Options Reference
+
+### pipeline.sh
+
+| Flag | Description | Default |
+|---|---|---|
+| `-m, --model MODEL` | Whisper model for transcription | `base.en` |
+| `-f, --audio-format FMT` | Download format: `mp3`, `wav`, `flac` | `mp3` |
+| `-l, --language LANG` | Spoken language or `auto` | `en` |
+| `-t, --threads N` | CPU threads for whisper | `4` |
+| `-s, --safe` | Rate-limit downloads | off |
+| `-p, --prompt TEXT` | Custom LLM prompt | summarize |
+| `--system TEXT` | Custom LLM system prompt | analyst |
+| `-P, --prompt-file FILE` | Read prompt from file | — |
+| `--llm-model MODEL` | LLM model name | `gpt-4o` |
+| `--local` | Use LM Studio instead of OpenAI | off |
+| `--max-tokens N` | Max LLM response tokens | `4096` |
+| `--temperature N` | LLM sampling temperature | `0.3` |
+| `-o, --output DIR` | Processed output directory | `./processed` |
+| `--no-transcribe` | Skip download+transcribe, use transcript files | off |
+| `--no-process` | Skip LLM processing | off |
+
+### process.sh
+
+| Flag | Description | Default |
+|---|---|---|
+| `-p, --prompt TEXT` | Custom prompt | summarize |
+| `-s, --system TEXT` | Custom system prompt | analyst |
+| `-P, --prompt-file FILE` | Read prompt from file | — |
+| `-m, --model MODEL` | Model name | `gpt-4o` / auto |
+| `--local` | Use LM Studio | off |
+| `-o, --output DIR` | Output directory | `./processed` |
+| `-b, --batch DIR` | Process all `.txt` files in directory | — |
+| `--max-tokens N` | Max response tokens | `4096` |
+| `--temperature N` | Sampling temperature | `0.3` |
 
 ### transcribe.sh
 
@@ -109,18 +170,79 @@ Both scripts accept multiple URLs:
 | `-o, --output DIR` | Transcript output directory | `./transcripts` |
 | `-s, --safe` | Rate-limit downloads (avoids IP bans) | off |
 | `--no-download` | Treat arguments as local file paths | off |
-| `-h, --help` | Show help | — |
 
 ### dl-audio.sh
 
 | Flag | Description | Default |
 |---|---|---|
 | `-f, --format FMT` | Audio format: `mp3`, `opus`, `flac`, `wav`, `m4a` | `mp3` |
-| `-q, --quality Q` | Audio quality 0–9 (0 = best) | `0` |
+| `-q, --quality Q` | Audio quality 0-9 (0 = best) | `0` |
 | `-o, --output DIR` | Output directory | `./downloads` |
 | `-l, --list` | List all available formats for a URL (no download) | — |
 | `-s, --safe` | Rate-limit downloads (avoids IP bans) | off |
-| `-h, --help` | Show help | — |
+
+## LLM Configuration
+
+### OpenAI API
+
+Edit `.env` (created by `setup.sh`):
+
+```bash
+OPENAI_API_KEY=sk-your-key-here
+OPENAI_MODEL=gpt-4o
+```
+
+Or set as environment variables:
+
+```bash
+OPENAI_API_KEY=sk-... ./process.sh transcripts/video.txt
+```
+
+### LM Studio (Local Models)
+
+1. Install [LM Studio](https://lmstudio.ai)
+2. Download and load a model in LM Studio
+3. Start the local server (default: `http://localhost:1234/v1`)
+4. Use the `--local` flag:
+
+```bash
+./process.sh --local transcripts/video.txt
+./pipeline.sh --local "URL"
+```
+
+The script auto-detects the loaded model. To specify one explicitly:
+
+```bash
+./process.sh --local -m "llama-3-8b" transcripts/video.txt
+```
+
+Or set in `.env`:
+
+```bash
+LM_STUDIO_URL=http://localhost:1234/v1
+LM_STUDIO_MODEL=llama-3-8b
+```
+
+### Custom Prompts
+
+Inline:
+
+```bash
+./process.sh -p "Extract all actionable advice as a bullet list" transcripts/video.txt
+```
+
+From a file:
+
+```bash
+echo "Write a detailed blog post based on this transcript" > prompts/blog.txt
+./process.sh -P prompts/blog.txt transcripts/video.txt
+```
+
+Custom system prompt:
+
+```bash
+./process.sh -s "You are a tech journalist writing for Hacker News" -p "Summarize this" transcripts/video.txt
+```
 
 ## Whisper Models
 
@@ -156,14 +278,6 @@ bash whisper.cpp/models/download-ggml-model.sh small.en
 | CSV | `-O csv` | Comma-separated values |
 | LRC | `-O lrc` | Lyrics format with timestamps |
 
-```bash
-# Generate subtitles
-./transcribe.sh -O srt "https://www.youtube.com/watch?v=VIDEO_ID"
-
-# Generate JSON with full metadata
-./transcribe.sh -O json "https://www.youtube.com/watch?v=VIDEO_ID"
-```
-
 ## Testing
 
 `test.sh` validates the full pipeline end-to-end using a short test video
@@ -187,7 +301,7 @@ Test artifacts are cleaned up automatically on exit.
 For bulk downloads, use the `--safe` / `-s` flag to throttle requests:
 
 ```bash
-./transcribe.sh -s "URL1" "URL2" "URL3"
+./pipeline.sh -s "URL1" "URL2" "URL3"
 ./dl-audio.sh -s "URL1" "URL2" "URL3"
 ```
 
@@ -202,17 +316,22 @@ yt-dlp --cookies-from-browser chrome -x "URL"
 
 ```
 personal-audio/
-├── setup.sh           # One-command setup: deps, build, model download
-├── transcribe.sh      # Full pipeline: YouTube URL → transcript
+├── pipeline.sh        # Full pipeline: URL → audio → transcript → LLM
+├── transcribe.sh      # Download + transcribe (no LLM)
 ├── dl-audio.sh        # Audio-only downloader
+├── process.sh         # LLM transcript processor
+├── setup.sh           # One-command setup: deps, build, model, .env
 ├── test.sh            # End-to-end test suite
+├── .env.example       # Template for API keys (committed)
+├── .env               # Your API keys (gitignored)
 ├── command.sh         # Legacy command reference
 ├── whisper.cpp/       # Git submodule — whisper.cpp source + models
 │   ├── build/         # Compiled binaries (gitignored)
 │   └── models/        # Model .bin files (gitignored)
 ├── yt-dlp/            # Git submodule — yt-dlp source
 ├── downloads/         # Downloaded audio files (gitignored)
-└── transcripts/       # Generated transcripts (gitignored)
+├── transcripts/       # Generated transcripts (gitignored)
+└── processed/         # LLM-processed output (gitignored)
 ```
 
 ## Troubleshooting
@@ -251,3 +370,9 @@ Download it:
 ```bash
 ./setup.sh   # Installs cmake and other deps via Homebrew
 ```
+
+### LLM processing fails
+
+- **OpenAI**: Check your `OPENAI_API_KEY` in `.env`
+- **LM Studio**: Make sure the server is running and a model is loaded
+- Test connectivity: `curl http://localhost:1234/v1/models`
