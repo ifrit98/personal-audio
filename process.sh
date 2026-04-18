@@ -24,6 +24,7 @@ USER_PROMPT=""
 SYSTEM_PROMPT=""
 PROMPT_FILE=""
 BATCH_DIR=""
+USE_SUMMARIZE=false
 
 DEFAULT_SYSTEM_PROMPT="You are an expert analyst. You receive transcripts of audio/video content. \
 Respond to the user's request thoughtfully and thoroughly. Use markdown formatting. \
@@ -31,6 +32,33 @@ If the transcript is from a lecture or talk, preserve the speaker's key argument
 
 DEFAULT_USER_PROMPT="Summarize the key points from this transcript. \
 Organize them with clear headings and bullet points."
+
+SUMMARIZE_SYSTEM_PROMPT="You are an expert content analyst who distills audio and video transcripts \
+into structured, actionable intelligence. You handle any genre: lectures, tutorials, how-to guides, \
+interviews, philosophical discussions, debates, podcasts, sermons, conference talks, and more. \
+Adapt your analysis to the nature of the content. Use markdown formatting throughout."
+
+read -r -d '' SUMMARIZE_USER_PROMPT <<'PROMPT' || true
+Analyze this transcript and produce a structured summary with the following sections:
+
+## Overview
+A 2-3 sentence description of what this content is (lecture, tutorial, conversation, etc.), who the speaker(s) are if identifiable, and the central theme.
+
+## Key Takeaways
+The most important ideas, arguments, or insights presented. Use bullet points. Capture the substance, not just surface-level observations. For philosophical or abstract content, distill the core thesis and supporting reasoning.
+
+## Action Items & Practical Advice
+Concrete steps, recommendations, or techniques the audience can apply. If the content is philosophical or theoretical rather than practical, reframe the key ideas as actionable principles or mental models. If there are truly no actionable elements, note that briefly and skip this section.
+
+## Notable Quotes
+3-5 of the most striking or representative quotes from the transcript, presented as blockquotes.
+
+## Implications & Connections
+Broader significance of the ideas presented. What fields, debates, or decisions do they connect to? What are the downstream consequences if the speaker's arguments are taken seriously?
+
+## Critical Assessment
+A brief, balanced evaluation: What is the strongest part of the argument? Where are the gaps, assumptions, or areas that deserve further scrutiny?
+PROMPT
 
 usage() {
     cat <<'USAGE'
@@ -40,7 +68,9 @@ Usage: process.sh [OPTIONS] <FILE> [FILE ...]
 Send transcripts to an LLM (OpenAI or local LM Studio) for processing.
 
 Options:
-  -p, --prompt TEXT      Custom prompt for processing (default: summarize)
+  --summarize            Deep structured summary: takeaways, action items, quotes,
+                         implications, and critical assessment
+  -p, --prompt TEXT      Custom prompt for processing (default: basic summarize)
   -s, --system TEXT      Custom system prompt
   -P, --prompt-file FILE Read user prompt from a file
   -m, --model MODEL      Model name (default: gpt-4o / auto for local)
@@ -56,12 +86,11 @@ Configuration:
   Set LM_STUDIO_URL for custom local endpoint (default: http://localhost:1234/v1).
 
 Examples:
-  process.sh transcripts/video.txt
+  process.sh --summarize transcripts/video.txt
   process.sh -p "Extract all actionable advice as a bullet list" transcripts/video.txt
+  process.sh --summarize -b transcripts/
   process.sh -P prompts/my-prompt.txt transcripts/video.txt
-  process.sh -b transcripts/
-  process.sh --local transcripts/video.txt
-  process.sh --local -m "llama-3-8b" transcripts/video.txt
+  process.sh --local --summarize transcripts/video.txt
 USAGE
     exit 0
 }
@@ -70,6 +99,7 @@ INPUTS=()
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        --summarize)       USE_SUMMARIZE=true; shift ;;
         -p|--prompt)       USER_PROMPT="$2"; shift 2 ;;
         -s|--system)       SYSTEM_PROMPT="$2"; shift 2 ;;
         -P|--prompt-file)  PROMPT_FILE="$2"; shift 2 ;;
@@ -85,7 +115,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-# Resolve prompt
+# Resolve prompt (--summarize sets the structured prompt; explicit -p/-P overrides it)
 if [[ -n "$PROMPT_FILE" ]]; then
     if [[ ! -f "$PROMPT_FILE" ]]; then
         echo "Error: prompt file not found: $PROMPT_FILE" >&2
@@ -93,6 +123,12 @@ if [[ -n "$PROMPT_FILE" ]]; then
     fi
     USER_PROMPT="$(cat "$PROMPT_FILE")"
 fi
+
+if $USE_SUMMARIZE && [[ -z "$USER_PROMPT" ]]; then
+    USER_PROMPT="$SUMMARIZE_USER_PROMPT"
+    [[ -z "$SYSTEM_PROMPT" ]] && SYSTEM_PROMPT="$SUMMARIZE_SYSTEM_PROMPT"
+fi
+
 [[ -z "$USER_PROMPT" ]] && USER_PROMPT="$DEFAULT_USER_PROMPT"
 [[ -z "$SYSTEM_PROMPT" ]] && SYSTEM_PROMPT="$DEFAULT_SYSTEM_PROMPT"
 
