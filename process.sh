@@ -13,6 +13,7 @@ fi
 OPENAI_API_KEY="${OPENAI_API_KEY:-}"
 OPENAI_MODEL="${OPENAI_MODEL:-gpt-4o}"
 LM_STUDIO_URL="${LM_STUDIO_URL:-http://localhost:1234/v1}"
+LM_STUDIO_API_KEY="${LM_STUDIO_API_KEY:-lm-studio}"
 LM_STUDIO_MODEL="${LM_STUDIO_MODEL:-}"
 
 OUTPUT_DIR="$SCRIPT_DIR/processed"
@@ -152,7 +153,7 @@ fi
 # Resolve API endpoint and model
 if $USE_LOCAL; then
     API_BASE="$LM_STUDIO_URL"
-    API_KEY="lm-studio"
+    API_KEY="$LM_STUDIO_API_KEY"
     if [[ -n "$MODEL" ]]; then
         API_MODEL="$MODEL"
     elif [[ -n "$LM_STUDIO_MODEL" ]]; then
