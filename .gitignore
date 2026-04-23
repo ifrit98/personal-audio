@@ -9,6 +9,7 @@ whisper.cpp/build/
 downloads/
 transcripts/
 processed/
+reports/
 
 # Secrets
 .env

@@ -112,6 +112,45 @@ Using a local model instead of OpenAI:
 ./transcribe.sh --no-download recording.mp3
 ```
 
+### Newsletter Digest: Multi-Video Summary
+
+Generate a newsletter-style report from multiple videos with individual
+deep-dive reports and a cross-video executive digest:
+
+```bash
+./newsletter.sh "URL1" "URL2" "URL3"
+```
+
+With a custom title and local model:
+
+```bash
+./newsletter.sh --local --title "Weekly Research" "URL1" "URL2" "URL3"
+```
+
+From a file of URLs (one per line, `#` comments allowed):
+
+```bash
+./newsletter.sh --from-file urls.txt
+```
+
+Using existing transcripts (skip download):
+
+```bash
+./newsletter.sh --no-transcribe transcripts/*.txt
+```
+
+Output structure:
+
+```
+reports/<title>/
+├── digest.md              # Cross-video executive summary
+├── individual/
+│   ├── Video One.md       # Deep-dive report per video
+│   ├── Video Two.md
+│   └── ...
+└── transcripts/           # Symlinked raw transcripts
+```
+
 ### Multiple URLs
 
 All scripts accept multiple inputs:
@@ -143,6 +182,23 @@ All scripts accept multiple inputs:
 | `-o, --output DIR` | Processed output directory | `./processed` |
 | `--no-transcribe` | Skip download+transcribe, use transcript files | off |
 | `--no-process` | Skip LLM processing | off |
+
+### newsletter.sh
+
+| Flag | Description | Default |
+|---|---|---|
+| `--title TEXT` | Newsletter title | `Digest YYYY-MM-DD` |
+| `--from-file FILE` | Read URLs/paths from a file (one per line) | — |
+| `-o, --output DIR` | Report output directory | `./reports` |
+| `-m, --model MODEL` | Whisper model for transcription | `base.en` |
+| `-l, --language LANG` | Spoken language or `auto` | `en` |
+| `-t, --threads N` | CPU threads for whisper | `4` |
+| `-s, --safe` | Rate-limit downloads | off |
+| `--no-transcribe` | Treat inputs as transcript files | off |
+| `--local` | Use LM Studio instead of OpenAI | off |
+| `--llm-model MODEL` | LLM model name | `gpt-4o` / auto |
+| `--max-tokens N` | Max LLM response tokens | `4096` |
+| `--temperature N` | LLM sampling temperature | `0.3` |
 
 ### process.sh
 
@@ -320,6 +376,7 @@ personal-audio/
 ├── transcribe.sh      # Download + transcribe (no LLM)
 ├── dl-audio.sh        # Audio-only downloader
 ├── process.sh         # LLM transcript processor
+├── newsletter.sh      # Multi-video newsletter digest generator
 ├── setup.sh           # One-command setup: deps, build, model, .env
 ├── test.sh            # End-to-end test suite
 ├── .env.example       # Template for API keys (committed)
@@ -331,7 +388,8 @@ personal-audio/
 ├── yt-dlp/            # Git submodule — yt-dlp source
 ├── downloads/         # Downloaded audio files (gitignored)
 ├── transcripts/       # Generated transcripts (gitignored)
-└── processed/         # LLM-processed output (gitignored)
+├── processed/         # LLM-processed output (gitignored)
+└── reports/           # Newsletter digests (gitignored)
 ```
 
 ## Troubleshooting
