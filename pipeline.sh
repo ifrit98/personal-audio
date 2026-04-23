@@ -17,6 +17,7 @@ LLM_MODEL=""
 LLM_LOCAL=false
 LLM_MAX_TOKENS=4096
 LLM_TEMPERATURE="0.3"
+LLM_SUMMARIZE=false
 OUTPUT_DIR="$SCRIPT_DIR/processed"
 
 SKIP_TRANSCRIBE=false
@@ -36,7 +37,9 @@ Transcription options:
   -s, --safe               Rate-limit downloads
 
 LLM processing options:
-  -p, --prompt TEXT        Custom prompt for LLM (default: summarize)
+  --summarize              Deep structured summary with takeaways, action items,
+                           quotes, implications, and critical assessment
+  -p, --prompt TEXT        Custom prompt for LLM (default: basic summarize)
   --system TEXT            Custom system prompt
   -P, --prompt-file FILE   Read prompt from a file
   --llm-model MODEL        LLM model name (default: gpt-4o / auto for local)
@@ -75,6 +78,7 @@ while [[ $# -gt 0 ]]; do
         -P|--prompt-file)    LLM_PROMPT_FILE="$2"; shift 2 ;;
         --llm-model)         LLM_MODEL="$2"; shift 2 ;;
         --local)             LLM_LOCAL=true; shift ;;
+        --summarize)         LLM_SUMMARIZE=true; shift ;;
         --max-tokens)        LLM_MAX_TOKENS="$2"; shift 2 ;;
         --temperature)       LLM_TEMPERATURE="$2"; shift 2 ;;
         -o|--output)         OUTPUT_DIR="$2"; shift 2 ;;
@@ -165,6 +169,7 @@ process_args=(-o "$OUTPUT_DIR" --max-tokens "$LLM_MAX_TOKENS" --temperature "$LL
 [[ -n "$LLM_PROMPT_FILE" ]] && process_args+=(-P "$LLM_PROMPT_FILE")
 [[ -n "$LLM_MODEL" ]]       && process_args+=(-m "$LLM_MODEL")
 $LLM_LOCAL                   && process_args+=(--local)
+$LLM_SUMMARIZE               && process_args+=(--summarize)
 
 process_args+=("${TRANSCRIPT_FILES[@]}")
 
