@@ -1,0 +1,17 @@
+# Model binaries (large, download via setup.sh)
+whisper.cpp/models/ggml-*.bin
+whisper.cpp/models/for-tests-*.bin
+
+# Build artifacts
+whisper.cpp/build/
+
+# Downloaded audio & generated outputs
+downloads/
+transcripts/
+processed/
+
+# Secrets
+.env
+
+# macOS
+.DS_Store
