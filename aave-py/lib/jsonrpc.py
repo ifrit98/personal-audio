@@ -41,21 +41,25 @@ class RpcClient:
             headers={"Content-Type": "application/json"},
             method="POST",
         )
-        last_err: Exception | None = None
         for attempt in range(RETRIES):
             try:
                 with urlopen(req, timeout=self.timeout) as resp:
                     data = resp.read()
                 payload = json.loads(data.decode("utf-8"))
-                if "error" in payload:
+                if payload.get("error") is not None:
                     err = payload["error"]
                     raise JsonRpcError(err.get("code", 0), err.get("message", "?"), err.get("data"))
                 return payload["result"]
-            except (URLError, HTTPError, TimeoutError) as e:
-                last_err = e
+            except HTTPError as e:
+                # Retry only on transient statuses (408, 429, 5xx). Other 4xx
+                # codes (e.g. 401/403 from a revoked RPC key) are terminal.
+                if e.code in (408, 429) or 500 <= e.code < 600:
+                    if attempt < RETRIES - 1:
+                        time.sleep(2 ** attempt)
+                        continue
+                raise
+            except (URLError, TimeoutError):
                 if attempt < RETRIES - 1:
                     time.sleep(2 ** attempt)
                     continue
                 raise
-        assert last_err is not None
-        raise last_err

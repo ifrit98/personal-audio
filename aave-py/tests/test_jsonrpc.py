@@ -50,6 +50,39 @@ class TestRpcClient(unittest.TestCase):
             client.call("eth_blockNumber", [])
         self.assertEqual(ids, [1, 2])
 
+    def test_http_4xx_not_retried(self):
+        from urllib.error import HTTPError
+        from io import BytesIO
+        client = RpcClient("https://example/rpc")
+        attempts = []
+        def burn(req, timeout):
+            attempts.append(1)
+            raise HTTPError(req.full_url, 401, "Unauthorized", {}, BytesIO(b""))
+        with patch("lib.jsonrpc.urlopen", side_effect=burn), patch("lib.jsonrpc.time.sleep"):
+            with self.assertRaises(HTTPError):
+                client.call("eth_blockNumber", [])
+        self.assertEqual(len(attempts), 1, "401 should fail fast, not retry")
+
+    def test_http_5xx_retries(self):
+        from urllib.error import HTTPError
+        from io import BytesIO
+        import json as _json
+        client = RpcClient("https://example/rpc")
+        attempts = []
+        def flaky(req, timeout):
+            attempts.append(1)
+            if len(attempts) < 3:
+                raise HTTPError(req.full_url, 502, "Bad Gateway", {}, BytesIO(b""))
+            body = _json.dumps({"jsonrpc": "2.0", "id": _json.loads(req.data)["id"], "result": "0xab"}).encode()
+            class Ctx:
+                def __enter__(self): return _fake_response(_json.loads(body))
+                def __exit__(self, *a): return False
+            return Ctx()
+        with patch("lib.jsonrpc.urlopen", side_effect=flaky), patch("lib.jsonrpc.time.sleep"):
+            out = client.call("eth_blockNumber", [])
+        self.assertEqual(out, "0xab")
+        self.assertEqual(len(attempts), 3)
+
 
 if __name__ == "__main__":
     unittest.main()
