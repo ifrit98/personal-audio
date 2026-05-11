@@ -91,6 +91,8 @@ __pycache__/
 .env.*.local
 *.log
 .DS_Store
+.venv/
+venv/
 ```
 
 - [ ] **Step 4: Write `aave-py/.env.example`** (mirrors TS `.env.example` with Python notes)
@@ -162,6 +164,7 @@ The wordlist is normative for BIP-39 — we cannot generate it. Source from the 
 `aave-py/tests/test_wordlist.py`:
 
 ```python
+import hashlib
 import unittest
 from pathlib import Path
 
@@ -169,6 +172,12 @@ from pathlib import Path
 class TestWordlist(unittest.TestCase):
     def test_wordlist_is_canonical(self):
         path = Path(__file__).parent.parent / "wordlist.txt"
+        # Fail fast on file corruption: enforce canonical BIP-39 English SHA-256.
+        self.assertEqual(
+            hashlib.sha256(path.read_bytes()).hexdigest(),
+            "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+            "wordlist.txt does not match canonical BIP-39 English SHA-256",
+        )
         words = path.read_text(encoding="utf-8").splitlines()
         self.assertEqual(len(words), 2048, "BIP-39 wordlist must have exactly 2048 words")
         # Canonical first and last word per the BIP-39 English wordlist.
@@ -176,7 +185,7 @@ class TestWordlist(unittest.TestCase):
         self.assertEqual(words[-1], "zoo")
         # Specific known indices for sanity:
         self.assertEqual(words[3], "about")  # 4th word
-        self.assertEqual(words[1023], "lonely")
+        self.assertEqual(words[1023], "lend")
         self.assertEqual(words[2047], "zoo")
         # All lowercase ASCII, no surrounding whitespace.
         for i, w in enumerate(words):
@@ -266,6 +275,32 @@ class TestKeccak256(unittest.TestCase):
         self.assertNotEqual(keccak256(long_input), keccak256(prefix))
         self.assertNotEqual(keccak256(long_input), keccak256(b""))
 
+    # Boundary-length KATs, generated against pycryptodome's keccak (digest_bits=256).
+    # 135 specifically exercises the merged-pad-byte branch (rate - 1 input).
+    def test_boundary_135_bytes(self):
+        self.assertEqual(
+            keccak256(b"\x00" * 135).hex(),
+            "29e3704feeca7fb9ba229f0fa04d9b36449cf3ad6e1d85d9cfff3a10df9abc3e",
+        )
+
+    def test_boundary_136_bytes(self):
+        self.assertEqual(
+            keccak256(b"\x00" * 136).hex(),
+            "3a5912a7c5faa06ee4fe906253e339467a9ce87d533c65be3c15cb231cdb25f9",
+        )
+
+    def test_boundary_137_bytes(self):
+        self.assertEqual(
+            keccak256(b"\x00" * 137).hex(),
+            "bee7fbb405cb0d91a8775e338c4a5e4b5d6b2d051f687fa942043cffdc73bd28",
+        )
+
+    def test_multi_block_200_bytes(self):
+        self.assertEqual(
+            keccak256(b"\x00" * 200).hex(),
+            "e1bb54e1bc3af48d01e5dbfc81015c98152a574f6428c6948aa4837c9c0baad9",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
@@ -330,7 +365,7 @@ def _keccak_f1600(state: list[list[int]]) -> None:
         # chi
         for x in range(5):
             for y in range(5):
-                state[x][y] = b[x][y] ^ ((~b[(x + 1) % 5][y]) & b[(x + 2) % 5][y]) & 0xFFFFFFFFFFFFFFFF
+                state[x][y] = (b[x][y] ^ ((~b[(x + 1) % 5][y]) & b[(x + 2) % 5][y])) & 0xFFFFFFFFFFFFFFFF
         # iota
         state[0][0] ^= rc
 
@@ -344,11 +379,16 @@ def keccak256(data: bytes) -> bytes:
     while n - offset >= _RATE_BYTES:
         _absorb_block(state, data[offset:offset + _RATE_BYTES])
         offset += _RATE_BYTES
-    # pad final block: 0x01 ... 0x80 (multi-rate padding "10*1")
+    # pad final block: multi-rate padding "10*1".
+    # If the tail is exactly rate-1 bytes there is only one slot left, so we
+    # merge the two pad bits (0x01 | 0x80) into a single 0x81 byte.
     tail = bytearray(data[offset:])
-    tail.append(0x01)
-    tail.extend(b"\x00" * (_RATE_BYTES - len(tail) - 1))
-    tail.append(0x80)
+    if len(tail) == _RATE_BYTES - 1:
+        tail.append(0x81)
+    else:
+        tail.append(0x01)
+        tail.extend(b"\x00" * (_RATE_BYTES - len(tail) - 1))
+        tail.append(0x80)
     _absorb_block(state, bytes(tail))
     # squeeze 32 bytes (one rate-sized squeeze is enough for 256 bits)
     out = bytearray()
@@ -361,7 +401,8 @@ def keccak256(data: bytes) -> bytes:
 
 
 def _absorb_block(state: list[list[int]], block: bytes) -> None:
-    assert len(block) == _RATE_BYTES
+    if len(block) != _RATE_BYTES:
+        raise ValueError(f"Keccak absorb block must be {_RATE_BYTES} bytes, got {len(block)}")
     for i in range(_RATE_BYTES // 8):
         x = i % 5
         y = i // 5
@@ -373,7 +414,7 @@ def _absorb_block(state: list[list[int]], block: bytes) -> None:
 - [ ] **Step 4: Run test to verify it passes**
 
 Run: `cd aave-py && PYTHONPATH=. python -m unittest tests.test_keccak -v`
-Expected: PASS (4 tests). The first three are exact-vector checks against canonical Keccak-256 outputs; the last is a structural sanity check on the absorb loop.
+Expected: PASS (8 tests). Three exact-vector checks against canonical Keccak-256 outputs (empty / "abc" / quick-brown-fox), one structural sanity check on the absorb loop, and four boundary-length KATs (135 / 136 / 137 / 200) that exercise the merged-pad branch and multi-block absorption.
 
 - [ ] **Step 5: Commit**
 
@@ -453,6 +494,28 @@ class TestRlp(unittest.TestCase):
         # Per yellow paper appendix.
         self.assertEqual(encode([[], [[]], [[], [[]]]]).hex(), "c7c0c1c0c3c0c1c0")
 
+    def test_list_55_byte_payload(self):
+        # 11 * (1 byte 0x84 + 4 bytes "AAAA") = 55 bytes payload -> short-list 0xf7.
+        items = [b"AAAA"] * 11
+        out = encode(items)
+        self.assertEqual(out[0], 0xf7)
+        self.assertEqual(len(out), 56)
+
+    def test_list_56_byte_payload(self):
+        # 56-byte payload -> long-list form: 0xf8 0x38 then payload.
+        items = [b"X" * 54, b"Y"]
+        out = encode(items)
+        self.assertEqual(out[0], 0xf8)
+        self.assertEqual(out[1], 56)
+        self.assertEqual(len(out), 2 + 56)
+
+    def test_list_long_payload_lenoflen(self):
+        # 303-byte payload -> 0xf9 0x012f then payload (multi-byte length).
+        out = encode([b"X" * 300])
+        self.assertEqual(out[0], 0xf9)
+        self.assertEqual(out[1:3], bytes.fromhex("012f"))
+        self.assertEqual(len(out), 3 + 303)
+
 
 if __name__ == "__main__":
     unittest.main()
@@ -512,7 +575,7 @@ def _length_prefix(length: int, base: int) -> bytes:
 - [ ] **Step 4: Run test to verify it passes**
 
 Run: `cd aave-py && PYTHONPATH=. python -m unittest tests.test_rlp -v`
-Expected: PASS (12 tests).
+Expected: PASS (15 tests).
 
 - [ ] **Step 5: Commit**
 
@@ -1009,11 +1072,15 @@ ABANDON_SEED_HEX = (
     "9a5ac40b389cd370d086206dec8aa6c43daea6690f20ad3d8d48b2d2ce9e38e4"
 )
 
-# Hardhat / Anvil default test wallet derived from the abandon mnemonic at
-# m/44'/60'/0'/0/0. This is the canonical address the EVM tooling community
-# uses for fixtures.
-HARDHAT_PRIV = bytes.fromhex("ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80")
-HARDHAT_ADDR = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+# Canonical BIP-44 derivation from the BIP-39 "abandon x11 about" mnemonic at
+# m/44'/60'/0'/0/0. Cross-checked against MetaMask, ethers.js, and web3.py.
+#
+# NOTE: This is NOT the Hardhat/Anvil default address. Hardhat/Anvil's default
+# first account `0xf39Fd6...` comes from the test mnemonic
+# "test test test test test test test test test test test junk", not from the
+# abandon mnemonic.
+ABANDON_PRIV = bytes.fromhex("1ab42cc412b618bdea3a599e3c9bae199ebf030895b039e9db1e30dafb12b727")
+ABANDON_ADDR = "0x9858EfFD232B4033E47d90003D41EC34EcaEda94"
 
 
 class TestBip39(unittest.TestCase):
@@ -1047,15 +1114,15 @@ class TestBip39(unittest.TestCase):
 
 
 class TestBip32(unittest.TestCase):
-    def test_derive_path_yields_hardhat_priv(self):
+    def test_derive_path_yields_abandon_priv(self):
         seed = mnemonic_to_seed(ABANDON)
         priv = derive_path(seed, "m/44'/60'/0'/0/0")
-        self.assertEqual(priv.hex(), HARDHAT_PRIV.hex())
+        self.assertEqual(priv.hex(), ABANDON_PRIV.hex())
 
     def test_derive_path_address(self):
         seed = mnemonic_to_seed(ABANDON)
         priv = derive_path(seed, "m/44'/60'/0'/0/0")
-        self.assertEqual(derive_address(priv), HARDHAT_ADDR)
+        self.assertEqual(derive_address(priv), ABANDON_ADDR)
 
     def test_path_must_start_with_m(self):
         seed = mnemonic_to_seed(ABANDON)
@@ -1225,8 +1292,10 @@ from lib.eth import to_checksum_address, build_eip1559_tx, sign_eip1559_tx, sigh
 from lib.keccak import keccak256
 
 
-HARDHAT_PRIV = bytes.fromhex("ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80")
-HARDHAT_ADDR = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+# Wallet derived from the BIP-39 "abandon x11 about" mnemonic at
+# m/44'/60'/0'/0/0. (Cross-verified in Task 8.)
+ABANDON_PRIV = bytes.fromhex("1ab42cc412b618bdea3a599e3c9bae199ebf030895b039e9db1e30dafb12b727")
+ABANDON_ADDR = "0x9858EfFD232B4033E47d90003D41EC34EcaEda94"
 
 
 class TestEip55(unittest.TestCase):
@@ -1262,22 +1331,19 @@ class TestEip1559Signing(unittest.TestCase):
             data=bytes.fromhex("69328dec"),
         )
         sighash = sighash_eip1559(tx)
-        raw = sign_eip1559_tx(tx, HARDHAT_PRIV)
+        raw = sign_eip1559_tx(tx, ABANDON_PRIV)
         # Raw must start with the 0x02 type byte.
         self.assertEqual(raw[0], 0x02)
 
-        # Recover the signer from sighash + sig and confirm == HARDHAT_ADDR.
-        # Last component of the signed RLP list is s; second-to-last is r;
-        # third-to-last is yParity. We extract them via the known suffix
-        # length: each of (yParity, r, s) is at most 33 bytes RLP-encoded
-        # (1 byte length + 32 byte value), but yParity is 1 byte (0x80 or 0x01).
-        # Easier: sign again and pull (r,s,y) from a second call.
+        # Recover the signer from sighash + sig and confirm == ABANDON_ADDR.
+        # Sign again and pull (r,s,y) from a second call rather than parsing
+        # them out of the signed RLP envelope.
         from lib.crypto import sign_recoverable
-        r, s, y = sign_recoverable(HARDHAT_PRIV, sighash)
+        r, s, y = sign_recoverable(ABANDON_PRIV, sighash)
         sig65 = r.to_bytes(32, "big") + s.to_bytes(32, "big") + bytes([y])
         recovered = PublicKey.from_signature_and_message(sig65, sighash, hasher=None)
         addr = "0x" + keccak256(recovered.format(compressed=False)[1:])[12:].hex()
-        self.assertEqual(addr.lower(), HARDHAT_ADDR.lower())
+        self.assertEqual(addr.lower(), ABANDON_ADDR.lower())
 
 
 if __name__ == "__main__":
@@ -1739,10 +1805,13 @@ from lib.eth import (
 from lib.keccak import keccak256
 
 
-HARDHAT_PRIV = bytes.fromhex(
-    "ac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
+# Wallet derived from the BIP-39 canonical "abandon x11 about" mnemonic at
+# m/44'/60'/0'/0/0. Cross-verified against MetaMask, ethers.js, web3.py, and
+# eth-account.
+ABANDON_PRIV = bytes.fromhex(
+    "1ab42cc412b618bdea3a599e3c9bae199ebf030895b039e9db1e30dafb12b727"
 )
-HARDHAT_ADDR = "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266"
+ABANDON_ADDR = "0x9858EfFD232B4033E47d90003D41EC34EcaEda94"
 ABANDON_MNEMONIC = (
     "abandon abandon abandon abandon abandon abandon abandon abandon "
     "abandon abandon abandon about"
@@ -1780,13 +1849,13 @@ def _check_abi() -> tuple[bool, str | None]:
     data = abi.encode_withdraw_call(
         asset="0x6B175474E89094C44Da98b954EedeAC495271d0F",
         amount=(1 << 256) - 1,
-        to=HARDHAT_ADDR,
+        to=ABANDON_ADDR,
     )
     expected_prefix = (
         "69328dec"
         + "0000000000000000000000006b175474e89094c44da98b954eedeac495271d0f"
         + "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-        + "000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+        + "0000000000000000000000009858effd232b4033e47d90003d41ec34ecaeda94"
     )
     got = data.hex()
     if got != expected_prefix:
@@ -1807,7 +1876,7 @@ def _check_bip39() -> tuple[bool, str | None]:
 def _check_bip32() -> tuple[bool, str | None]:
     seed = mnemonic_to_seed(ABANDON_MNEMONIC)
     priv = derive_path(seed, "m/44'/60'/0'/0/0")
-    if priv != HARDHAT_PRIV:
+    if priv != ABANDON_PRIV:
         return False, f"BIP-32 abandon path mismatch: {priv.hex()}"
     return True, None
 
@@ -1821,8 +1890,8 @@ def _check_eip55() -> tuple[bool, str | None]:
         got = to_checksum_address(inp)
         if got != expected:
             return False, f"EIP-55({inp}) -> {got}, expected {expected}"
-    if derive_address(HARDHAT_PRIV) != HARDHAT_ADDR:
-        return False, "derive_address(HARDHAT_PRIV) mismatch"
+    if derive_address(ABANDON_PRIV) != ABANDON_ADDR:
+        return False, "derive_address(ABANDON_PRIV) mismatch"
     return True, None
 
 
@@ -1838,16 +1907,16 @@ def _check_eip1559() -> tuple[bool, str | None]:
         data=bytes.fromhex("69328dec"),
     )
     sighash = sighash_eip1559(tx)
-    raw = sign_eip1559_tx(tx, HARDHAT_PRIV)
+    raw = sign_eip1559_tx(tx, ABANDON_PRIV)
     if raw[0] != 0x02:
         return False, f"raw tx must start with 0x02, got {raw[0]:#x}"
     # Round-trip recovery
-    r, s, y = sign_recoverable(HARDHAT_PRIV, sighash)
+    r, s, y = sign_recoverable(ABANDON_PRIV, sighash)
     sig65 = r.to_bytes(32, "big") + s.to_bytes(32, "big") + bytes([y])
     pub = PublicKey.from_signature_and_message(sig65, sighash, hasher=None)
     addr = "0x" + keccak256(pub.format(compressed=False)[1:])[12:].hex()
-    if addr.lower() != HARDHAT_ADDR.lower():
-        return False, f"recovered addr {addr} != {HARDHAT_ADDR}"
+    if addr.lower() != ABANDON_ADDR.lower():
+        return False, f"recovered addr {addr} != {ABANDON_ADDR}"
     return True, None
 
 
@@ -2113,7 +2182,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: Run test to verify it passes**
 
 Run: `cd aave-py && PYTHONPATH=. python -m unittest tests.test_cli -v`
-Expected: PASS (6 tests).
+Expected: PASS (7 tests).
 
 Also run the selftest end-to-end:
 
@@ -2347,7 +2416,7 @@ EOF
 python aave.py verify
 ```
 
-Expected: same shape of output as the TS smoke test. Wallet should be `0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266`. All three reserves should show `reserve status: ok` with non-zero pool liquidity figures and `your aToken bal: 0 ...`.
+Expected output: Wallet line should read `0x9858EfFD232B4033E47d90003D41EC34EcaEda94` (the canonical BIP-39 abandon-mnemonic address at `m/44'/60'/0'/0/0`, cross-verified against eth-account / MetaMask / ethers.js / web3.py). All three reserves should show `reserve status: ok` with non-zero pool liquidity figures and `your aToken bal: 0 ...`.
 
 Delete the test `.env` after this check:
 
@@ -2707,12 +2776,11 @@ Expected: every check `PASS`, exit code 0.
 
 Run: `cd aave-py && python aave.py verify`
 Expected:
-- `Wallet:` line shows `0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266`
+- `Wallet:` line shows `0x9858EfFD232B4033E47d90003D41EC34EcaEda94` (the canonical address derived from the BIP-39 abandon mnemonic at `m/44'/60'/0'/0/0`)
 - All three markets show `reserve status: ok`
 - `your aToken bal:` = `0` for all three
 - `pool liquidity:` shows non-zero figures (millions of DAI / USDC / USDT)
 - Exit code 0
-- This output should structurally match the `npm run verify` smoke test from the TS version.
 
 - [ ] **Step 4: Run `withdraw --only=USDC --yes`**
 
