@@ -17,7 +17,8 @@ from lib import aave as aavelib  # noqa: E402
 from lib.aave import MARKET_ORDER, MARKETS, POOL, decode_reserve_status  # noqa: E402
 from lib.bip39_32 import derive_path, mnemonic_to_seed  # noqa: E402
 from lib.crypto import derive_address  # noqa: E402
-from lib.jsonrpc import RpcClient  # noqa: E402
+from lib.eth import build_eip1559_tx, sign_eip1559_tx  # noqa: E402
+from lib.jsonrpc import JsonRpcError, RpcClient  # noqa: E402
 
 
 VERSION = "0.1.0"
@@ -212,11 +213,188 @@ def cmd_verify(args: argparse.Namespace) -> int:
     return 0
 
 
-# ----------------------- withdraw (stub, Task 14 fills in) -----------------------
+# ----------------------- withdraw -----------------------
+
+def _gas_fields(client: RpcClient) -> tuple[int, int]:
+    priority_gwei = int(os.environ.get("PRIORITY_FEE_GWEI", "2"))
+    priority = priority_gwei * 10 ** 9
+    max_fee_gwei = os.environ.get("MAX_FEE_GWEI", "").strip()
+    if max_fee_gwei:
+        return int(max_fee_gwei) * 10 ** 9, priority
+    block = client.call("eth_getBlockByNumber", ["latest", False])
+    base_fee = int(block["baseFeePerGas"], 16)
+    return base_fee * 2 + priority, priority
+
+
+def _confirm(prompt: str, auto: bool) -> bool:
+    if auto:
+        return True
+    try:
+        a = input(prompt + " [y/N]: ").strip().lower()
+    except EOFError:
+        return False
+    return a in ("y", "yes")
+
+
+def _try_estimate_gas(client: RpcClient, sender: str, data: bytes) -> int:
+    try:
+        out = client.call(
+            "eth_estimateGas",
+            [{"from": sender, "to": POOL, "data": "0x" + data.hex(), "value": "0x0"}],
+        )
+        return int(out, 16)
+    except JsonRpcError as e:
+        raise RuntimeError(f"eth_estimateGas reverted: {e}") from e
+
+
+def _wait_for_receipt(client: RpcClient, tx_hash: str, timeout_secs: int = 300, poll_secs: float = 4.0):
+    import time
+    deadline = time.monotonic() + timeout_secs
+    while time.monotonic() < deadline:
+        receipt = client.call("eth_getTransactionReceipt", [tx_hash])
+        if receipt is not None:
+            return receipt
+        time.sleep(poll_secs)
+    return None
+
 
 def cmd_withdraw(args: argparse.Namespace) -> int:
     _ensure_selftest_passes()
-    print("withdraw: not yet implemented")
+    client = _make_client()
+    priv, addr = _resolve_wallet(prompt=getattr(args, "prompt", False))
+    recipient = os.environ.get("RECIPIENT", "").strip() or addr
+    only = getattr(args, "only", None)
+    auto_yes = getattr(args, "yes", False) or os.environ.get("AUTO_CONFIRM", "").lower() == "true"
+    gas_limit = int(os.environ.get("GAS_LIMIT", "500000"))
+
+    _divider("Pre-flight")
+    eth_balance_hex = client.call("eth_getBalance", [addr, "latest"])
+    eth_wei = int(eth_balance_hex, 16)
+    print(f"Wallet:     {addr}")
+    print(f"Recipient:  {recipient}{'  (override)' if recipient != addr else ''}")
+    print(f"ETH:        {_format_units(eth_wei, 18)} ETH")
+    print(f"AUTO yes:   {auto_yes}")
+    if only:
+        print(f"--only:     {only}")
+
+    acct = aavelib.get_user_account_data(client, addr)
+    if acct.total_debt_base > 0:
+        print()
+        print("!!! Wallet has open Aave debt. Refusing to start withdrawal sequence.")
+        print(f"    totalDebtBase = ${_format_units(acct.total_debt_base, 8)}")
+        sys.exit(2)
+
+    if eth_wei < 5 * 10 ** 15:  # 0.005 ETH
+        print()
+        print("!!! WARNING: ETH balance is very low (<0.005 ETH). Top up before continuing.")
+
+    targets = (only,) if only else MARKET_ORDER
+    results: list[tuple[str, str]] = []
+
+    for key in targets:
+        m = MARKETS[key]
+        _divider(f"Market: {key}")
+
+        balance = aavelib.erc20_balance_of(client, m.a_token, addr)
+        if balance == 0:
+            print(f"[{key}] aToken balance is 0 - nothing to withdraw, skipping.")
+            results.append((key, "skipped"))
+            continue
+
+        config = aavelib.get_reserve_configuration(client, m.underlying)
+        status = decode_reserve_status(config)
+        if not status.active:
+            print(f"[{key}] reserve INACTIVE - skipping.")
+            results.append((key, "skipped"))
+            continue
+        if status.paused:
+            print(f"[{key}] reserve PAUSED - skipping.")
+            results.append((key, "skipped"))
+            continue
+
+        liquidity = aavelib.erc20_balance_of(client, m.underlying, m.a_token)
+        if liquidity == 0:
+            print(f"[{key}] pool has 0 liquidity right now - skipping.")
+            results.append((key, "skipped"))
+            continue
+        if liquidity >= balance:
+            amount = (1 << 256) - 1
+            mode = "ALL"
+        else:
+            amount = liquidity - 1 if liquidity > 1 else liquidity
+            mode = "PARTIAL"
+            print(f"[{key}] partial withdraw: pool liquidity {liquidity} < balance {balance}")
+
+        data = aavelib.withdraw_calldata(asset=m.underlying, amount=amount, to=recipient)
+        try:
+            est = _try_estimate_gas(client, addr, data)
+        except RuntimeError as e:
+            print(str(e))
+            if not _confirm("Continue with the next market?", auto_yes):
+                sys.exit(1)
+            results.append((key, "aborted"))
+            continue
+
+        if est * 12 // 10 > gas_limit:
+            print(f"[{key}] gas estimate {est} too close to GAS_LIMIT {gas_limit}; bump it.")
+            sys.exit(1)
+
+        max_fee, priority = _gas_fields(client)
+        balance_fmt = _format_units(balance, m.decimals)
+        amount_fmt = balance_fmt if mode == "ALL" else _format_units(amount, m.decimals)
+
+        print()
+        print(f"  asset:           {m.underlying}")
+        print(f"  current balance: {balance_fmt}")
+        print(f"  withdrawing:     {mode} ({amount_fmt})")
+        print(f"  recipient:       {recipient}")
+        print(f"  gas estimate:    {est}")
+        print(f"  gas limit:       {gas_limit}")
+        print(f"  maxFeePerGas:    {max_fee // 10 ** 9} gwei")
+        print(f"  priorityFee:     {priority // 10 ** 9} gwei")
+        print(f"  est tx cost:     ~{_format_units(max_fee * est, 18)} ETH")
+
+        if not _confirm("  Proceed with this withdrawal?", auto_yes):
+            print("  Skipped by user.")
+            results.append((key, "aborted"))
+            continue
+
+        nonce = int(client.call("eth_getTransactionCount", [addr, "latest"]), 16)
+        tx = build_eip1559_tx(
+            chain_id=1, nonce=nonce,
+            max_priority_fee_per_gas=priority, max_fee_per_gas=max_fee,
+            gas_limit=gas_limit, to=POOL, value=0, data=data,
+        )
+        raw = sign_eip1559_tx(tx, priv)
+        try:
+            tx_hash = client.call("eth_sendRawTransaction", ["0x" + raw.hex()])
+        except JsonRpcError as e:
+            print(f"  !!! send rejected: {e}")
+            sys.exit(1)
+        print(f"  tx hash:         {tx_hash}")
+        print(f"  https://etherscan.io/tx/{tx_hash}")
+        print("  waiting for receipt...")
+        receipt = _wait_for_receipt(client, tx_hash)
+        if receipt is None:
+            print("  receipt timeout; check etherscan.")
+            sys.exit(4)
+        block = int(receipt["blockNumber"], 16)
+        status_int = int(receipt["status"], 16)
+        gas_used = int(receipt["gasUsed"], 16)
+        print(f"  mined in block {block}, status={status_int}, gasUsed={gas_used}")
+        if status_int != 1:
+            print("  !!! tx REVERTED. Stopping.")
+            sys.exit(1)
+        results.append((key, "withdrawn"))
+
+    # Wipe priv after the last sign.
+    del priv
+
+    _divider("Done")
+    for k, st in results:
+        print(f"  {k.ljust(5)} {st}")
+    print()
+    print("Recommended: run `python aave.py verify` again to confirm balances are zero.")
     return 0
 
 
