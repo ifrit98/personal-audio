@@ -1,3 +1,4 @@
+import hashlib
 import unittest
 from pathlib import Path
 
@@ -5,6 +6,12 @@ from pathlib import Path
 class TestWordlist(unittest.TestCase):
     def test_wordlist_is_canonical(self):
         path = Path(__file__).parent.parent / "wordlist.txt"
+        # Fail fast on file corruption: enforce canonical BIP-39 English SHA-256.
+        self.assertEqual(
+            hashlib.sha256(path.read_bytes()).hexdigest(),
+            "2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda",
+            "wordlist.txt does not match canonical BIP-39 English SHA-256",
+        )
         words = path.read_text(encoding="utf-8").splitlines()
         self.assertEqual(len(words), 2048, "BIP-39 wordlist must have exactly 2048 words")
         # Canonical first and last word per the BIP-39 English wordlist.
