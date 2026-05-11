@@ -36,6 +36,34 @@ class TestKeccak256(unittest.TestCase):
         self.assertNotEqual(keccak256(long_input), keccak256(prefix))
         self.assertNotEqual(keccak256(long_input), keccak256(b""))
 
+    def test_boundary_135_bytes(self):
+        """Triggers the merged-pad-byte branch (rate - 1 input)."""
+        self.assertEqual(
+            keccak256(b"\x00" * 135).hex(),
+            "29e3704feeca7fb9ba229f0fa04d9b36449cf3ad6e1d85d9cfff3a10df9abc3e",
+        )
+
+    def test_boundary_136_bytes(self):
+        """Exact rate boundary - tail is empty after the absorb loop."""
+        self.assertEqual(
+            keccak256(b"\x00" * 136).hex(),
+            "3a5912a7c5faa06ee4fe906253e339467a9ce87d533c65be3c15cb231cdb25f9",
+        )
+
+    def test_boundary_137_bytes(self):
+        """One byte past the boundary."""
+        self.assertEqual(
+            keccak256(b"\x00" * 137).hex(),
+            "bee7fbb405cb0d91a8775e338c4a5e4b5d6b2d051f687fa942043cffdc73bd28",
+        )
+
+    def test_multi_block_200_bytes(self):
+        """Multi-block input with a hard-coded reference digest."""
+        self.assertEqual(
+            keccak256(b"\x00" * 200).hex(),
+            "e1bb54e1bc3af48d01e5dbfc81015c98152a574f6428c6948aa4837c9c0baad9",
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

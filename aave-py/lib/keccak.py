@@ -49,7 +49,7 @@ def _keccak_f1600(state: list[list[int]]) -> None:
         # chi
         for x in range(5):
             for y in range(5):
-                state[x][y] = b[x][y] ^ ((~b[(x + 1) % 5][y]) & b[(x + 2) % 5][y]) & 0xFFFFFFFFFFFFFFFF
+                state[x][y] = (b[x][y] ^ ((~b[(x + 1) % 5][y]) & b[(x + 2) % 5][y])) & 0xFFFFFFFFFFFFFFFF
         # iota
         state[0][0] ^= rc
 
@@ -65,9 +65,12 @@ def keccak256(data: bytes) -> bytes:
         offset += _RATE_BYTES
     # pad final block: 0x01 ... 0x80 (multi-rate padding "10*1")
     tail = bytearray(data[offset:])
-    tail.append(0x01)
-    tail.extend(b"\x00" * (_RATE_BYTES - len(tail) - 1))
-    tail.append(0x80)
+    if len(tail) == _RATE_BYTES - 1:
+        tail.append(0x81)            # 0x01 | 0x80 - merged padding when only one slot remains
+    else:
+        tail.append(0x01)
+        tail.extend(b"\x00" * (_RATE_BYTES - len(tail) - 1))
+        tail.append(0x80)
     _absorb_block(state, bytes(tail))
     # squeeze 32 bytes (one rate-sized squeeze is enough for 256 bits)
     out = bytearray()
@@ -80,7 +83,8 @@ def keccak256(data: bytes) -> bytes:
 
 
 def _absorb_block(state: list[list[int]], block: bytes) -> None:
-    assert len(block) == _RATE_BYTES
+    if len(block) != _RATE_BYTES:
+        raise ValueError(f"Keccak absorb block must be {_RATE_BYTES} bytes, got {len(block)}")
     for i in range(_RATE_BYTES // 8):
         x = i % 5
         y = i // 5
