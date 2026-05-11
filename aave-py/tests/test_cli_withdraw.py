@@ -84,5 +84,26 @@ class TestWithdrawCommand(unittest.TestCase):
         self.assertEqual(cm.exception.code, 2)
 
 
+class TestReceiptPolling(unittest.TestCase):
+    def test_wait_for_receipt_survives_transient_jsonrpc_error(self):
+        from unittest.mock import MagicMock
+        from lib.jsonrpc import JsonRpcError
+
+        client = MagicMock()
+        # First call raises, second returns a valid receipt.
+        client.call.side_effect = [
+            JsonRpcError(-32603, "internal error"),
+            {"blockNumber": "0x1", "status": "0x1", "gasUsed": "0x5208"},
+        ]
+        # Patch time.sleep so the test isn't slow.
+        with patch("time.sleep"):
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                receipt = aave._wait_for_receipt(client, "0xabc", timeout_secs=10, poll_secs=0)
+        self.assertIsNotNone(receipt)
+        self.assertEqual(receipt["status"], "0x1")
+        self.assertIn("transient RPC error", buf.getvalue())
+
+
 if __name__ == "__main__":
     unittest.main()

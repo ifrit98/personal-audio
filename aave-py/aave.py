@@ -95,6 +95,21 @@ def _make_client() -> RpcClient:
     return RpcClient(url)
 
 
+def _int_env(name: str, default: str | None = None) -> int:
+    """Read an integer env var, exiting cleanly with a clear message on parse failure."""
+    raw = os.environ.get(name)
+    if raw is None or raw.strip() == "":
+        if default is None:
+            print(f"Missing required env var: {name}")
+            sys.exit(2)
+        raw = default
+    try:
+        return int(raw)
+    except ValueError:
+        print(f"Env var {name} must be an integer; got {raw!r}.")
+        sys.exit(2)
+
+
 def _resolve_mnemonic(prompt: bool) -> str:
     if prompt:
         m = getpass.getpass("BIP-39 mnemonic: ").strip()
@@ -112,8 +127,12 @@ def _resolve_mnemonic(prompt: bool) -> str:
 def _resolve_wallet(prompt: bool) -> tuple[bytes, str]:
     mnemonic = _resolve_mnemonic(prompt)
     path = os.environ.get("HD_PATH", DEFAULT_HD_PATH).strip()
-    seed = mnemonic_to_seed(mnemonic)
-    priv = derive_path(seed, path)
+    try:
+        seed = mnemonic_to_seed(mnemonic)
+        priv = derive_path(seed, path)
+    except ValueError as e:
+        print(f"Mnemonic / HD path error: {e}")
+        sys.exit(2)
     addr = derive_address(priv)
     return priv, addr
 
@@ -216,11 +235,15 @@ def cmd_verify(args: argparse.Namespace) -> int:
 # ----------------------- withdraw -----------------------
 
 def _gas_fields(client: RpcClient) -> tuple[int, int]:
-    priority_gwei = int(os.environ.get("PRIORITY_FEE_GWEI", "2"))
+    priority_gwei = _int_env("PRIORITY_FEE_GWEI", "2")
     priority = priority_gwei * 10 ** 9
     max_fee_gwei = os.environ.get("MAX_FEE_GWEI", "").strip()
     if max_fee_gwei:
-        return int(max_fee_gwei) * 10 ** 9, priority
+        try:
+            return int(max_fee_gwei) * 10 ** 9, priority
+        except ValueError:
+            print(f"Env var MAX_FEE_GWEI must be an integer; got {max_fee_gwei!r}.")
+            sys.exit(2)
     block = client.call("eth_getBlockByNumber", ["latest", False])
     base_fee = int(block["baseFeePerGas"], 16)
     return base_fee * 2 + priority, priority
@@ -248,10 +271,25 @@ def _try_estimate_gas(client: RpcClient, sender: str, data: bytes) -> int:
 
 
 def _wait_for_receipt(client: RpcClient, tx_hash: str, timeout_secs: int = 300, poll_secs: float = 4.0):
+    """Poll eth_getTransactionReceipt until it returns a non-null receipt or
+    the timeout expires.
+
+    Once a tx has been broadcast, transient RPC errors (rate limits, node
+    blips, network errors) MUST NOT be treated as the tx having failed -
+    the tx may already be in the mempool or even mined. We swallow those
+    here and keep polling, with a one-line warning so the user knows
+    polling is degraded.
+    """
     import time
+    from urllib.error import URLError
     deadline = time.monotonic() + timeout_secs
     while time.monotonic() < deadline:
-        receipt = client.call("eth_getTransactionReceipt", [tx_hash])
+        try:
+            receipt = client.call("eth_getTransactionReceipt", [tx_hash])
+        except (JsonRpcError, URLError, TimeoutError) as e:
+            print(f"  (transient RPC error while polling receipt: {e}; will retry)")
+            time.sleep(poll_secs)
+            continue
         if receipt is not None:
             return receipt
         time.sleep(poll_secs)
@@ -265,7 +303,7 @@ def cmd_withdraw(args: argparse.Namespace) -> int:
     recipient = os.environ.get("RECIPIENT", "").strip() or addr
     only = getattr(args, "only", None)
     auto_yes = getattr(args, "yes", False) or os.environ.get("AUTO_CONFIRM", "").lower() == "true"
-    gas_limit = int(os.environ.get("GAS_LIMIT", "500000"))
+    gas_limit = _int_env("GAS_LIMIT", "500000")
 
     _divider("Pre-flight")
     eth_balance_hex = client.call("eth_getBalance", [addr, "latest"])

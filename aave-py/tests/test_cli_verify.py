@@ -59,5 +59,22 @@ class TestVerifyCommand(unittest.TestCase):
         self.assertIn("0x9858EfFD232B4033E47d90003D41EC34EcaEda94", out)
 
 
+class TestVerifyBadMnemonicExits2(unittest.TestCase):
+    def test_bad_mnemonic_exits_2_with_clean_message(self):
+        from unittest.mock import patch
+        with patch.object(
+            aave, "_resolve_mnemonic",
+            return_value="totally bogus words and not bip39 valid at all",
+        ), patch.object(aave, "_make_client"):
+            buf = io.StringIO()
+            with redirect_stdout(buf), self.assertRaises(SystemExit) as cm:
+                args = argparse.Namespace(prompt=False)
+                aave.cmd_verify(args)
+        self.assertEqual(cm.exception.code, 2)
+        self.assertIn("Mnemonic", buf.getvalue())
+        # Should NOT contain a Python traceback marker
+        self.assertNotIn("Traceback", buf.getvalue())
+
+
 if __name__ == "__main__":
     unittest.main()

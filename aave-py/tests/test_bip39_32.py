@@ -69,5 +69,26 @@ class TestBip32(unittest.TestCase):
             derive_path(seed, "44'/60'/0'/0/0")
 
 
+class TestBip32ReferenceVectors(unittest.TestCase):
+    """Canonical BIP-32 test vectors from
+    https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki."""
+
+    BIP32_TV1_SEED = bytes.fromhex("000102030405060708090a0b0c0d0e0f")
+
+    def test_vector1_m_0H(self):
+        priv = derive_path(self.BIP32_TV1_SEED, "m/0'")
+        self.assertEqual(
+            priv.hex(),
+            "edb2e14f9ee77d26dd93b4ecede8d16ed408ce149b6cd80b0715a2d911a0afea",
+        )
+
+    def test_vector1_m_0H_1(self):
+        priv = derive_path(self.BIP32_TV1_SEED, "m/0'/1")
+        self.assertEqual(
+            priv.hex(),
+            "3c6cb8d0f6a264c91ea8b5030fadaa8e538b020f0a387421a12de9319dc93368",
+        )
+
+
 if __name__ == "__main__":
     unittest.main()
