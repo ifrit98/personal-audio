@@ -459,8 +459,16 @@ def _build_parser() -> argparse.ArgumentParser:
     return p
 
 
-def main(argv: list[str] | None = None) -> int:
-    _load_dotenv()
+def main(argv: list[str] | None = None, env_path: str | None = ".env") -> int:
+    """CLI entry point.
+
+    `env_path` is the path to a dotenv file to load (default: ".env" in cwd).
+    Pass `env_path=None` to skip dotenv loading entirely - useful for tests
+    so a stray `aave-py/.env` doesn't pollute `os.environ` for the rest of
+    the process.
+    """
+    if env_path is not None:
+        _load_dotenv(env_path)
     parser = _build_parser()
     args = parser.parse_args(argv)
     if args.command == "selftest":
