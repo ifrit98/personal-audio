@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# aave - thin shell wrapper around `python aave.py`.
+#
+# Lets you run `./aave selftest`, `./aave verify --prompt`,
+# `./aave withdraw --only=USDC`, etc. from anywhere - it auto-resolves the
+# venv interpreter and PYTHONPATH so you don't have to remember either.
+#
+# Forwards every argument verbatim to `aave.py`. Exit code is whatever
+# `aave.py` returned.
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV_PY="$SCRIPT_DIR/.venv/bin/python3"
+
+if [ ! -x "$VENV_PY" ]; then
+    echo "venv interpreter not found at: $VENV_PY" >&2
+    echo "" >&2
+    echo "First-time setup:" >&2
+    echo "  cd $SCRIPT_DIR" >&2
+    echo "  python3.13 -m venv .venv" >&2
+    echo "  .venv/bin/pip install -r requirements.txt" >&2
+    echo "" >&2
+    echo "(coincurve does not currently build under Python 3.14.)" >&2
+    exit 1
+fi
+
+cd "$SCRIPT_DIR"
+exec env PYTHONPATH=. "$VENV_PY" aave.py "$@"

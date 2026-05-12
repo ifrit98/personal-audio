@@ -91,10 +91,19 @@ git check-ignore -v .env
 
 ## Run
 
+Two equivalent ways to invoke:
+
+| | Direct | Via thin wrapper |
+|---|---|---|
+| Setup | `source .venv/bin/activate` first, then `python aave.py …` | works from anywhere; auto-resolves the venv `python3` and sets `PYTHONPATH=.` |
+| Example | `python aave.py selftest` | `./aave selftest` |
+
+The `./aave` wrapper is just a 30-line bash file that exec's `.venv/bin/python3 aave.py "$@"` — no behavior change, just less typing under stress.
+
 Always start with `selftest` to verify all the hand-rolled crypto matches its published test vectors:
 
 ```bash
-python aave.py selftest
+./aave selftest
 ```
 
 Expected:
@@ -114,17 +123,52 @@ selftest: ALL PASS
 Then read-only state inspection:
 
 ```bash
-python aave.py verify              # reads MNEMONIC from .env
-python aave.py verify --prompt     # prompts for mnemonic via getpass (recommended)
+./aave verify              # reads MNEMONIC from .env
+./aave verify --prompt     # prompts for mnemonic via getpass (recommended)
 ```
 
 Then the live drain. `verify` and `withdraw` both run `selftest` internally before doing anything else.
 
 ```bash
-python aave.py withdraw                  # interactive sequential drain DAI -> USDC -> USDT
-python aave.py withdraw --only=DAI       # only one market
-python aave.py withdraw --yes            # skip per-market confirmation prompts
-python aave.py withdraw --prompt         # mnemonic via getpass; combine with --yes if desired
+./aave withdraw                  # interactive sequential drain DAI -> USDC -> USDT
+./aave withdraw --only=DAI       # only one market
+./aave withdraw --yes            # skip per-market confirmation prompts
+./aave withdraw --prompt         # mnemonic via getpass; combine with --yes if desired
+```
+
+### Pre-flight rehearsal (`./rehearse.sh`)
+
+A separate `./rehearse.sh` runs the entire pipeline against the public BIP-39 abandon mnemonic (a well-known empty wallet on mainnet). It writes a temporary `.env`, runs `selftest` → `verify` → `withdraw --only={DAI,USDC,USDT} --yes` end-to-end against your real RPC, asserts the expected wallet derives, all reserves are healthy, every market skips cleanly with no broadcast, and that argparse rejects bad input. Restores your real `.env` afterward and never touches real funds.
+
+Use it to:
+
+- Catch environment regressions before D-day (Python version, venv state, `coincurve` install, RPC reachability).
+- Smoke-test a freshly-cloned checkout in 10 seconds.
+- Validate that a `.env` URL change (new Alchemy key, new provider) hasn't broken anything.
+
+```bash
+./rehearse.sh https://eth-mainnet.g.alchemy.com/v2/YOUR_KEY
+# or, with ALCHEMY_HTTP_URL already in your .env:
+./rehearse.sh
+```
+
+Expected output:
+
+```
+=== aave-py rehearsal ===
+RPC: https://...
+Wallet (expected): 0x9858EfFD232B4033E47d90003D41EC34EcaEda94
+
+[REHEARSE    ] selftest ... PASS
+[REHEARSE    ] verify wallet derives correctly ... PASS
+[REHEARSE    ] verify reports healthy DAI reserve ... PASS
+[REHEARSE    ] verify reports zero balances ... PASS
+[REHEARSE    ] withdraw --only=DAI --yes skips, no broadcast ... PASS
+[REHEARSE    ] withdraw --only=USDC --yes skips, no broadcast ... PASS
+[REHEARSE    ] withdraw --only=USDT --yes skips, no broadcast ... PASS
+[REHEARSE    ] withdraw --only=BANANA rejected by argparse ... PASS
+
+=== summary: 8 passed, 0 failed ===
 ```
 
 ---
@@ -235,6 +279,8 @@ aave-py/
 ├── .env.example
 ├── .gitignore                 # excludes .env, .venv/, venv/, __pycache__/, etc.
 ├── wordlist.txt               # canonical 2048-word BIP-39 English wordlist
+├── aave                       # thin shell wrapper: `./aave selftest|verify|withdraw`
+├── rehearse.sh                # automated mainnet rehearsal vs. abandon mnemonic
 ├── aave.py                    # CLI entrypoint (argparse, .env parser, dispatch)
 ├── lib/
 │   ├── __init__.py
@@ -292,14 +338,15 @@ Should report `Ran 73 tests in <1s — OK`. The same vectors are also wired into
 
 ```bash
 cd aave-py
-python3.13 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+python3.13 -m venv .venv
+.venv/bin/pip install -r requirements.txt
 cp .env.example .env && chmod 600 .env
 $EDITOR .env                          # fill in ALCHEMY_HTTP_URL (leave MNEMONIC blank)
 
-python aave.py selftest               # always first
-python aave.py verify --prompt        # paste mnemonic; sanity-check the printed wallet address
-python aave.py withdraw --prompt      # paste mnemonic again; confirm each market
+./rehearse.sh                         # 10s sanity check against the abandon wallet
+./aave selftest                       # always first
+./aave verify --prompt                # paste mnemonic; sanity-check the printed wallet address
+./aave withdraw --prompt              # paste mnemonic again; confirm each market
 
 shred -u .env                         # or srm -z .env on macOS
 ```
