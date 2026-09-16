@@ -19,6 +19,12 @@ __pycache__/
 
 # Secrets
 .env
+.env.test
 
 # macOS
 .DS_Store
+
+# Unrelated project bundles left in this checkout
+aave/
+compound-sniper/
+*.zip
