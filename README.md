@@ -2,7 +2,18 @@
 
 A local-first pipeline for downloading YouTube audio, transcribing it with
 [whisper.cpp](https://github.com/ggml-org/whisper.cpp), and processing
-transcripts with LLMs (OpenAI API or local models via LM Studio).
+transcripts with LLMs (OpenAI, Anthropic, OpenRouter, or local models via
+LM Studio).
+
+Three entry points do most of the work. `pipeline.sh` takes a single video from
+URL to summary. `digest.sh` takes a whole playlist and turns each video into a
+structured analytical report — themes, speaker-attributed claims, steel-manned
+conclusions, supporting evidence, and a critical read — plus a cross-video
+synthesis. `bot.sh` puts that behind a Discord bot so you can paste a playlist
+link from your phone and get the reports back as files or a gist.
+
+See [Playlist Digest](#playlist-digest-deep-analysis-at-scale) and
+[Discord Bot](#discord-bot).
 
 ## Prerequisites
 
@@ -151,6 +162,180 @@ reports/<title>/
 └── transcripts/           # Symlinked raw transcripts
 ```
 
+### Playlist Digest: Deep Analysis at Scale
+
+`digest.sh` is the "I saved 12 podcasts to a playlist and have no time to watch
+them" path. Point it at a YouTube playlist (or a list file) and it downloads,
+transcribes with timestamps, and turns each video into a structured report that
+extracts the major themes, every claim attributed to the speaker who made it, a
+steel-manned read of the conclusions, the evidence offered in support, and a
+critical assessment. With more than one video it also writes a cross-video
+`index.md` that surfaces consensus, live disagreements, and what you should
+believe differently as a result.
+
+```bash
+./digest.sh "https://www.youtube.com/playlist?list=PLxxxxxxxx"
+```
+
+Check what you're in for before spending anything — this downloads nothing and
+calls no provider:
+
+```bash
+./digest.sh --dry-run "https://www.youtube.com/playlist?list=PLxxxxxxxx"
+```
+
+Point it at a list file instead of a playlist. `txt`, `csv`, `json`, and `yaml`
+all work:
+
+```bash
+./digest.sh --title "Macro Week 37" watchlist.csv
+```
+
+```csv
+url,title,note
+https://youtu.be/aaaaaaaaaaa,,Want the yen carry trade argument
+https://youtu.be/bbbbbbbbbbb,,Steel-man the bear case
+```
+
+The optional `note` column is worth using: it tells the model why you saved the
+video, and the analysis leans toward that interest without ignoring the rest.
+Plain text lists use `URL | why I saved it`, and `#` starts a comment.
+
+Other common runs:
+
+```bash
+# a specific provider and model
+./digest.sh --provider anthropic --llm-model claude-sonnet-4-5 "URL"
+
+# better transcription for hard audio, and only the first 5 of a long playlist
+./digest.sh -m small.en --limit 5 "PLAYLIST_URL"
+
+# analyze transcripts you already have
+./digest.sh transcripts/*.txt
+
+# fully local, no data leaves the machine
+./digest.sh --provider lmstudio "PLAYLIST_URL"
+
+# transcribe now, analyze later
+./digest.sh --transcribe-only "PLAYLIST_URL"
+```
+
+Output structure:
+
+```
+digests/<title>/
+├── index.md              # Start here: cross-video synthesis
+├── videos/
+│   ├── some-podcast.md   # Per-video report, timestamps deep-linked
+│   └── ...
+├── transcripts/          # .srt (timestamped) and .txt per video
+├── notes/                # Intermediate chunk notes for long videos
+└── state.json            # Resume ledger
+```
+
+Notes on behaviour worth knowing:
+
+- **Resumable.** Re-running the same command skips videos that already have a
+  report, so an interrupted 20-video run picks up where it stopped. Use
+  `--force` to redo them anyway.
+- **Long videos.** Transcripts that fit the model's context window go in one
+  pass. Anything longer is analyzed chunk by chunk into dense intermediate
+  notes, then synthesized, so a 3-hour panel survives even an 8k-context local
+  model. `--chunk` forces this mode; it costs more calls but holds onto more
+  per-speaker detail.
+- **Quotes are checked, not trusted.** Every quote in a report is matched back
+  against the transcript. Anything the model paraphrased into quotation marks is
+  flagged inline, and the count lands in the report's `unverified_quotes` field.
+- **Timestamps are links.** `[00:42:15]` in a report links straight to that
+  moment in the video, so you can verify any claim in one click.
+- **Audio is cached** in `downloads/` and reused across runs.
+
+To change what the analysis asks for, dump the prompts and edit them:
+
+```bash
+./digest.sh --write-prompts     # writes prompts/*.md
+```
+
+`digest.sh` picks them up automatically from then on.
+
+### Discord Bot
+
+`bot.sh` puts `digest.sh` behind a Discord bot, so the whole loop is: save
+videos to a playlist on your phone, paste the link into Discord, get the reports
+back as files or a gist link.
+
+```bash
+./bot.sh
+```
+
+First run creates `.venv` and installs `discord.py` into it. Everything else in
+this repo stays stdlib-only.
+
+**One-time Discord setup**
+
+1. Create an application at
+   [discord.com/developers/applications](https://discord.com/developers/applications).
+2. Under **Bot**, reset and copy the token into `DISCORD_BOT_TOKEN` in `.env`.
+3. Under **Bot → Privileged Gateway Intents**, enable **Message Content
+   Intent**. The bot cannot read your links without it.
+4. Under **OAuth2 → URL Generator**, tick `bot` scope plus **Send Messages**,
+   **Attach Files**, and **Read Message History**, then open the generated URL
+   to invite it.
+5. Turn on Discord's Developer Mode (Settings → Advanced) so you can
+   right-click to copy your user ID, and put it in `DISCORD_ALLOWED_USERS`.
+
+The bot **refuses to start without an allowlist**. A single message can queue
+hours of transcription and paid API calls, so it will not take orders from
+anyone who merely happens to see the channel. Set at least one of
+`DISCORD_ALLOWED_USERS`, `DISCORD_ALLOWED_CHANNELS`, or
+`DISCORD_ALLOWED_GUILDS`.
+
+**Using it**
+
+DM the bot, @-mention it, or post in a channel listed in
+`DISCORD_ALLOWED_CHANNELS`. It picks up URLs anywhere in the message, and reads
+an attached `.txt`/`.csv`/`.json`/`.yaml` list if you'd rather send a file.
+
+```
+https://youtube.com/playlist?list=PLxxxx limit=3 whisper=small.en as=gist
+```
+
+Options can go anywhere in the message:
+
+| Option | Effect |
+|---|---|
+| `limit=5` | Cap the number of videos (also capped by `DIGEST_MAX_VIDEOS`) |
+| `whisper=small.en` | Better transcription, slower |
+| `llm=gpt-5.6-sol` | Use a stronger model for this run |
+| `provider=anthropic` | `openai`, `anthropic`, `openrouter`, or `lmstudio` |
+| `title="Macro Week 37"` | Name the run and its output folder |
+| `as=gist` | `files`, `gist`, or `both` — overrides `DIGEST_DELIVERY` |
+| `safe` | Rate-limit downloads |
+| `force` | Redo videos already analyzed |
+| `dryrun` | List what would be processed, costing nothing |
+
+Say `help` to get this list in Discord.
+
+**What it does**
+
+Jobs run one at a time — whisper is CPU-bound, so parallel runs would only slow
+each other down — and the bot replies with your queue position. It edits a
+status message as transcription progresses, then delivers:
+
+- **`files`**: `index.md` plus each per-video report as attachments. If there
+  are more than 9 files or they exceed the upload limit, it sends a zip instead.
+- **`gist`**: a secret gist (needs `GITHUB_TOKEN` with `gist` scope) and replies
+  with the link. If gist creation fails it falls back to attachments rather than
+  losing the work.
+
+Either way it posts the roll-up's opening section inline, so the headline is
+readable without opening anything, and warns you if any quotes failed
+verification.
+
+Reports also stay on disk under `digests/`, so a failed upload is never a lost
+run — and since `digest.sh` is resumable, re-sending the same playlist picks up
+where it stopped instead of paying twice.
+
 ### Multiple URLs
 
 All scripts accept multiple inputs:
@@ -182,6 +367,37 @@ All scripts accept multiple inputs:
 | `-o, --output DIR` | Processed output directory | `./processed` |
 | `--no-transcribe` | Skip download+transcribe, use transcript files | off |
 | `--no-process` | Skip LLM processing | off |
+
+### digest.sh
+
+| Flag | Description | Default |
+|---|---|---|
+| `--title TEXT` | Run title, used for the output folder | playlist title or date |
+| `-o, --output DIR` | Output root | `./digests` |
+| `--limit N` | Process at most N videos | all |
+| `--force` | Reprocess videos that already have a report | off |
+| `--retranscribe` | Re-run whisper even if a transcript exists | off |
+| `--single` | Treat a watch URL containing `&list=` as one video | off |
+| `--dry-run` | Resolve the video list and estimate work, then stop | off |
+| `--no-rollup` | Skip the cross-video synthesis | off |
+| `-q, --quiet` | Only report errors | off |
+| `-m, --model MODEL` | Whisper model | `base.en` |
+| `-l, --language LANG` | Spoken language or `auto` | `en` |
+| `-t, --threads N` | CPU threads for whisper | `4` |
+| `-f, --audio-format FMT` | Download format: mp3, wav, flac, ogg | `mp3` |
+| `-s, --safe` | Rate-limit downloads | off |
+| `--transcribe-only` | Download and transcribe, skip all LLM analysis | off |
+| `--provider NAME` | `openai`, `anthropic`, `openrouter`, or `lmstudio` | first configured key |
+| `--llm-model MODEL` | Model name | `gpt-5.6-luna`, or `DIGEST_MODEL` |
+| `--base-url URL` | Override the provider API base URL | — |
+| `--max-tokens N` | Max response tokens | `8192` |
+| `--temperature N` | Sampling temperature | `0.2` |
+| `--context-tokens N` | Override the model's context window | auto-detected |
+| `--chunk` | Always map-reduce, even when the transcript fits | auto |
+| `--no-verify-quotes` | Skip checking quotes against the transcript | off |
+| `--timeout SEC` | Per-request timeout | `300` |
+| `--prompts-dir DIR` | Directory of prompt overrides | `./prompts` |
+| `--write-prompts` | Write the default prompts to `--prompts-dir` and exit | — |
 
 ### newsletter.sh
 
@@ -278,6 +494,49 @@ Or set in `.env`:
 LM_STUDIO_URL=http://localhost:1234/v1
 LM_STUDIO_MODEL=llama-3-8b
 ```
+
+### Anthropic and OpenRouter (digest.sh only)
+
+`pipeline.sh`, `process.sh`, and `newsletter.sh` speak OpenAI-compatible APIs
+only. `digest.sh` additionally supports Anthropic's Messages API and OpenRouter:
+
+```bash
+ANTHROPIC_API_KEY=sk-ant-...
+ANTHROPIC_MODEL=claude-sonnet-4-5
+
+OPENROUTER_API_KEY=sk-or-...
+OPENROUTER_MODEL=anthropic/claude-sonnet-4.5
+```
+
+Provider selection order is `--provider`, then `DIGEST_PROVIDER` in `.env`, then
+whichever of `OPENAI_API_KEY` / `ANTHROPIC_API_KEY` / `OPENROUTER_API_KEY` is set
+first, then LM Studio. So with only an OpenAI key configured nothing changes; add
+an Anthropic key and pick it per run with `--provider anthropic`.
+
+### Model defaults
+
+`digest.sh` defaults to **`gpt-5.6-luna`**: a 1.05M-token context window at
+$0.20 / $1.20 per million input / output tokens. The large window matters here
+because it means even a 3-hour panel is analyzed in a single pass rather than
+chunked, which preserves per-speaker claim detail that map-reduce inevitably
+blurs. Override it per run with `--llm-model`, or globally with `DIGEST_MODEL`
+in `.env`.
+
+`DIGEST_MODEL` applies to `digest.sh` only and takes precedence over
+`OPENAI_MODEL`, so the older scripts can stay on a different model.
+
+One cost note: GPT-5.6 and GPT-6 models switch to a long-context pricing tier
+above 272K input tokens, roughly doubling the input rate. Nothing normal gets
+close — a 3-hour podcast is about 45K tokens — but a roll-up across dozens of
+videos could. `digest.sh` warns before it happens rather than letting you find
+out on the invoice.
+
+Context windows are inferred from the model name and can be overridden with
+`--context-tokens` when a model reports something unusual — that number is what
+decides whether a long transcript goes through in one pass or gets chunked.
+Parameter quirks (`max_tokens` versus `max_completion_tokens`, whether
+`temperature` is accepted) are learned from the API on the first call of a run
+and reused, so new model releases work without a code change.
 
 ### Custom Prompts
 
@@ -377,6 +636,12 @@ personal-audio/
 ├── dl-audio.sh        # Audio-only downloader
 ├── process.sh         # LLM transcript processor
 ├── newsletter.sh      # Multi-video newsletter digest generator
+├── digest.sh          # Playlist → deep analytical reports (wraps digest.py)
+├── digest.py          # Playlist digest implementation (stdlib only)
+├── bot.sh             # Discord bot launcher (creates .venv on first run)
+├── discord_bot.py     # Discord front end for digest.py
+├── requirements.txt   # discord.py — the only third-party dependency
+├── prompts/           # Optional prompt overrides for digest.sh
 ├── setup.sh           # One-command setup: deps, build, model, .env
 ├── test.sh            # End-to-end test suite
 ├── .env.example       # Template for API keys (committed)
@@ -389,7 +654,8 @@ personal-audio/
 ├── downloads/         # Downloaded audio files (gitignored)
 ├── transcripts/       # Generated transcripts (gitignored)
 ├── processed/         # LLM-processed output (gitignored)
-└── reports/           # Newsletter digests (gitignored)
+├── reports/           # Newsletter digests (gitignored)
+└── digests/           # Playlist digests (gitignored)
 ```
 
 ## Troubleshooting

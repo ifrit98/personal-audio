@@ -10,6 +10,12 @@ downloads/
 transcripts/
 processed/
 reports/
+digests/
+
+# Python bytecode & the Discord bot's virtualenv
+__pycache__/
+*.pyc
+.venv/
 
 # Secrets
 .env
