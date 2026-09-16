@@ -9,9 +9,22 @@ whisper.cpp/build/
 downloads/
 transcripts/
 processed/
+reports/
+digests/
+
+# Python bytecode & the Discord bot's virtualenv
+__pycache__/
+*.pyc
+.venv/
 
 # Secrets
 .env
+.env.test
 
 # macOS
 .DS_Store
+
+# Unrelated project bundles left in this checkout
+aave/
+compound-sniper/
+*.zip

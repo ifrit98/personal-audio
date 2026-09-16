@@ -1,0 +1,3 @@
+# Only the Discord bot needs third-party packages.
+# digest.py, digest.sh and every other script in this repo are stdlib-only.
+discord.py>=2.3,<3
