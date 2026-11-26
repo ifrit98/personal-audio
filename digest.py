@@ -677,6 +677,9 @@ def transcribe(audio: Path, out_prefix: Path, whisper_model: str, language: str,
             "-f", str(audio),
             "-l", language,
             "-t", str(threads),
+            # Don't condition each window on the previous text: large models
+            # otherwise fall into repetition loops over music and montage.
+            "--max-context", "0",
             "--output-srt",
             "-of", str(out_prefix),
             "-np",
@@ -878,7 +881,7 @@ CONTEXT_LIMITS: dict[str, int] = {
     "gpt-4-turbo": 128_000,
     "gpt-5": 400_000,
     "gpt-5.6": 1_050_000,   # sol, terra, and luna all report 1.05M
-    "gpt-6": 1_050_000,
+    "gpt-6": 1_050_000,     # sol and luna; luna max input 922K, output 128K
     "o1": 200_000,
     "o3": 200_000,
     "o4": 200_000,
@@ -963,7 +966,7 @@ PROVIDER_DEFAULTS = {
         "base_url": "https://api.openai.com/v1",
         "key_env": ("OPENAI_API_KEY",),
         "model_env": ("DIGEST_MODEL", "OPENAI_MODEL"),
-        "default_model": "gpt-5.6-luna",
+        "default_model": "gpt-6-luna",
     },
     "openrouter": {
         "kind": "openai",
@@ -1978,13 +1981,16 @@ examples:
                            help="resolve the video list and estimate work, then stop")
     run_group.add_argument("--no-rollup", action="store_true",
                            help="skip the cross-video synthesis")
+    run_group.add_argument("--force-rollup", action="store_true",
+                           help="regenerate the cross-video roll-up even if "
+                                "nothing new was analyzed")
     run_group.add_argument("-q", "--quiet", action="store_true",
                            help="only report errors")
 
     ts_group = parser.add_argument_group("transcription")
-    ts_group.add_argument("-m", "--model", default="base.en", metavar="MODEL",
+    ts_group.add_argument("-m", "--model", default="large-v3-turbo", metavar="MODEL",
                           help="whisper model: tiny.en, base.en, small.en, "
-                               "medium.en, large-v3-turbo (default: base.en)")
+                               "medium.en, large-v3-turbo (default: large-v3-turbo)")
     ts_group.add_argument("-l", "--language", default="en", metavar="LANG",
                           help="spoken language, or 'auto' (default: en)")
     ts_group.add_argument("-t", "--threads", type=int, default=4, metavar="N",
@@ -2004,8 +2010,8 @@ examples:
                            help="model name (default: provider default or env)")
     llm_group.add_argument("--base-url", metavar="URL",
                            help="override the provider API base URL")
-    llm_group.add_argument("--max-tokens", type=int, default=8192, metavar="N",
-                           help="max response tokens (default: 8192)")
+    llm_group.add_argument("--max-tokens", type=int, default=16384, metavar="N",
+                           help="max response tokens (default: 16384)")
     llm_group.add_argument("--temperature", type=float, default=0.2, metavar="N",
                            help="sampling temperature (default: 0.2)")
     llm_group.add_argument("--context-tokens", type=int, metavar="N",
@@ -2254,13 +2260,16 @@ def main(argv: Sequence[str] | None = None) -> int:
     # ── Roll-up ──────────────────────────────────────────────────────
     Log.say("-" * 60)
     rollup_path = out_dir / "index.md"
-    # Re-synthesize when there is new material, or when a previous run never
-    # produced an index (a failed roll-up should not be sticky).
+    # Re-synthesize when there is new material, when a previous run never
+    # produced an index (a failed roll-up should not be sticky), or when
+    # asked to unconditionally (e.g. after retrying a straggler video whose
+    # earlier failure had already left a stale index behind).
     wants_rollup = (
         provider is not None
         and not args.no_rollup
         and len(entries) > 1
-        and (len(entries) > skipped or not rollup_path.is_file())
+        and (args.force_rollup or len(entries) > skipped
+             or not rollup_path.is_file())
     )
     if wants_rollup:
         try:

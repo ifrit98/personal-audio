@@ -58,14 +58,14 @@ git submodule update --init --recursive
 1. **Installs system packages** via Homebrew: `yt-dlp`, `ffmpeg`, `cmake`
 2. **Initializes git submodules**: pulls `whisper.cpp` and `yt-dlp` source
 3. **Builds whisper.cpp** from source (uses Metal/GPU acceleration on Apple Silicon)
-4. **Downloads a whisper model** (default: `base.en`, ~141 MB)
+4. **Downloads a whisper model** (default: `large-v3-turbo`, ~1.5 GB)
 5. **Creates `.env`** from `.env.example` for API key configuration
 6. **Creates output directories**: `downloads/`, `transcripts/`, `processed/`
 
 ### Setup Options
 
 ```bash
-./setup.sh                     # Default: install everything, download base.en model
+./setup.sh                     # Default: install everything, download large-v3-turbo model
 ./setup.sh -m small.en         # Use a different model
 ./setup.sh --all-models        # Download base.en + small.en + large-v3-turbo
 ./setup.sh --skip-brew         # Skip Homebrew (if deps are already installed)
@@ -306,12 +306,13 @@ Options can go anywhere in the message:
 |---|---|
 | `limit=5` | Cap the number of videos (also capped by `DIGEST_MAX_VIDEOS`) |
 | `whisper=small.en` | Better transcription, slower |
-| `llm=gpt-5.6-sol` | Use a stronger model for this run |
+| `llm=gpt-6-sol` | Use a stronger model for this run |
 | `provider=anthropic` | `openai`, `anthropic`, `openrouter`, or `lmstudio` |
 | `title="Macro Week 37"` | Name the run and its output folder |
 | `as=gist` | `files`, `gist`, or `both` — overrides `DIGEST_DELIVERY` |
 | `safe` | Rate-limit downloads |
 | `force` | Redo videos already analyzed |
+| `forcerollup` | Regenerate the cross-video summary even if nothing new ran |
 | `dryrun` | List what would be processed, costing nothing |
 
 Say `help` to get this list in Discord.
@@ -352,7 +353,7 @@ All scripts accept multiple inputs:
 
 | Flag | Description | Default |
 |---|---|---|
-| `-m, --model MODEL` | Whisper model for transcription | `base.en` |
+| `-m, --model MODEL` | Whisper model for transcription | `large-v3-turbo` |
 | `-f, --audio-format FMT` | Download format: `mp3`, `wav`, `flac` | `mp3` |
 | `-l, --language LANG` | Spoken language or `auto` | `en` |
 | `-t, --threads N` | CPU threads for whisper | `4` |
@@ -380,17 +381,18 @@ All scripts accept multiple inputs:
 | `--single` | Treat a watch URL containing `&list=` as one video | off |
 | `--dry-run` | Resolve the video list and estimate work, then stop | off |
 | `--no-rollup` | Skip the cross-video synthesis | off |
+| `--force-rollup` | Regenerate the roll-up even if nothing new was analyzed | off |
 | `-q, --quiet` | Only report errors | off |
-| `-m, --model MODEL` | Whisper model | `base.en` |
+| `-m, --model MODEL` | Whisper model | `large-v3-turbo` |
 | `-l, --language LANG` | Spoken language or `auto` | `en` |
 | `-t, --threads N` | CPU threads for whisper | `4` |
 | `-f, --audio-format FMT` | Download format: mp3, wav, flac, ogg | `mp3` |
 | `-s, --safe` | Rate-limit downloads | off |
 | `--transcribe-only` | Download and transcribe, skip all LLM analysis | off |
 | `--provider NAME` | `openai`, `anthropic`, `openrouter`, or `lmstudio` | first configured key |
-| `--llm-model MODEL` | Model name | `gpt-5.6-luna`, or `DIGEST_MODEL` |
+| `--llm-model MODEL` | Model name | `gpt-6-luna`, or `DIGEST_MODEL` |
 | `--base-url URL` | Override the provider API base URL | — |
-| `--max-tokens N` | Max response tokens | `8192` |
+| `--max-tokens N` | Max response tokens | `16384` |
 | `--temperature N` | Sampling temperature | `0.2` |
 | `--context-tokens N` | Override the model's context window | auto-detected |
 | `--chunk` | Always map-reduce, even when the transcript fits | auto |
@@ -406,7 +408,7 @@ All scripts accept multiple inputs:
 | `--title TEXT` | Newsletter title | `Digest YYYY-MM-DD` |
 | `--from-file FILE` | Read URLs/paths from a file (one per line) | — |
 | `-o, --output DIR` | Report output directory | `./reports` |
-| `-m, --model MODEL` | Whisper model for transcription | `base.en` |
+| `-m, --model MODEL` | Whisper model for transcription | `large-v3-turbo` |
 | `-l, --language LANG` | Spoken language or `auto` | `en` |
 | `-t, --threads N` | CPU threads for whisper | `4` |
 | `-s, --safe` | Rate-limit downloads | off |
@@ -434,7 +436,7 @@ All scripts accept multiple inputs:
 
 | Flag | Description | Default |
 |---|---|---|
-| `-m, --model MODEL` | Whisper model (see table below) | `base.en` |
+| `-m, --model MODEL` | Whisper model (see table below) | `large-v3-turbo` |
 | `-O, --output-format FMT` | Transcript format: `txt`, `srt`, `vtt`, `json`, `csv`, `lrc` | `txt` |
 | `-f, --audio-format FMT` | Audio download format: `mp3`, `wav`, `flac` | `mp3` |
 | `-l, --language LANG` | Spoken language code, or `auto` for detection | `en` |
@@ -515,8 +517,8 @@ an Anthropic key and pick it per run with `--provider anthropic`.
 
 ### Model defaults
 
-`digest.sh` defaults to **`gpt-5.6-luna`**: a 1.05M-token context window at
-$0.20 / $1.20 per million input / output tokens. The large window matters here
+`digest.sh` defaults to **`gpt-6-luna`**: a 1.05M-token context window at
+$0.10 / $0.50 per million input / output tokens. The large window matters here
 because it means even a 3-hour panel is analyzed in a single pass rather than
 chunked, which preserves per-speaker claim detail that map-reduce inevitably
 blurs. Override it per run with `--llm-model`, or globally with `DIGEST_MODEL`
@@ -567,10 +569,22 @@ Models are stored in `whisper.cpp/models/` and gitignored (download via `setup.s
 |---|---|---|---|
 | `base.en` | 141 MB | ~40 sec | Fast transcription of clear English |
 | `small.en` | 465 MB | ~2 min | Better accuracy, still fast |
-| `large-v3-turbo` | 1.5 GB | ~5 min | Best accuracy, multilingual |
+| `large-v3-turbo` | 1.5 GB | ~5 min | Best accuracy, multilingual (default) |
 
-English-only models (`*.en`) are faster and more accurate for English content.
-Use `large-v3-turbo` with `-l auto` for non-English or mixed-language audio.
+`large-v3-turbo` is the default because it gets proper names and technical
+terms right far more often (on a test video it produced Korzybski, Baudrillard
+and Nietzsche where YouTube's auto-captions had "Corski", "Bodriad" and
+"Nichi"). Use `-m base.en` when speed matters more than names. Use `-l auto` with `large-v3-turbo` for non-English or mixed-language
+audio.
+
+Whisper runs with `--max-context 0`, so each 30-second window is decoded without
+the previous window's text as a prompt. Without it, large models can fall into
+repetition loops over music or clip montages, repeating one line for many
+seconds and dropping the speech underneath. The cost: without that context, whisper often
+drops punctuation and capitalization for long stretches (more than half the
+lines on a test video), and it can still skip a short music-backed clip.
+Quote checking ignores punctuation, so it is unaffected; the transcript reads less
+cleanly.
 
 Download additional models any time:
 
@@ -686,7 +700,7 @@ yt-dlp --cookies-from-browser chrome -x "URL"
 Download it:
 
 ```bash
-./setup.sh -m base.en
+./setup.sh -m large-v3-turbo
 ```
 
 ### Build fails (missing cmake, etc.)

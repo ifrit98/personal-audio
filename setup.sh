@@ -4,7 +4,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$SCRIPT_DIR"
 
-DEFAULT_MODEL="base.en"
+DEFAULT_MODEL="large-v3-turbo"
 
 info()  { printf "\033[1;34m==> %s\033[0m\n" "$*"; }
 ok()    { printf "\033[1;32m  ✓ %s\033[0m\n" "$*"; }
@@ -19,7 +19,7 @@ Set up the full audio pipeline: install dependencies, build whisper.cpp,
 and download a whisper model.
 
 Options:
-  -m, --model MODEL    Whisper model to download (default: base.en)
+  -m, --model MODEL    Whisper model to download (default: large-v3-turbo)
                        Choices: tiny, tiny.en, base, base.en, small, small.en,
                                 medium, medium.en, large-v3-turbo
   --all-models         Download base.en, small.en, and large-v3-turbo

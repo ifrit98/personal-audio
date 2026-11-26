@@ -43,7 +43,8 @@ DISCORD_MESSAGE_LIMIT = 2000
 GIST_API = "https://api.github.com/gists"
 
 # Bare words that toggle behaviour, versus key=value options.
-FLAG_OPTIONS = {"safe", "chunk", "force", "quiet", "dryrun", "dry-run"}
+FLAG_OPTIONS = {"safe", "chunk", "force", "quiet", "dryrun", "dry-run",
+                "forcerollup", "force-rollup"}
 DELIVERY_MODES = {"files", "gist", "both"}
 
 
@@ -71,7 +72,7 @@ class Config:
     delivery: str = "files"
     github_token: str = ""
     gist_public: bool = False
-    whisper_model: str = "base.en"
+    whisper_model: str = "large-v3-turbo"
     threads: int = 4
     provider: str = ""
     llm_model: str = ""
@@ -106,7 +107,7 @@ class Config:
             github_token=os.environ.get("GITHUB_TOKEN", "").strip(),
             gist_public=os.environ.get("DIGEST_GIST_PUBLIC", "").lower()
             in ("1", "true", "yes"),
-            whisper_model=os.environ.get("DIGEST_WHISPER_MODEL", "base.en"),
+            whisper_model=os.environ.get("DIGEST_WHISPER_MODEL", "large-v3-turbo"),
             threads=int(os.environ.get("DIGEST_THREADS", "4")),
             provider=os.environ.get("DIGEST_PROVIDER", "").strip(),
             llm_model=os.environ.get("DIGEST_MODEL", "").strip(),
@@ -194,7 +195,10 @@ def parse_request(text: str) -> Request:
     for token in tokens:
         lowered = token.lower().strip("-")
         if lowered in FLAG_OPTIONS:
-            request.flags.add(lowered.replace("dry-run", "dryrun"))
+            normalized = lowered.replace("dry-run", "dryrun").replace(
+                "force-rollup", "forcerollup"
+            )
+            request.flags.add(normalized)
             continue
         if "=" not in token and ":" not in token:
             continue
@@ -261,6 +265,8 @@ def build_command(request: Request, config: Config, list_file: Path | None,
         cmd.append("--force")
     if "dryrun" in request.flags:
         cmd.append("--dry-run")
+    if "forcerollup" in request.flags:
+        cmd.append("--force-rollup")
 
     if list_file is not None:
         cmd.append(str(list_file))
@@ -463,12 +469,13 @@ conclusions, the supporting evidence, and a critical assessment.
 **Options** (append anywhere in the message)
 `limit=5` — cap the number of videos
 `whisper=small.en` — better transcription, slower
-`llm=gpt-5.6-sol` — use a stronger model
+`llm=gpt-6-sol` — use a stronger model
 `provider=anthropic` — openai, anthropic, openrouter, or lmstudio
 `title="Macro Week 37"` — name the run
 `as=gist` — return a gist link instead of files (`files`, `gist`, or `both`)
 `safe` — rate-limit downloads
 `force` — redo videos already analyzed
+`forcerollup` — regenerate the cross-video summary even if nothing new ran
 `dryrun` — just list what would be processed, costing nothing
 
 **Example**

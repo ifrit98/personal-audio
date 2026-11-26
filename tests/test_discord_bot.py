@@ -90,7 +90,7 @@ class TestConfigFromEnv(unittest.TestCase):
         self.assertEqual(config.delivery, "files")
         self.assertEqual(config.max_videos, 7)
         self.assertEqual(config.threads, 2)
-        self.assertEqual(config.whisper_model, "base.en")
+        self.assertEqual(config.whisper_model, "large-v3-turbo")
 
 
 class TestConfigAuthorized(unittest.TestCase):
@@ -153,15 +153,20 @@ class TestParseRequest(unittest.TestCase):
         self.assertEqual(bot.parse_request("dry-run").flags, {"dryrun"})
         self.assertEqual(bot.parse_request("--dry-run").flags, {"dryrun"})
 
+    def test_forcerollup_and_force_dash_rollup_are_equivalent(self):
+        self.assertEqual(bot.parse_request("forcerollup").flags, {"forcerollup"})
+        self.assertEqual(bot.parse_request("force-rollup").flags, {"forcerollup"})
+        self.assertEqual(bot.parse_request("--force-rollup").flags, {"forcerollup"})
+
     def test_key_value_options(self):
         request = bot.parse_request(
             "https://youtu.be/abc limit=3 threads=8 whisper=small.en "
-            "llm=gpt-5.6-sol provider=OpenAI title=\"Macro Week 37\" as=gist"
+            "llm=gpt-6-sol provider=OpenAI title=\"Macro Week 37\" as=gist"
         )
         self.assertEqual(request.limit, 3)
         self.assertEqual(request.threads, 8)
         self.assertEqual(request.whisper_model, "small.en")
-        self.assertEqual(request.llm_model, "gpt-5.6-sol")
+        self.assertEqual(request.llm_model, "gpt-6-sol")
         self.assertEqual(request.provider, "openai")
         self.assertEqual(request.title, "Macro Week 37")
         self.assertEqual(request.delivery, "gist")
@@ -174,7 +179,7 @@ class TestParseRequest(unittest.TestCase):
         self.assertEqual(bot.parse_request("model=tiny.en").whisper_model, "tiny.en")
         self.assertEqual(bot.parse_request("m=tiny.en").whisper_model, "tiny.en")
         self.assertEqual(
-            bot.parse_request("llm-model=gpt-5.6-sol").llm_model, "gpt-5.6-sol"
+            bot.parse_request("llm-model=gpt-6-sol").llm_model, "gpt-6-sol"
         )
         self.assertEqual(bot.parse_request("deliver=both").delivery, "both")
 
@@ -250,10 +255,10 @@ class TestBuildCommand(unittest.TestCase):
     def test_flags_map_to_switches(self):
         request = bot.Request(
             urls=["https://youtu.be/abc"],
-            flags={"safe", "chunk", "force", "dryrun"},
+            flags={"safe", "chunk", "force", "dryrun", "forcerollup"},
         )
         cmd = bot.build_command(request, self.config, None, "T", Path("/out"))
-        for switch in ("-s", "--chunk", "--force", "--dry-run"):
+        for switch in ("-s", "--chunk", "--force", "--dry-run", "--force-rollup"):
             self.assertIn(switch, cmd)
 
     def test_list_file_replaces_urls(self):
