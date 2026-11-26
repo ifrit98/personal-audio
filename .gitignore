@@ -28,3 +28,7 @@ __pycache__/
 aave/
 compound-sniper/
 *.zip
+
+# Whitney Webb research: downloaded audio and run logs (transcripts already ignored above)
+whitney-webb/audio/
+whitney-webb/*.log
