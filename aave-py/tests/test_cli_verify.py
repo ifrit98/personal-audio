@@ -71,9 +71,12 @@ class TestVerifyBadMnemonicExits2(unittest.TestCase):
                 args = argparse.Namespace(prompt=False)
                 aave.cmd_verify(args)
         self.assertEqual(cm.exception.code, 2)
-        self.assertIn("Mnemonic", buf.getvalue())
+        out = buf.getvalue()
+        # Names the mnemonic as the problem, without depending on the exact
+        # wording or capitalization of the signer's error prefix.
+        self.assertIn("mnemonic", out.lower())
         # Should NOT contain a Python traceback marker
-        self.assertNotIn("Traceback", buf.getvalue())
+        self.assertNotIn("Traceback", out)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,4 @@
+# Optional: only needed for `--signer ledger`.
+# Thin wrapper around the hidapi C library; ships as a prebuilt wheel with no
+# transitive dependencies, so the base install stays at exactly one package.
+hidapi>=0.14

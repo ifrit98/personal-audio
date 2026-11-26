@@ -26,4 +26,17 @@ if [ ! -x "$VENV_PY" ]; then
 fi
 
 cd "$SCRIPT_DIR"
+
+# Route "wallet" subcommand to the dedicated wallet.py script.
+if [ "${1:-}" = "wallet" ]; then
+    shift
+    exec env PYTHONPATH=. "$VENV_PY" wallet.py "$@"
+fi
+
+# Route "scan_aave" subcommand to scan_aave.py.
+if [ "${1:-}" = "scan_aave" ]; then
+    shift
+    exec env PYTHONPATH=. "$VENV_PY" scan_aave.py "$@"
+fi
+
 exec env PYTHONPATH=. "$VENV_PY" aave.py "$@"

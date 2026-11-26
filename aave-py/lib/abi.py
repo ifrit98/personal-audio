@@ -30,6 +30,19 @@ def encode_address(addr: str) -> bytes:
     return b"\x00" * 12 + _normalize_address(addr)
 
 
+def encode_int128(value: int) -> bytes:
+    """Encode a signed int128 as a 32-byte two's-complement word.
+
+    Curve pools take coin indices as int128. Ours are always 0..2, but encoding
+    the sign correctly keeps the helper honest if it is ever reused.
+    """
+    if not isinstance(value, int) or isinstance(value, bool):
+        raise TypeError("int128 must be a non-bool int")
+    if value < -(1 << 127) or value >= (1 << 127):
+        raise ValueError(f"int128 out of range: {value}")
+    return (value & ((1 << 256) - 1)).to_bytes(32, "big")
+
+
 def encode_withdraw_call(asset: str, amount: int, to: str) -> bytes:
     return (
         WITHDRAW_SELECTOR

@@ -171,6 +171,49 @@ check_fails "withdraw --only=BANANA rejected by argparse" \
     "./aave withdraw --only=BANANA" \
     "invalid choice"
 
+# ----- signer guards -----
+
+check_fails "verify --expect-address mismatch refuses" \
+    "./aave verify --expect-address 0x0000000000000000000000000000000000000001" \
+    "does not match the expected address"
+
+check "verify --expect-address match proceeds" \
+    "./aave verify --expect-address $ABANDON_ADDR" \
+    "$ABANDON_ADDR"
+
+check "--mnemonic-var reads an alternate env var" \
+    "REHEARSAL_SEED='abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about' ./aave verify --mnemonic-var REHEARSAL_SEED" \
+    "$ABANDON_ADDR"
+
+check_fails "missing mnemonic names the available vars" \
+    "MNEMONIC= ./aave verify --mnemonic-var NOPE_NOT_SET" \
+    "is not set"
+
+check_fails "--signer=ledger fails cleanly with no device attached" \
+    "./aave verify --signer ledger" \
+    "Ledger"
+
+# ----- curve consolidation -----
+
+check "swap verifies the live pool coin layout" \
+    "./aave swap --to DAI --yes" \
+    "Coin layout: verified against the live pool"
+
+check "swap skips zero balances without broadcasting" \
+    "./aave swap --to DAI --yes" \
+    "Nothing to swap." \
+    "tx hash:"
+
+check_fails "swap --to BANANA rejected by argparse" \
+    "./aave swap --to BANANA" \
+    "invalid choice"
+
+# ----- read-only position discovery -----
+
+check_fails "scan_aave reports no positions for the abandon wallet" \
+    "./aave scan_aave --depth 2 --only-var MNEMONIC" \
+    "NO AAVE POSITIONS FOUND"
+
 echo
 echo "=== summary: $PASS passed, $FAIL failed ==="
 

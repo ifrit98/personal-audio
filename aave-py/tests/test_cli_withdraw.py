@@ -54,7 +54,12 @@ class TestWithdrawCommand(unittest.TestCase):
         self.assertIn("nothing to withdraw", out)
         self.assertNotIn("eth_sendRawTransaction", out)
 
-    def test_withdraw_refuses_with_open_debt(self):
+    def _run_withdraw_with_debt(self, debt_base: int):
+        """Drive cmd_withdraw against a mocked account carrying `debt_base` debt.
+
+        Returns (exit_code_or_None, stdout).
+        """
+        buf = io.StringIO()
         with patch.object(aave, "_resolve_mnemonic", return_value=(
             "abandon abandon abandon abandon abandon abandon abandon abandon "
             "abandon abandon abandon about"
@@ -70,18 +75,70 @@ class TestWithdrawCommand(unittest.TestCase):
                     return "0x0"
                 if method == "eth_call":
                     data = params[0]["data"]
-                    if data.startswith("0xbf92857c"):  # getUserAccountData with debt
+                    if data.startswith("0xbf92857c"):  # getUserAccountData
                         zero = "00" * 32
-                        # field 1 (totalDebtBase) = 100
-                        debt = (100).to_bytes(32, "big").hex()
+                        debt = debt_base.to_bytes(32, "big").hex()
                         return "0x" + zero + debt + zero * 4
                 return _zero32()
 
             client.call.side_effect = call
             args = argparse.Namespace(prompt=False, only=None, yes=True)
-            with self.assertRaises(SystemExit) as cm:
+            code = None
+            try:
+                with redirect_stdout(buf):
+                    aave.cmd_withdraw(args)
+            except SystemExit as e:
+                code = e.code
+        return code, buf.getvalue()
+
+    def test_withdraw_refuses_with_real_open_debt(self):
+        # $5.00 of debt, comfortably above the dust floor.
+        code, out = self._run_withdraw_with_debt(5 * 10 ** 8)
+        self.assertEqual(code, 2)
+        self.assertIn("open Aave debt", out)
+
+    def test_withdraw_ignores_rounding_dust_debt(self):
+        # $0.000001 - Aave leaves this on accounts that have ever borrowed.
+        # It must not block the sequence (regression: it used to exit 2).
+        code, out = self._run_withdraw_with_debt(100)
+        self.assertIsNone(code)
+        self.assertIn("dust debt", out)
+
+    def test_dust_floor_boundary_is_inclusive(self):
+        # Exactly at the floor counts as dust; one unit above does not.
+        code_at, _ = self._run_withdraw_with_debt(aave.DEFAULT_DEBT_DUST_BASE)
+        self.assertIsNone(code_at)
+        code_over, _ = self._run_withdraw_with_debt(aave.DEFAULT_DEBT_DUST_BASE + 1)
+        self.assertEqual(code_over, 2)
+
+    def test_allow_debt_overrides_the_guard(self):
+        buf = io.StringIO()
+        with patch.object(aave, "_resolve_mnemonic", return_value=(
+            "abandon abandon abandon abandon abandon abandon abandon abandon "
+            "abandon abandon abandon about"
+        )), patch.object(aave, "_make_client") as make_client:
+            client = make_client.return_value
+
+            def call(method, params):
+                if method == "eth_blockNumber":
+                    return "0x10"
+                if method == "eth_getBalance":
+                    return "0xde0b6b3a7640000"
+                if method == "eth_getTransactionCount":
+                    return "0x0"
+                if method == "eth_call":
+                    data = params[0]["data"]
+                    if data.startswith("0xbf92857c"):
+                        zero = "00" * 32
+                        debt = (5 * 10 ** 8).to_bytes(32, "big").hex()
+                        return "0x" + zero + debt + zero * 4
+                return _zero32()
+
+            client.call.side_effect = call
+            args = argparse.Namespace(prompt=False, only=None, yes=True, allow_debt=True)
+            with redirect_stdout(buf):
                 aave.cmd_withdraw(args)
-        self.assertEqual(cm.exception.code, 2)
+        self.assertNotIn("Refusing to start", buf.getvalue())
 
 
 class TestReceiptPolling(unittest.TestCase):

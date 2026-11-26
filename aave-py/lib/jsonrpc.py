@@ -38,7 +38,10 @@ class RpcClient:
         req = Request(
             self.url,
             data=body,
-            headers={"Content-Type": "application/json"},
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": "aave-py/0.1",
+            },
             method="POST",
         )
         for attempt in range(RETRIES):

@@ -32,9 +32,14 @@ def _words() -> list[str]:
     return _WORDS
 
 
-def mnemonic_to_seed(mnemonic: str, passphrase: str = "") -> bytes:
+def mnemonic_to_seed(mnemonic: str, passphrase: str = "", skip_checksum: bool = False) -> bytes:
     """Per BIP-39: validate the mnemonic, then PBKDF2-HMAC-SHA512."""
-    _validate_mnemonic(mnemonic)
+    if not skip_checksum:
+        _validate_mnemonic(mnemonic)
+    else:
+        words = mnemonic.strip().split()
+        if len(words) not in (12, 15, 18, 21, 24):
+            raise ValueError(f"mnemonic must be 12/15/18/21/24 words, got {len(words)}")
     salt = ("mnemonic" + passphrase).encode("utf-8")
     return hashlib.pbkdf2_hmac(
         "sha512",
