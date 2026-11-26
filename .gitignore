@@ -32,3 +32,4 @@ compound-sniper/
 # Whitney Webb research: downloaded audio and run logs (transcripts already ignored above)
 whitney-webb/audio/
 whitney-webb/*.log
+!whitney-webb/transcripts/

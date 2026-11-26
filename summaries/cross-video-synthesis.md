@@ -4,7 +4,7 @@
 
 **Coverage.** This document covers arguments that connect across videos. Single-video material lives only in the per-video files: TPC 2180's pharma, RFK and media-figures half, Hayes's Flop Labs mechanics, Leahy's policy detail, and Watkins's Gladio/OSS history in full.
 
-**Source files.** Per-video summaries are in this folder. Webb: `../whitney-webb/analysis.md`. Transcripts are whisper `small.en` with no speaker labels, so TPC attributions are partly inferred.
+**Source files.** Per-video summaries are in this folder; transcripts are in `source-transcripts/`. Webb: `../whitney-webb/analysis.md`. Transcripts are whisper `small.en` with no speaker labels, so TPC attributions are partly inferred.
 
 **Disclosure.** Several speakers discuss Anthropic, which makes Claude. I report their claims neutrally and have not weighted them for or against it.
 

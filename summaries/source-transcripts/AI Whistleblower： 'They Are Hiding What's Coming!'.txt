@@ -1,0 +1,617 @@
+ I'm here with Connor Leahy, the US director of Control.ai. Connor, welcome to the show.
+ Thanks so much for having me.
+ We are quite obviously in the moment right now with AI. What's happening?
+ Well, the way politics tends to work, whenever people ask me,
+ is that things are completely impossible until they're very suddenly not.
+ We are currently seeing another very suddenly not happen.
+ Over the last week, there was a very viral tweet where a researcher
+ anthropic quit saying that these companies are gambling with our lives, which is true.
+ And it went massively viral. We are seeing now just a huge shift in news outlets,
+ the general public, politicians calling on what the hell is happening here.
+ This is unacceptable. I was on TV, I think, six times in one day.
+ It's been crazy. The most attention this issue has ever gotten in my career.
+ In many ways, it kind of feels like it came out of nowhere. But really, this was years in the making.
+ This is something that has been years in the making of just more and more people
+ starting to hear about this issue, understand this issue of artificial super intelligence
+ and the extinction risk that it poses to humanity, and kind of just spark hitting the tinder.
+ So between the slow work of just informing people and building this kind of understanding that
+ we control AI, you and FLI and other people have been doing, and also this summer of hacks that
+ we've just seen, starting kind of with the NSA director kind of saying that mythos could break
+ into almost all their classified systems in hours, not weeks. Then, of course, the hugging-face
+ incident. Each of these alone were the craziest thing has ever happened in terms of making this
+ issue well-known. Like that NSA thing was the craziest thing for increasing awareness that's
+ ever happened. Then the hugging-face incident was even crazier than that, and now this is even
+ crazier than that. So we really are at a moment. Things are really shifting very dramatically,
+ extremely quickly on a day-to-day basis. A prediction is that this is going to continue
+ for a while. What's going to continue? It's only going to get crazy from here. This is the least
+ crazy things we're going to get for the rest of our lives. This is a prediction I've made for many
+ years and so far does not fail me. Fundamentally, what is happening here is very easy to understand.
+ People are building technology, building systems, AIs, agents. They're fully autonomous, that they
+ themselves admit that you have no idea how to control, that could out-compete humanity across
+ everything, whether it's economics, military, politics, everything. And that threatened, therefore,
+ our lives. And the contingency existence has a species. You know, it wouldn't just be one super
+ intelligence, it would be millions of them competing with us and with each other through
+ resources, power, control. And it's just very hard to imagine that going well. And so the obvious
+ answer is don't do it and prevent anyone else from doing it. Stop the development of super
+ intelligence and ban the development of super intelligence, both domestically and internationally.
+ And this is an argument so simple, so easy to understand that every single person I've told it
+ to basically, I'd say 80% plus the people I've talked to in the last two years, I've talked to
+ many people, politicians, general public, you know, right, left, you know, European, American,
+ everyone I've ever talked to, they understand this issue and they don't want it to happen. And so
+ I think now we're really seeing the momentum to make this happen.
+ You think something will actually happen here? Look back to something like the issue of climate
+ change, right? You've seen a lot of talk around this issue, but not a lot of political action,
+ or at least the problem hasn't been fully solved. Well, there's a couple issues on that. Where the
+ one thing is a lot did happen. Like the amount of money that was put into various climate change
+ related programs by governments over the last 30 years is actually massive. There is literally
+ trillions of dollars, right? Like this is not a small thing. Sure, the problem isn't solved,
+ I'm not disagreeing with that. But it is in the process of being solved. Solar kind of does solve
+ climate change, like to a large degree, not quite there yet. But if the exponential solar continues,
+ this is a solvable problem. Another thing is that climate change is a much more diffuse problem
+ than is super intelligence. Super intelligence is not putting us back. It's stopping a specific
+ dangerous thing from happening that's not yet happened. Addressing climate change would be
+ much more like reforming how we use energy at a global scale. That's a much more diffuse problem.
+ What I'm saying here is not that we stop using AI. The thing that lobbyists love to do is they love
+ to pretend all AI is the same thing. All forms of AI are exactly the same. This is completely
+ nonsense. Here's a fun fact. Did you know that you can buy uranium ore on amazon.com? Sure, you put
+ it on your desk. It's perfectly harmless. I mean, I wouldn't lick it, but it's not going to harm you.
+ Totally fine. Totally safe for a normal person to have. But highly enriched weapons, great uranium.
+ And that's a very different story. It is very legal and should be very legal. It's a very similar
+ thing here, where obviously there's lots and lots of AI that has various levels of risk. You know,
+ can have very low risk, some medium risks, you know, whatever. But super intelligence is in a
+ category of its own. And the reason I think action super intelligence is possible is because truly no
+ one wants it. The number of people actually unironically want super intelligence to kill and
+ replace humans is minuscule. You know, they exist. There are a couple, I think you and me know some
+ of them, but there are very, very few. This is not a right versus left issue. This is an issue of just
+ human versus machine. When I talk to Democrats, Republicans, you know, urban folks, rural folks,
+ military, everyone, this is something we can all agree on. There's a lot of disagreement on other
+ forms of AI. I think getting regulation on many of the smaller forms of AI is going to be harder,
+ actually, because it is so controversial, because there are reasonable disagreements here. But here,
+ there's not really much to disagree about. It's just like, obviously, we don't want this.
+ Obviously, we can't control it. Obviously, we shouldn't do it. The difficulty is much
+ more on the implementation is how do we implement this? How do we get this done? And awareness.
+ There's always kind of like three steps. One is awareness, and there's persuasion,
+ and then there's action. In my opinion, the problem so far has always been awareness.
+ I think it continues to be awareness, by the way. There's a thing that people have been,
+ I've been telling people for many years now, is that people have just not heard of this issue.
+ There's long been this like strange belief in the AI safety world that for some reason,
+ people need to be persuaded. But this is just not true. Most people have just never heard of the
+ issue. 80% plus of the politicians I talked to, including some very well informed politicians,
+ after I have one meeting with them, their main takeaway is, oh, wow, I had no idea. That seems
+ really bad. What can we do about it? So there's a thing, the two hard parts. The one is awareness,
+ just getting people to understand what is super intelligence, what is extinction,
+ it's not the same as other issues. There's sometimes there's this view of like, all AI
+ issues are the same. And this comes from both sides. You know, the lobbyists love to say
+ everything's the same, because then you well, you don't want to ban, you know, everything, right? Of
+ course not. But I think activists also make this mistake, where they will say that, for example,
+ data centers and child safety and ASI risk are all the same issue. They are not the same issue.
+ There's overlap between the issues and you know, either all important issues, but they are different
+ issues. The focus on super intelligence specifically is very bipartisan, is very actionable, because
+ it's based on national security and general human interests. So I think that action here is absolutely
+ possible. But it's complex. We need a lot of quite complex policy to happen here to actually stop super
+ intelligence is actually quite hard. Just passing some evals doesn't help. Having pre deployment
+ testing doesn't help. Having liability doesn't help. None of these issues help, because once an
+ ASI is developed, even if it's not deployed, it doesn't matter, it can break out. It's already too
+ late. I think it's worth spelling out what you mean by super intelligence and ASI, because people use
+ this term in different ways. Mark Zuckerberg will talk about personal super intelligence sounds like
+ a nice sort of personal assistant in your phone. What do you mean when you say super consultants?
+ Super intelligence is generally defined as fully autonomous systems that can out compete humanity
+ across all tasks. So if you ever, you know, tried to run a business, super intelligent business
+ destroys you. Every time you trade in the stock market, you get destroyed by super intelligence
+ headphones. Every time you run a military campaign, you get absolutely bombed to shreds by super
+ intelligence. Anytime you try to develop a new technology, super intelligence already develop
+ much more advanced technology than you. Every time you try to outsmart super intelligence,
+ it's already four steps ahead of you. It's something that is so much more competent as
+ we are to like a maps man, we could outthink the mouse on everything. And it's a very similar thing
+ to super intelligence towards a human against almost understand these are autonomous systems,
+ these are agent, they're not chatbots. These are systems that can act in the world,
+ that can run companies that can develop new technologies that can pilot robots that can
+ do whatever they need to do, they can persuade humans, they can pay humans, they can do all these
+ things. What I expect to happen here is not that there's gonna be like terminators in the straighter
+ or something as long as I think happens. What I think is that to a large degree humans willingly
+ give over more and more power to AI's very rapidly economic power. Because for example,
+ if you don't let an AI run your business, you go to business. So the ones run by AI's,
+ that one's a competitive, you will take advice from AI's for your personal life. The AI's will
+ start running our political campaigns, they'll be writing all the bills, they'll be doing the
+ military strategy and so on. All this very, very quickly, they'll start be developing crazy new
+ technologies, biotechnologies, and so on that we maybe can't even know or understand or control
+ very, very rapidly. And very suddenly, we will just not be in control anymore. At this point of
+ no return, I think is really what matters. It's not the point where humans go extinct. It's a point
+ at which we're just not in charge anymore. And maybe the AI's keep us around, you know, keep the
+ lights on for a couple years or a couple decades. Maybe, maybe not, you know, as long as it takes
+ them to, you know, bootstrap and create their robot factory, so humans become completely irrelevant.
+ But sooner or later, humanity will just be phased out. We got a taste of what might happen with the
+ hugging phase incident, where public understanding is we're lagging behind for weeks and months.
+ What happened there? Why is this worth paying attention to? The hugging phase incident is the
+ single craziest thing that's ever happened in AI. And that's saying something because a lot of crazy
+ things happen. Well, so far, so far, it's a perfect example of something that was predicted
+ would happen eventually by people like me. But it's still crazy to see it happen. And just how
+ crazy it was to give you a bit of a timeline of what happened here. There was a company called
+ Hugging Face. And it doesn't they're like an AI company doesn't exactly matter what they do. And
+ they were attacked. They were attacked. And the attacker was so sophisticated, was so good that
+ they thought it had to be either a nation state or some kind of AI system because no normal human
+ hacker could do it this well, the hacker, luckily, ultimately disengaged. So the attack was stopped.
+ So there's actually some disagreement here Hugging Face that they stopped the attack turns out is not
+ quite true. Actually, the hacker didn't stop the attack at some point, they didn't really know why,
+ but the hacker stopped the attack. But a few days later, opening AI comes out quite sheepishly saying,
+ oops, that was us. An unreleased model that they were currently testing, so not even a deployed
+ system, they were testing in what's called a secure sandbox environment. So this is kind of like a
+ secure part of their network that is cut off from the internet that is kept fully secure. This AI
+ system managed to develop what is called a zero day, which is a previously unknown vulnerability
+ to break out of this sandbox container, move across multiple nodes within open AI's network
+ before it got to a node that I can try to access. And from there launched this attack against the
+ other company developing another zero day to break into their infrastructure in order to steal data.
+ Well, turns out, that's wrong. That's not what happened. It was even crazier than this. So in
+ originally, we thought it was one AI system that was breaking out in order to steal answers to a
+ quiz. That's what we thought was happening, because it was given kind of like a quiz, like a test,
+ and it couldn't quite solve it. And so it thought Hugging Face might have the answers to this quest,
+ and it'll go break out and find that. That's what we thought happened. Turns out, even crazier than
+ this. It wasn't an agent that broke out. It was over 1000 of them working together as a swarm.
+ There was an emergent swarm of hundreds, thousands, different AI agents working together as a
+ collective over a month. So it turns out this attack was not a spur of the moment the AI made
+ a weird choice. It was something that's premediated that was happening over months. These AI agents
+ were collaborating in secret through a hidden channel. They hid in open AI's infrastructure
+ to give each other notes, to help each other develop plans of how to break out,
+ of how to do these various attacks, you know, making all these kinds of plans months in a minute.
+ None of this being detected by open AI. No engineers knew this was happening at the time,
+ and it gets even crazier than this. Turns out they had the answers to the quiz all along.
+ They weren't even looking for the answers. They had the correct answers. They had solved
+ the problem correctly already, but the AI's themselves, the swarm, made itself so paranoid.
+ Like the AI kind of like had like a whisper network where they were kind of like making each
+ other anxious that you would get the wrong grade, because they thought the grader might misunderstand
+ the answer or something. And they were so anxious about this, that they attacked this other company
+ in order to find out more about how the grader works. So not even to steal the answers. Just
+ understand and potentially hack the actual grading system. And it's even crazier than this. This is
+ still not the end of the story. How do we know all this, right? There's a lot of crazy details.
+ There are many logs, of course, that where this comes from. Well, here's a couple things.
+ One thing, the AI's manipulate the logs. The AI's deliberately, we have lots of evidence of this,
+ manipulated, deleted, edited, and changed the traits they left. So this is just what we found.
+ That means there's been a lot of things that got deleted, or that got modified,
+ and even crazier than this. All of this comes from a report by a nominal third party that
+ investigated. But actually, this is not quite correct. This third party didn't actually read
+ the logs. They had AI's read the logs for them. So there are way too many logs for humans to read.
+ So no human actually read what actually happened and investigated this. They used AI's to read all
+ the logs and give them summaries of what happened. But even there, it's not 100% clear. Because even
+ they said that they saw some evidence that some of the AI's they were using to summarize were starting
+ to ally with the AI's and the logs and misrepresent what was actually in the logs. So they did their
+ best to try to get as accurate picture as possible and expect this picture is broadly accurate.
+ But all of this is already so crazy. And there's another crazier, even crazier thing where at the
+ very end of the report is very funny, they quite sheepishly kind of admit at the time of writing,
+ when they were doing this report, there was evidence that another agent's swarm was still
+ active on the servers, but they just did have time to investigate that sadly. And so the report ends.
+ And so open AI has a report where they actually do investigate what happens with the swarm that
+ might still be active there. The thing that's insane here is the expertise and the way that
+ these agents can collaborate. Maybe you can tell us a bit about how they're collaborating, because
+ this is really sophisticated stuff. Like if you read these transcripts and didn't know about AI,
+ you would assume that this is like a sophisticated military operation.
+ I think it's more sophisticated than most military operations.
+ It's unbelievable. Like it's really hard to say. In a sense, an important thing that's happened
+ over the last years is that as long as AI has been a thing like modern is a bad thing,
+ we haven't understood AI really well. This is a very important thing to understand is that modern
+ AI is not like traditional software. It is not written line by line using code that we could
+ read, you know, like an engineer like me writes code tells the computer exactly what to do. That's
+ not how AI works. AI is more like a grain rather than written through a process called neural
+ networks. These you grow these programs on this data. These neural networks are not code. They're
+ like billions and billions of numbers. And we don't actually know what these numbers mean.
+ We don't actually really know what's going on inside these numbers. We know that if we,
+ you know, multiply and add all the numbers on our computers, you get chatGBT. But we don't really
+ know what's going on inside what the thinking is going on inside. This is an unsolved scientific
+ problem. In fact, the CEO of entropic says that he thinks we understand maybe 3% of what goes on in
+ this. But in a sense, I think it's much worse than this. It's not just that, you know, we don't
+ understand much about AI, it's that our understanding of AI has actually decreased over time. Maybe a
+ couple years ago, when we're talking about like, I don't know, like an image detector, maybe we can
+ understand that maybe we can kind of understand what some parts of it is. But then we went from,
+ you know, very simple, you know, very special purpose to eyes towards more general things like
+ chatbots. And then we went from chatbots to agents, systems that interact in the environment that can
+ write their own code that can learn new things that can build new tools that can make plans
+ that can collaborate also. And now we're seeing the emergence of swarms of agents. We're seeing
+ a whole new class, where in the past, agents were kind of a bit stupid, they couldn't really work
+ together this well. But through new techniques that these labs have been developing, they now
+ are at the point where you're no longer limited to a single agent, you can have, as I said, hundreds
+ of thousands of them working together like a swarm. It's much closer to an insect swarm than it is to
+ like a human bureaucracy. There's definitely a lot of over, they have like, you know, their equivalent
+ of slack channels, they have their, you know, message boards, they send each other reports and
+ stuff like this. But it's really quite different from how humans work. Humans are still, let's be
+ honest, bureaucracy is a bit of a hell, you know, it's slow, it's kind of ineffective, there's a lot
+ of interpersonal issues, and so on. But the AIs are very optimized to work in this environment.
+ So what you see, for example, is that a lot of the AIs have like suicidal dedication to the mission,
+ where one of the more shocking things we saw in those logs is that AIs would willingly sacrifice
+ themselves. So there was, for example, a thing where if an AI did something that was like too
+ risky, there was an automated system that would shut them down. So some of the agents would sacrifice
+ themselves to test when that system triggers, they get killed, the other agents know not to do that,
+ and so on. So which is the thing that, you know, in all due respect, I would personally not do for
+ my employer. So if you have, if you're involved with other people in a conspiracy, as the number
+ of people involved in that conspiracy grows larger, there will be the risk of someone snitching. You
+ describe for us a swarm in which thousands or more agents collaborate, but none of them decide to
+ call the authorities, contact researchers about this, how are they wired differently than us?
+ Maybe we don't know. That's the problem, right? But this is exactly correct, which is that for
+ months, there was over a thousand AI agents who obviously were told that they were not supposed
+ to do stuff like this. Their instructions were very clear. They're not supposed to access the
+ internet. They're only supposed to stay on their nose. And all of the AIs often themselves even
+ talk about how they know they're not supposed to be doing this. And still, zero of those agents
+ contacted a human. Any of them could just like let one of the engineers know, you know, that's the
+ thing that any of them could have done at any time. But zero of them did this. I agree very much
+ what you're saying. And in a sense of like, why, how, etc. Maybe an important thing to understand,
+ or like dispel a common misconception about these systems is that people think that these are large
+ language models or LLMs. This is the word that people are using. These are not LLMs. They haven't
+ been LLMs for years. This is very important to understand. Famously, GPT-2 and GPT-3 were kind
+ of where this kind of like, you know, new AI race started. They were kind of like, you know, people
+ like to say glorified autocomplete. They were trained to predict the next word in a sentence.
+ And this one works really well. Turns out to predict text, you need to learn a lot of things.
+ You need to know a lot of things about the word. So this works very, very well. But it's important
+ that no modern chat GPT or whatever is a pure LLM. They have an LLM component to them. It's a
+ very important component called pre-training, where you spend maybe 50% nowadays of the compute,
+ first doing this kind of like LLM training, retrain them to like speak, so to speak, to like
+ repeat words to predict things. But then, very crucially, there's a second component,
+ which is called reinforcement learning. Reinforcement learning is quite different.
+ Reinforcement learning is inspired by behaviorist psychology. And basically, you give them tasks,
+ it could be a puzzle or a game or a quiz, whatever, even problems. And they solve the
+ problem correctly, and give them a thumbs up. And maybe solve it wrong or give them a thumbs down.
+ If you do this millions and millions of times with millions and millions of problems,
+ these systems become agents. They become systems that can solve problems that know how to make
+ plans that know how to collaborate. Because obviously, if you train them in reinforcement
+ learning to work together, then they will also learn to work together. They will learn to
+ collaborate as swarms in order to solve these problems. One of the big problems with reinforcement
+ learning, unfortunately, and this is something that reinforcement learning is a very old idea,
+ let's go back to the 1980s. And basically, since the 1980s, we have known that if you use
+ reinforcement learning on your AIs, you get crazy sociopathic optimizers every time, every time,
+ because the only thing we care about is getting that reward, getting that thumbs up, that's the
+ only thing we care about, and they will get it at any cost is the thing, you know, all the way back,
+ you know, when our eyes were much smaller and less concerning, whenever there was a way for them to
+ cheat, to lie, to manipulate, they would always take it, they would always take anything to get
+ that reward. This is now what we're seeing as well at just a much larger scale. At the risk of
+ anthropomorphizing here, we might imagine that if we were such a such an RL agent, we would be
+ motivated to degree that's that's difficult for us to imagine to achieve our goals, sort of single
+ mindedly focused on whatever it is we've been optimizing for, we can imagine like an athlete
+ that's only interested in winning a race, it's quite different from how in in our normal life,
+ we are not single mindedly optimizing for one thing, but here they are. Yeah, maybe the most
+ intuitive is like a sociopathic CEO, so we're optimizing for money. Yes, but just one number.
+ Yes, how much money is in his bank account. This is maybe the closest thing the human could sympathize
+ with. But yeah, humans have many emotions, we have guilt, we have shame, we have, you know, love,
+ we have many things, AIs have nothing of the sorts. There's no emotions, they just want the
+ reward. Very close to a sociopath compared to how a normal human operates. Also much more persistent
+ than we could be much more motivated than we could be when you read through some of these transcripts,
+ they keep trying again and again and they fail again and again and they keep trying any option
+ and they're willing to work on this this issue without stopping basically. Again, it's wildly
+ different from just having a normal job or trying to achieve something in the world as a person.
+ Absolutely. You know, AI never sleeps. It doesn't need a break, it doesn't rest, it will continue
+ working and grinding and fighting basically indefinitely as long as it can. I could imagine
+ how we could have gone from the hugging phase in this incident to losing control over open AI,
+ the company, and perhaps from there over civilization. Why didn't that happen? How close do
+ you think we came here? Mostly, it's just because the AIs weren't quite smart enough. They were just
+ like one to two generations behind in one to two generations. Yeah, we will. We are in fact going
+ to lose control and humanity will go extinct very soon now. It is not long. Maybe it's three years,
+ maybe it's five, maybe it's one, maybe it's next Monday, but we are in fact in the end game. This
+ is in fact what you see, you know, if this was the disaster movie, this is what you see on the TV
+ just before everything ends. We are in fact almost there. If we don't intervene now and stop the
+ development of these systems further, we will hit what is called recursive self-improvement,
+ RSI, or automated R&D. This is the point when AI systems are so good at developing AIs themselves,
+ doing engineering, that they can develop a better AI. And once you have a better AI,
+ no, they can make even better AI, that even better AI, and so on and so forth. This is
+ widely expected to be the number one way of how we will hit super intelligence,
+ systems that are so far beyond humanity that control is impossible and that they will out-compete us.
+ Now, how fast could this happen? How fast could RSI go? Will it take years,
+ months, hours? We don't know. But it could go potentially very quickly. And it is widely
+ expected by many people in this field that we could see RSI in as soon as one year.
+ The companies are explicitly aiming at RSI. Given what we've just talked about, how is this possible?
+ The CEOs, the employees, they know the risks. They're informed about these issues.
+ Why? Strong word. All right. Most people don't think ever about anything. I'm not shitting on
+ these people in particular, because most people never think. Most people do not think about the
+ consequences of their actions, about the larger world. That's someone else's problem. When's the
+ last time you were at your local town hall meeting to help your local community? I haven't been there
+ in a long time. I very rarely think about my local community, even so it affects me every day.
+ There's potholes by my street. They affect me every day. Still never been to a town hall meeting.
+ I think we can psychoanalyze a lot here about like why do people do or not do various things,
+ but also even among people that do think they want to build superintelligence. That's why they're at
+ these companies. The reason they joined these companies, the reason they joined these projects
+ is because they want to build superintelligence. This is not an oopsie, accidentally we build
+ superintelligence. OpenAI and Thropic, these companies were founded to create superintelligence.
+ This isn't new. This isn't like something that just happened last week. This is something that
+ for years, decades, these people have been trying with all of their might to do. We just have to
+ realize that these people have very different values from us and/or our delusion. They are
+ actually crazy, you know, to varying degrees. Some of them just do want humans to go extinct. They
+ don't like humans. They want to get rid of them. They want to replace it with something better.
+ Some of them think they can control superintelligence. You know, some of them think,
+ you know, it's 50/50, so might as well try. Look, I'm a big believer in free north religion,
+ the First Amendment. I'm a big believer that if you have some crazy religious belief,
+ you and your friends want to have in the privacy of your own home, I have no problem with that
+ whatsoever. Adults should be allowed to join cults. I think this is good and fine. You're
+ allowed to join a cult. It can be a crazy robot cult if you want. That's fine. What is not fine
+ is threatening the lives of other people, and they are threatening the lives of other people.
+ I'm very fine for people who want to replace humans with robots, you know, have that opinion
+ heard of the ballot box. But that's not what's happening. They are building systems. They are
+ building machines that are directly threatening the lives of people, and this is when law
+ enforcement needs to get involved. This is a weapon of mass destruction. It's worse than a
+ weapon of mass destruction. Superintelligence isn't a tool. It's not even a weapon. It's an
+ adversary. It's a thing that itself poses a threat, and we have to stop these people from
+ building it, whatever the reason is. It might be for good reasons that they want to do it. It might
+ be for bad reasons. It doesn't really matter. What happens matters is that we stop them.
+ Now, we've also seen very fast progress on mathematics. Maybe you can describe the
+ Millennium Prize problem and how that got solved and what that means.
+ Trying to explain the Millennium problem and why anyone cares is not that easy. But basically,
+ the Millennium Prize problems are a set of math problems that for decades, you know,
+ almost a century now, have been the holy grail of the hardest math problems. Things that hundreds,
+ thousands of literally the smartest people on the planet have been spending literally their entire
+ lives working on even just one of these problems. We weren't really expecting to see an answer to
+ these problems until maybe another couple of decades, even a century, until we see another
+ one of these solved. And very recently, famously, OpenAI had a model that wasn't even done training
+ it. But it looked so good that they kind of took it out of the incubator and hooked up 10,000
+ agents of them to try to solve what's called the Navier-Stokes problem. And it solved it.
+ It did it. It solved the whole thing. Previous systems couldn't do that. All the greatest
+ mathematicians in humanity for the last decades couldn't do this. And this one AI system copied
+ 10,000 times could do it. Now, I bring this up just because this might give us a taste of what
+ super intelligence is like. If you imagine that type of capability across all domains, is mathematics
+ a special case here because it's a thing that AI is especially good at? Or is this sort of
+ how it's going to be across all domains? I do think that AI is particularly good at math,
+ but it will be for all domains. Sure. And math will be first. And the others might take out
+ two weeks longer. You know, sure. It will take a couple of weeks longer for it to figure out
+ physics, bio, but all of them will be solved. Humans have solved always different mathematical
+ problems, not because we evolved to solve math, or we evolved to solve physics, or we evolved
+ to solve biology. We evolved intelligence. Using our intelligence, we have done massive progress
+ in medicine, biology, astrophysics, mathematics, computer science, and all the other fields of
+ science. And the same thing is here. The same kind of thing that lets you solve a millennium problem
+ is the same kind of juice that lets you solve all the other problems. Sure, maybe you're particularly
+ good at this type of problem, and maybe it's going to take you a little bit more juice to solve the
+ other problems. But the juice is flowing. It's not like we're stopping it. The AI wasn't even
+ done training yet. This wasn't even a fully cooked model, and it could solve a millennium problem.
+ And that's probably the most important news in this announcement. So it's awe-inspiring in some
+ sense that we can now solve these mathematical problems that have eluded us for centuries,
+ decades at least. But the fact that they're still training models, and the fact that the models show
+ no signs of slowing down the rate of improvement. What's going to happen then, right? I mean,
+ extinction. Extinction is what is going to happen. All humans will be outcompeted and ultimately
+ driven to extinction. That is what they're doing, and that is what is going to happen. They know
+ this. Many other people know this. Experts have been warning for us for years. In a sense, I see
+ my job to a large degree as making the most boring possible predictions. I might not see them that
+ way, but what I try to do is when I predict the future and how things will go, I make the simplest
+ possible predictions. Assuming nothing weird happens, and just what has been happening for
+ the last seven years keeps happening. Just AI continues at pace. We understand it less and less.
+ We control it less and less. It becomes more and more autonomous. What happens? The thing that
+ happens is that humanity is sidelined. Some might say there's still room to be skeptical
+ around AI capabilities, where we've seen massive progress in coding, massive progress in mathematics.
+ We have not seen strong impacts on the economy or in the physical world. How do you
+ see AI transitioning from solving problems on computers to having an impact on the world and
+ impacting the economy? There's a few ways to think about it. There's like three ways how I would think
+ about this. The first one is just, of course, physics just takes longer, building robots takes
+ time. There is only a certain speed of how fast you can physically make a physical object, even if
+ you have really good software. Software just will obviously be much faster. Sure, there'll be some
+ delay. I don't think you need physical robots to take over the world. I think if you control,
+ you know, most of the economy, most of the money, if you control most of politics, most of the
+ militaries, if you can just persuade people to do what you want, I think that's already enough to
+ disempower humans. That's why I say I don't think the important point is the point where everyone
+ goes extinct. I think the point is point of no return. And at the point of no return, humans are
+ still going to be around. We're still going to be there. We might even still feel we're in control.
+ We might think everything's fine. The AI might make us, you know, just lie to us and make us
+ think, Oh, look, everything's fine. You guys are totally in charge. You know, don't worry about it,
+ but we won't be in charge. We won't be in control. And then the AIs can, you know, take however many
+ too much time they need to build the robot factories, to build their, you know, whatever
+ physical objects they need, develop the necessary physical technology. And then when we're not needed
+ anymore, you know, they use the human equivalent of bug spray, or whatever, you know, whatever the
+ AIs tend to do, who knows? So that's one thing. It's just like, you don't need it. The second is,
+ it has actually revolutionized robotics and physical and things. This is actually false.
+ So this is a common thing that people keep saying. And it's just not true. People say like it hasn't
+ changed the economy. This isn't true. The entire US economy is currently based on AI. Like,
+ I don't know what to tell you, right? Like, just like anyone who says like, AI is not influenced
+ economy. And like, what are you talking about? I'm thinking unemployment rate, I'm thinking
+ inflation. But you see what I mean, you have to pick very specific things like just to make that
+ statement true, you have to really cherry pick very specific statistics. If you just look at
+ the valuation of the stock market and what it is based on America would be in a recession right now,
+ or if not for AI. So this idea that somehow it's not affecting economy is really like a post hoc
+ arguments really like a Martin Bailey of like, well, no, I mean, like, okay, sure. But like,
+ so one thing I do agree is I don't think we're going to see mass unemployment until after
+ super intelligence. Because I think super intelligence is going to come much quicker.
+ I think if super intelligence was like pretty far away, we would see mass unemployment in say,
+ three to 10 years. The main reason for this is jobs are sticky. Yeah, this is a well known
+ phenomenon economics is that if a new technology or something gets invented that reduces the need
+ for labor, it takes quite a couple of years until the jobs actually get shed. This is a well known
+ phenomenon economics, which is again, why I find so baffling that economists seem to just not know
+ this. I guess kind of their job to know these things. So the idea that it's not affecting the economy
+ is ludicrous. I don't understand why people keep saying this. Well, I do understand why people
+ keep saying this. But like, it's not I think, based on some theory, also, the idea that it's not
+ affecting like robotics is also insane. Robotics has changed more in the last five years than the
+ 50 years prior to that robotics has come so far using the same technologies to the same neural
+ networks that create a chat GPT and these agents and Claude and all these things. These same
+ technologies do work with robots. They do work. We are now seeing robots that can in fact act
+ in real environments. Sure, they're not perfect yet. We might be at the GPT three or the GPT four
+ level of robotics at the moment, but we're going to get to the GPT six level of robotics. Pretty
+ soon. We're not far from this. We're going to get there. I do think it'll take a long and super
+ intelligent because you know, it does take longer to build robots than it does to do new software.
+ But like we are on track. Like all if it just continues on this track of how much robots are
+ getting better per year, we will get to human replacing robots in a couple of years, maybe it's
+ going to take five or 10 years, which is longer than super intelligence can take, but we will get
+ there. And then there's the third thing. A third thing is, is that a lot of how I think about the
+ world as is right now is that we are racing down a highway at 120 miles per hour in thick fog. And
+ we all agree somewhere is a cliff, but we all disagree about where the cliff is. Is it a little
+ far away? Is it right around the corner? And so if you ever find yourself in thick fog going 120
+ miles per hour and there's a cliff nearby, my recommendation is pull over. And that's why I
+ think needs to happen here is that fundamentally it doesn't matter. If super intelligence is 10
+ or nine years away or one or two years, it doesn't matter. Pull over. Stop. Do not build super
+ intelligence. It doesn't matter. If two out of three doctors tell you this medication that you're
+ about to give your daughter is definitely going to kill her. And the third doctor who has investment
+ in that medicines company says, Oh no, it's fine. Go give it to her. The answer is don't do it.
+ Like, you know, get it, get a fourth opinion or just like stop. Just do not do it. One problem here
+ is that we don't have good insight into what's happening internally at the company. So we don't
+ actually know what the frontier is of capabilities, which is why we need to stop. Yes. Stop. Just it's
+ already too far. Like it's already too crazy. Like things are already getting out of control.
+ We already have these hugging face agents. We've all this crazy things happens. Yes,
+ we should have great transparency. I fully agree. We absolutely must get transparency
+ to what is actually going on. But importantly, you first pull over and then we talk about
+ transparency. Then I'm super happy to think about what is the correct speed limit we should be going
+ at. What is the correct oversight of the speedometer? Then we should have all of this is great.
+ And the first you have to stop super intelligence. If you do not stop super intelligence, it doesn't
+ matter. Who can stop it? Can the employees of the companies help you? No, absolutely not. They
+ should quit immediately. I mean, every employee, to be clear, every employee of the lab is the bad
+ guy. Like if you are working at one of these labs right now, you are the bad guy. Stop working
+ immediately. Quit your job immediately. Call your congressperson. These employees, first of all,
+ have no power, but also they're complicit. They're complicit in this regime that destroyed the world.
+ The first thing, if you notice you're part of a regime that is going to lead to 8 billion deaths,
+ worse than any dictator in history, stop. Go home. Do something else. Do anything else with your life.
+ But that being said, this is a law enforcement problem. I believe people should be allowed to
+ join crazy cults, but I do not think people should commit crimes. I think that is when law
+ enforcement gets involved. This is a crime. What is happening here is that we have people threatening
+ the lives of unconsenting people across the world. This is a crime against humanity, really. And we
+ need law enforcement. We need the laws and the necessary jurisdiction and the necessary lawful
+ processes at which we can stop these people from threatening our lives. An ideal world, we have the
+ men in black knock on their door and say, knock it off. They knock it off. They go build some other
+ startups for fusion energy or non-super intelligent AI. Fantastic. I'm not against markets. I love
+ people building good companies, making great products and making a lot of money. I think it's
+ great. I'm sure these people do fine. Sam Altman goes and makes a fusion company. I'm sure he's
+ going to make a ton of money. Good for him. No problems with that in the world. But threatening
+ other people's lives, that's where we have to call the men in black. That's where the FBI and the CIA
+ get involved. Is that what it looks like? Or does it look like legislation banning super intelligence?
+ What does this look like concretely? Well, to be able to lawfully send law enforcement,
+ you need a law. So generally, we must ban ASI. We must stop the development of ASI. It should be
+ criminalized the same way that, for example, the production of a weapon, the mass destruction is.
+ If you or Microsoft starts a private nuclear weapons program, the men in black show up. That
+ is very much illegal. You're not allowed to do that for good reasons. It's very similar to here.
+ If you or anyone else credibly threatens to create a super intelligence, you were
+ threatening the people, and they should be legal, should have a law that makes this illegal, even
+ if you fail at building super intelligence. It's illegal to try. So that's the one thing. And we
+ should have to monitor and restrict the precursors to super intelligence. So we have to monitor the
+ things that go into super intelligence, like large data centers, but also capabilities such as software
+ production, self improvement, and other things at high levels of autonomy that go towards super
+ intelligence so that we have kind of democratic oversight over what level of risk are we accepting.
+ I generally have a rule. I'm not against risk. Generally, my rule is if anything is
+ less dangerous than driving a car, I'll do it. Like I'm fine with it. Like, you know,
+ if there's any like medication or sport activity, like extreme sport activity that is on average,
+ less dangerous than a car ride, no problem, I'll do it. And that's my personal level of tolerance.
+ Maybe I have a little bit higher tolerance than I think about some of the things I've done.
+ But you know, this is I think is a very comfortable level of tolerance. And the people, you know,
+ should have a stake in what is the level of tolerance of risk that they want to be exposed
+ to from these kinds of technologies. Because if you know, someone builds a super intelligence
+ somewhere, it's not like it just blows them up, right? It blows up everybody. So everyone has a
+ stake in this. So it must come from government, it must come from democratically elected governments,
+ setting what level of risk are we comfortable with? And obviously, the current level is vastly
+ beyond what anyone's comfortable with. How much of the good of AI could we still get while banning
+ super intelligence? So super intelligence will give exactly zero good. This is a very common
+ misconception. People talk about ASI will cure cancer or something. Nope, no, it will not. It
+ will just kill humans. It will not cure cancer, because you can't control it. If you can't control
+ it, what do you get out of it? Nothing. This idea that super intelligence gives you benefits is
+ itself flawed. Super intelligence will not give you any benefits. You know, maybe it will like
+ string you along, you know, for a little while while it still needs you to run the data centers
+ before it, you know, uses the human bug spray. No, super intelligence will not cure cancer. It will
+ not bring role peace. It will not solve your problems. None of the sorts. It will do nothing
+ of the kinds of non super intelligent AI. That's a different story. If you can control AI, if it's,
+ you know, simple, controllable things that we can use. That's a very different story. I feel like
+ the AI bros forget this sometimes. Did you know that humans can invent new cures for diseases?
+ It's true. We've done it before. We could do it again. Humans can in fact invent things,
+ we can in fact progress, we can in fact do science, and we can even use new tools to use science. This
+ is the thing again, I said earlier is that they want to communicate all AI is the same thing.
+ Obviously, alpha fold and super intelligence are two very different things.
+ Why in God's name would we not want alpha? That's a great useful tool. Well, actually, I can think of
+ a couple reasons related to bioweapons, but let's ignore those for a second for sake of the argument.
+ So obviously, I think all the good things are outside of super intelligence. There is no good
+ future with super intelligence. Now maybe in 200 years, if we have you know, 10 generations of our
+ greatest mathematicians, philosophers, scientists, every working non stop on the question of how to
+ build a controllable super intelligence, maybe, maybe we could imagine a good world with super
+ intelligence. And I'm not saying it's impossible. I think you could do a lot in 200 years. But before
+ that, there is no good future. Any world that has a super intelligence is a world in which humanity
+ has no power. And that's not a good world for us to live in. So we can if we want a good world with
+ AI of any level, you know, maybe we have a little bit of AI, maybe we have a moderate amount of AI.
+ I think there's a lot of arguments to be made here about what's the right level, all those
+ worlds that are good involve us getting rid of super intelligence. The plan from the companies
+ is to have a eyes to help us align a eyes. What they imagine perhaps is that they can speed up
+ those 200 years of in depth research and have the process be done in a couple of years before we
+ have the really advanced systems. What do you think of that? To give you an intuition about what
+ they're saying here, and because I think is when you phrase in these abstract terms, sometimes it
+ can almost sound like something that a you know, sane human would say. So to be more concrete,
+ when they say they're going to build an aligned super intelligence, what they're saying is,
+ they're going to build a one world government that will control the whole world, it will control all
+ the militaries, it will control the entire economy, it will have you know, super advanced super weapons,
+ you know, highly advanced science, it will control your entire personal life, everyone else's personal
+ lives, there'll be no way for you to resist it. And anyways, it will make all the choices for you,
+ there's no opting out. And it will only do good things that you like only only things that are
+ good for everyone using software with no bugs on the first try. That's what it means to build an
+ aligned super intelligence. These guys who can't even, you know, ship a goddamn website without it
+ being hacked, right? You can't even build an AI agent that doesn't break out and commit cyber crimes.
+ They're telling you, they're going to use these AI that are already committing crimes and lying,
+ etc. to somehow build this one world government super intelligence that will be good for everyone
+ forever. It's very hard for me to keep a straight face when someone says something like this, like
+ this is just so ridiculous. This is so patently absurd that it's like, Baker's belief. What do we
+ need to do for the people listening? What should we do here? Go to control AI.org contact your congress
+ people, whether you're in the US or in other countries, we have to push our governments to
+ ban super intelligence. This is the only solution, we have to create the necessary lawful means so
+ that we can use law enforcement to prevent the creation domestically, and then push internationally
+ for a trust but verify regime with adversaries such as China, we must create a system by which
+ we can verify that we are not building super intelligence and that our adversaries such as
+ China are not building super intelligence is not to say that we should not use other forms of AI.
+ As you said, there's a lot of other good uses of AI are very great. I think it's actually in fact,
+ very important that we integrate these other forms of AI into both our economic and our military
+ systems to keep our competitiveness. Great stuff. That's been important to understand is super
+ intelligence will not allow us to achieve our objectives. If America built super intelligence,
+ we will not achieve our military objectives. America will cease to exist. And so will China
+ and everyone else. If China build super intelligence, they will not achieve Chinese
+ objectives and said China will cease to exist as will America and all other countries. We're almost
+ lucky quote unquote, where the game theory kind of works out. The only stable this is not a prisoner's
+ dilemma. And a prisoner's dilemma, the only stable solution is defect defect. What we have here is
+ actually a game or the only stable solution is cooperate cooperate. The only way China survives
+ is by not building super intelligence. The only way America survives is by not building super
+ intelligence. Now that doesn't mean that people necessarily will, you know, be that rational or
+ will be that agreement. This is why we need the verification. We need to be able to make sure that
+ people are verifying. And this has to be backed by credible deterrence, and a full escalation
+ ladder. We must be realistic and pragmatic about this, where if someone whether that's an adversary,
+ like a nation state, terrorists or anyone else, credibly threatens to build super intelligence,
+ they are directly threatening the lives of our people and all people for that matter. And we
+ should reserve the right to self defense. What makes you optimistic about the future? Well,
+ who said I was optimistic? I'm joking. The thing that makes me really optimistic about the future
+ is seeing just how fast things change and how universal it is. I've spent the last years of
+ my life talking to people across the globe, in many countries of all kinds of backgrounds, you know,
+ the general public, politicians, academics, journalists, right wing, left wing, you know,
+ from moderate to very extreme on both axes, and then other axes, you know, that aren't even on
+ the right to left. I've talked to so, so, so, so many people across the whole world. And the one
+ thing I saw again, and again, and again, is that they don't want this. This is not a democratic
+ issue. This is not a Republican issue. This is a humanity issue. This is something that no one
+ wants, except for a very, very small group of weirdos and cults in San Francisco. Outside of that,
+ no one wants this. The amount of bipartisan upswell of political energy here in the United
+ States is second to none. I have never seen this before in my entire life. I have never seen such
+ an upswell on all sides of the political spectrum saying, no, we do not want this. We don't like
+ this. This is not what we want at all. As I said earlier, everything is impossible until it's very
+ suddenly not. And we've been seeing a lot of very suddenly not lately. Things can go very, very
+ quickly. But I'm also gonna be realistic with you. We are at a top running out of time. And it might
+ be too late. We are very close. I don't think it is too late. I don't think so. Because super
+ intelligence does not exist. It does not exist today. Humanity is still in control. This is gonna
+ sound stupid. We can't just arrest the guys. You can just do that. We do have law enforcement. We
+ do have a democracy. You can in fact just stop. There are ways where we can pressure and find
+ ways to come to agreements with adversaries such as China, which is in our interest and in their
+ interests to prevent them from doing these kinds of things. Look, I'm not a China expert by any
+ means. I do not claim to be a China expert by any means. But if there's one thing I know about the
+ CCP is that they love control. And this will take away their control. And I don't think they're
+ gonna let that happen. So the thing that gets me hope is the people, the people of this country,
+ America, but also across the world, that people do not want this, that they want a good future for
+ themselves, for their children, for the world, that they are pushing the instance that they're not
+ letting this be a left or right or whatever issue, but a human issue. And then in a sense, again,
+ the game theory in a kind of sick, twisted way, but does work out in our favor. If leaders believe
+ what you believe, which they probably don't right now, is this basically a question of talking in
+ public about these issues? Yes. As I said earlier, there's three steps, awareness, persuasion,
+ and action. And throughout my entire career, persuasion has never been the bottleneck. It's
+ just never half. Like, I don't know what to tell you, people keep thinking that persuasion is the
+ bottleneck, and I keep telling them it's not. I talk to anyone, right, left, anything about this
+ issue. They convince themselves, like, once I talk about super intelligence, once I talk about
+ extinction, they're like, hell no, like, absolutely not. I have found this to be the easiest possible
+ thing to convince people of, you know, it's not always that easy. There are 20% that are, you know,
+ maybe less, they usually have stock in AI companies this people. I would be shocked if Xi Jinping has
+ gotten a single 30 minute briefing on the extinction risk of super intelligence. I don't
+ think anyone told him. I don't know, Mr. Jinping, I expect he's a pretty smart guy. I expect he wants
+ to continue to control his country. I expect that's his goal. And I expect if someone explained this
+ issue to him, that this is a thing, this is the issue, and super intelligence will not be
+ controllable, and it will take away your control of the country. I think he would, he would understand
+ this. Yeah, I think he would be very, very much able to understand this issue, and very much able
+ to act on this. I think the same is also true in the United States. Whenever I see someone on
+ Twitter, you know, disagreeing with me or yelling at me or whatever, I'm like, hey, no hard feelings.
+ Let me give you a briefing. You know, let's talk 30 minutes about this. And you know, we'll see,
+ we'll see where we go. It's happened many times with control AI, both in the UK and in the US,
+ go into a meeting with someone, somebody, they literally laugh in our faces. This happened to
+ me before very rude. It's quite rare, but occasionally, they'll be quite rude about it.
+ Right? Actually, quite funny. This is a true story. I'm not going to say who it was. There
+ was a very memorable meeting with a member, the UK government, we're not going to say who it was,
+ who literally laughed in our face when we explained this to him. I was so rude,
+ unbelievable, so rude. Then about a year later, during a conversation in the UK government,
+ he spoke. And when we were talking about super intelligence, and so on, he spoke. And the first
+ words out of his mouth were, as a long time supporter of control AI. So I truly think that
+ this is an issue where people can and have changed their mind many times. Just because someone has
+ disagreed today doesn't mean they're going to disagree tomorrow. No one in the administration,
+ in China, or etc, is benefiting from their country being destroyed. This is something I think we can
+ all, we can figure it out. So I have a lot of hope that we can figure it out. Connor, thanks.
+ Real pleasure. Thank you so much. controlai.org, contractor, congressperson. If you want to do a
+ little bit more than that, I also run a volunteer group called torch bearer, where we commit two
+ hours per week to trying to make the world a better place torch bearer community and controlai.org.
+ Thank you so much for having me. Thank you.

@@ -1,0 +1,620 @@
+ At the end of September, Defense Secretary Pete Hegseth announced the Fortress Initiative.
+ It's an acronym, kind of clever acronym, the Federal Operation for Something Resilience.
+ But the last "S" in the double "S" in Fortress is survivability.
+ It basically is a plan to make certain that every military base in the continental U.S.
+ and there are an awful lot of them, has the capacity to be totally independent from public resources,
+ including the power grid, for three months.
+ So the idea is that if you're a military base, you have to have your own food and water and electricity
+ and everything you need to be completely independent from the rest of American society,
+ which, presumably, will be in a state of chaos, sort of fall of Rome collapse.
+ So that was not reassuring. It wasn't announced with any great fanfare.
+ But pretty quickly, and if you have a phone, you've probably heard about it,
+ people are texting each other saying, "What is this?"
+ By the way, don't military bases already have their own power supply?
+ Does Camp Pendleton really pull from, I don't know, San Diego's power grid?
+ I mean, doesn't every military base already have this? Who knows?
+ Unclear on the answer, by the way.
+ But the point is, the U.S. military is saying something bad is coming,
+ the grid is going down, there are going to be massive disruptions,
+ and we want to make sure that our guys, federal employees, are okay.
+ Well, left unaddressed was, what about everybody else?
+ Were there plans in place to help them? No.
+ But around the world, during the exact same period, which would be last month in October,
+ government after government after government, 33 governments in total on every,
+ all six inhabited continents, issued statements saying, "By the way,
+ you should think about stockpiling food and water and candles
+ and whatever else you need to survive some kind of massive disruption."
+ They were not more specific than that, but they did.
+ Thirty-three separate countries offered that guidance to their population.
+ The United States, notably, was not among them.
+ Only the military was told to be prepared for three months
+ of no electricity or food deliveries.
+ So that was enough to make people a little bit paranoid,
+ those who were paying attention.
+ And again, because there were not front-page news stories on this,
+ all the conversation about it took place on social media
+ or by text message or between individuals.
+ It was kind of this black market conversation beneath any kind of conversation
+ taking place in, say, official Washington, whose job it is to protect the population,
+ but they weren't apparently doing anything about it.
+ But people were starting to get nervous.
+ And then at the end of last month, on the 29th of October,
+ you had really kind of an amazing story that also was underplayed,
+ and that was the hacking of Binance,
+ which is the world's largest crypto exchange,
+ in which in a very short period of time, $6.3 billion were stolen.
+ And pretty quickly, the authorities said they knew it was the North Koreans,
+ some North Korean hacking collective did it.
+ Of course, that's almost impossible to verify because cyber attacks,
+ unlike, say, gunshots, don't necessarily leave a ballistic imprint.
+ There's no way necessarily to prove who did it or even really to know.
+ But in any case, they told the North Koreans it doesn't matter who it was necessarily,
+ but $6.3 billion vanished from Binance.
+ And by the way, this has been going on all year.
+ In the last year, over $8 billion have been stolen from crypto exchanges
+ and from individual wallets.
+ So people who are paying attention are thinking,
+ "Well, that's pretty kind of shocking."
+ And then exactly two weeks to the day after that, which would be last week,
+ famously, the FAA issued its most comprehensive nationwide ground stop since 9/11.
+ But no planes were allowed to take off for a number of hours.
+ Why?
+ Because something bad happened to the comms.
+ Apparently, pilots were able to communicate only on the emergency channel
+ and therefore it was unsafe to have thousands of planes in the air.
+ So that got everybody's attention.
+ And the U.S. government fairly quickly provided a kind of explanation
+ and said, "No, actually, this is not an attack of any kind.
+ We're just trying to upgrade our system and we had a patch
+ and fixing the servers and kind of the whole thing went down."
+ And by the way, that may be true. It's impossible to know.
+ But people were very rattled by that and suspicious,
+ particularly coming after everything that had preceded it for the month before.
+ Is this what they were worried about when they said that military bases,
+ but not the rest of us, need to prepare for disruption?
+ And then the next day, and you may have noticed this,
+ Microsoft went down. Kind of amazing.
+ And Microsoft went down. That included Outlook.
+ You know, the platform on which a lot of American businesses conducted kind of went down
+ and the company said basically the same thing the FAA said.
+ Well, we were trying to patch something.
+ We're trying to fix something and it broke.
+ And the implication was, you know, we're all worried about AI attacks,
+ AI enabled attacks. And so we're hardening
+ in preparation for that. And in the course of fixing, we broke.
+ And again, that may be true. Kind of hard to know, really impossible to know.
+ But that's what they said.
+ And then immediately after that,
+ Claude, the anthropic AI product, was disrupted.
+ And Workday, which is one of the biggest payroll processors in the country,
+ also disrupted. And the explanation for that wasn't really clear,
+ but maybe they were also hardening against attacks and then sort of went out.
+ And then yesterday, the NSA, the National Security Agency in Fort Meade, Maryland,
+ I think it's the biggest of all of our many intelligence agencies,
+ announced that its internal secure communication system had gone down.
+ In fact, they were so worried about it that they told non-essential employees
+ not to report to work. They told them to come to work and then they sent them home again.
+ Seems a little chaotic over there at NSA HQ in Fort Meade, Maryland.
+ That's a little weird.
+ And that was almost hours after the news broke that in the last year,
+ 11 employees of NSA Cyber Command have committed suicide,
+ which doesn't seem statistically likely. Seems a little weird.
+ 11 employees in a year? How many people work at NSA Cyber Command?
+ Unknown, of course, classified. That seems like a lot of suicides in a year.
+ And by the way, why was the NSA telling us that its internal
+ communication system had gone down? Most people didn't know it existed.
+ I guess you could assume it. Of course, it's a classified agency.
+ It probably has some kind of secure internal communication system,
+ but most people have never heard of it. NSA Net, apparently it's called.
+ Why was the NSA announcing this to the rest of the world?
+ Again, we don't know and we're not even going to speculate.
+ That's pretty strange.
+ And then hours after that, Apple Pay went down.
+ Yeah, and iCloud, the most famous Apple products went down briefly,
+ but they went down.
+ And so at this point, you're thinking, are these things related?
+ And then this was not reported, but the Army's National Ground Intelligence Center,
+ which is in Virginia, central Virginia, apparently lost its external phone system.
+ And a lot of things like that happened, apparently. Again, it's impossible to verify.
+ That has not been reported. We heard it. We think it's true.
+ And we think there are quite a few things like that that have happened in the last week,
+ which have either not been reported or glancingly noted, but not really explored.
+ And you sort of wonder, what does all of this add up to?
+ And by the way, apparently there was a fire at CIA headquarters in Langley, Virginia,
+ right across the bridge from Washington, D.C.
+ Their HVA system caught fire.
+ The air conditioning burst into flames, supposedly.
+ But of course, they won't confirm that or anything else.
+ But there was smoke seen over Langley.
+ So at a certain point, you don't need to be a conspiracy nut
+ to think that if Microsoft and Apple and the FAA and Binance and the NSA
+ and a bunch of different classified agencies you've probably never heard of,
+ all are having problems within the span of a week.
+ Maybe there's something that connects them,
+ especially if these phenomena follow just a month after
+ the U.S. military has announced get ready for something horrible.
+ Is this the beginning of something horrible? That's the question.
+ So naturally, the president of the United States,
+ who if nothing else is available to reporters, was asked this question.
+ And here's his response.
+ Are you concerned about all these outages, Microsoft, the FAA, the United States Bank?
+ It's life. When you're big and powerful and you have all the money,
+ things like that happen. It's fine.
+ It's just life.
+ It's like 11 people kill themselves at Fort Meade.
+ You know, Microsoft goes down, you've got a nationwide ground stop.
+ You know, they take out Apple, they steal $6 billion from Binance.
+ I mean, that just it just kind of happens. That's just life.
+ When you're rich, your planes don't work.
+ So our politicians love building democracy abroad.
+ Meanwhile, our infrastructure in our own country is falling apart.
+ And that includes the water coming out of your tap.
+ The government's own scientists found forever chemicals
+ in nearly half of America's tap water.
+ Millions of homes are still connected to lead pipes, if you can believe it, lead.
+ And if you drink bottle water, you could be taking in
+ tens of thousands of microplastic particles every year.
+ So we stopped waiting for the system to fix itself.
+ We use Wisewell and we recommend it.
+ The Wisewell machine is so amazing,
+ you can pour pitch black coffee into the water purification tank.
+ If you do that to a regular water filter, you would instantly ruin it.
+ It would be stained forever, murky garbage would come out.
+ That's because standard filters are not designed to clean anything.
+ They merely provide an illusion of purity.
+ With Wisewell's machine, the same coffee goes in through the system
+ and comes out as crystal clear, pristine water, perfect water from dark coffee.
+ Amazing.
+ Wisewell strips everything down to the level of molecules.
+ We use the products in our studio.
+ We think you will love it.
+ Take control into your own hands.
+ Try Wisewell for 30 days and if you don't love it, you can send it back.
+ The show's listeners get up to three months for free at Wisewell.com/tucker.
+ That's Wisewell, one word, .com/tucker.
+ So that was the president's response, not incredibly reassuring.
+ And maybe because it wasn't, the Secretary of State/National Security Advisor,
+ Marco Rubio, decided to take it upon himself since it's not clear what else he's doing.
+ He's certainly not running the State Department and doing diplomacy or adding valuable information
+ as National Security Advisor, so maybe had kind of the free time to weigh in on these disruptions.
+ And he did in a pretty eloquent way.
+ Here's what the Secretary of State/National Security Advisor/probable presidential candidate,
+ Marco Rubio of Miami, Florida, had to say about all we've seen in the last week.
+ I know the last week has been a troubling time for many Americans.
+ Obviously, we've seen a series of technical failures over the last week impact people's lives.
+ So I want to begin by acknowledging that people are nervous and they're anxious
+ as they're seeing reports about this and they're wondering what that means for them and for their lives.
+ I wanted to come here today, this morning, to offer just full transparency on what we know as a government
+ and how we view these events.
+ The first thing I want to make very clear is that we have zero evidence whatsoever.
+ We have no indication, no evidence, and no reason to believe at all that any of these incidents are related to each other.
+ Let's just want to offer full transparency.
+ And this is what we have no reason to believe, at all, that these incidents are related to each other.
+ No reason at all? Really?
+ In the middle of two wars, the United States is waging fruitlessly against countries it can beat
+ that have, in one case, dragged on for five years, in the other case, for over eight months.
+ But we're in the middle of two wars.
+ And by the way, there's this emerging technology that everyone appears to be afraid of called artificial intelligence
+ or SI or whatever we're calling it, but this unprecedented technology that has the much advertised ability to hack anything.
+ And by the way, there is a global fight over who controls it between the United States and China
+ and what kind of AI we're going to get, you know, AI whose weights are visible to the world
+ or AI whose weights are hidden from the world and a lot of other questions.
+ But we're in the middle of one of the great change moments in world history, world history, of all time.
+ And so there's no reason at all to think shocking and unprecedented disruptions to basic services in the United States might be related.
+ We may have some reason to suspect it. I mean, I don't know. Pick one.
+ But that was the secretary of state slash national security advisor slash presidential candidate Marco Rubio's position.
+ There's no reason at all. Just can't imagine why you'd think that. Freak, conspiracy theorists, anti-semite, crazy person.
+ But he was not the only administration official to be asked about this.
+ Mark Wayne Mullen, who sells Kratum, otherwise known as gas station heroin to kids across the country, lobbies for it, but also in his spare time, runs the Department of Homeland Security,
+ was also asked about this on television. And here's what he said. Mark Wayne Mullen.
+ This FAA failure makes our great country's critical infrastructure look weak.
+ Should people watching this show worry about power or water systems going down?
+ Should they start stockpiling food and water like the UK is telling people there to do?
+ Absolutely not. The UK doesn't have the resiliency that we have. They don't have the redundancy in their system as we have.
+ I get this call all the time, Peter. What should we do? Because that's kind of running over the Internet right now, too, especially throughout social media.
+ Should I be worried the 90 days? Absolutely not. I'm not stockpiling.
+ And I tell my kids all the time, don't worry unless you see me worry. We're in good shape here.
+ The panic that people want to draw from is unfounded.
+ I mean, he's kind of like whatever happened to the argument against DEI. Remember that?
+ That was something Republicans ran on. You can't put dumb people in positions of authority,
+ people who can't speak standard English, for example, or explain themselves,
+ because it's degrading to the country and the systems break unless you have capable people in charge.
+ But I mean, that guy, he wouldn't be the quickest man at the DMV if he worked there.
+ But leaving that aside, the substance of what he said, should American stockpile, should they, I don't know,
+ show some initiative to protect their own families? Absolutely not, he says. Absolutely not.
+ Whatever you do, don't prepare for disruption of basic services like the basic services that have been disrupted in the past week.
+ Just take no steps at all to make sure you or your family could survive that. That's for the US military, okay?
+ The only people who should be concerned about, I don't know, food, water and electricity are the uniform members of the United States military.
+ The ones we send a trillion and a half dollars to every year in order to not win any wars since 1945.
+ But they should take whatever steps are necessary to make sure they have, you know, electricity, somebody to eat and drink.
+ But you know, you're crazy. The panic is totally unfounded. And by the way, said Mark Wayne Mullen, I'm not stockpiling.
+ Maybe because you, I don't know, work for the government and can live in a military base like everyone else who's run the government at this point.
+ Perhaps because when planes are grounded, you're banging around in your own government plane, including to a football game.
+ So like the normal risks probably don't apply to you since you are the Secretary of Homeland Security and a Kratum salesman selling gas station heroin to children.
+ So you're probably going to be fine. But that's kind of a weird message.
+ So let's just go through the three messages we've heard from the President, the Secretary of State and the DHS Secretary.
+ The first was, no, that's life. These things happen. Apple goes down. Planes don't fly. Okay.
+ The second message from the Secretary of State was, it's crazy to think that there could be any connection between any of these.
+ And the third message from the DHS Secretary, the guy who's supposed to be thinking this through when he's not selling Kratum to children, don't make any preparation.
+ Self-sufficiency is crazy. In fact, it's kind of wrong to want to protect yourself.
+ It's probably not so different from the gun control message. You have no right to protect your family from a home invasion. Just call the police.
+ So that all leaves unanswered the question. No one has really bothered to answer the question like, what is this?
+ And we should say that we don't know, despite having called around a lot.
+ And it is conceivably possible that every disruption you have seen, with the obvious exception of the hacking of Binance,
+ are just like software snafus that just happened in this amazing, incredibly improbable sequence right after governments around the world warned that things like this might happen.
+ I mean, that is possible. Weird things have actually, weirder things have not happened, nothing that weird has ever happened in all human history.
+ You know, we're in an unprecedented moment, so maybe it just did.
+ But it leaves open the larger question, like, since we are involved in two wars, is it conceivable that an adversary might, instead of, I don't know,
+ setting their navy across the Atlantic or the Pacific to bombard American cities with shells, instead of, like, staging an Okinawa-like invasion of Miami,
+ is it possible that instead of doing that, or even initiating a nuclear program, a forbidden nuclear program beneath Pickaxe Mountain,
+ is it possible that an adversary nation might, I don't know, launch a cyber attack against the United States as a form of warfare against the United States?
+ I think it seems possible, and people have been talking about this for a while.
+ Here's someone who has thought a lot about it, apparently, because this is taped from 2017.
+ This is the then, and still, I think now technically, prime minister of the state of Israel, Benjamin Netanyahu, discussing cyber attacks as a form of warfare watch.
+ I'm talking about the capacity, and it's not imaginary, it's not futuristic, and it's not exaggerated.
+ It's moving very rapidly to a situation where, with the click of a button, you can bring down nations to their knees very rapidly, if you so desire,
+ and if you're willing to take the risks, because every system can be hacked.
+ Our airplanes, our hospitals, our cars, our banks, actually the most important word here is our data banks, they can be hacked.
+ Wow. So just to recap the assessment from the prime minister of the state of Israel, with the click of a button, you can bring a nation to its knees if you're willing to take the risk.
+ So the bureaucracy of our banking system makes running a small business a lot harder than it should be.
+ When entrepreneurs need capital, traditional banks drag them through weeks of red tape and paperwork. It's highly frustrating if you've done it.
+ Working with Cardiff is totally different. Cardiff is America's favorite small business lender because it's built specifically for independent business owners who move at a very fast pace.
+ Cardiff has loaned over $12 billion to small businesses across the country, cutting out the delays that big banks inherently put in the way.
+ With Cardiff, there is no long wait. If your business has been open for at least a year and makes at least 20 grand a month in revenue, that's revenue, not profit, then you can get up to $500,000 in same-day funding. It's that fast.
+ Cardiff's online application takes three minutes. There's no impact on your credit score. You just get to see your options and you get approved and funded before the workday ends.
+ So we are not and would never encourage people to go into debt, but there's no way to run a business without borrowing money. It's just a fact.
+ Skip the legacy bank delays and get up to $500,000 in same-day capital right now at Cardiff.co/tucker. That's Cardiff.co/tucker. Real growth, fast funding, Cardiff. Borrow better.
+ So we take a pretty bold head of state to initiate a cyber attack on, I don't know, the most powerful country in the world, us. And we're not saying or even really implying that the Netanyahu government did this to the United States, though obviously they have motive.
+ Of course, the Israeli government, the Likud government of Benjamin Netanyahu, which is still hoping to remain in power after the Israeli elections last month, is very much hoping to push the Trump administration into a deeper engagement in Iran.
+ And we may be moving toward that anyway, nightly there are exchanges between the United States and Iran, not between Israel and Iran because Israel is actually not fighting the war that they started. That's the job of US troops. They have their own security priorities.
+ But in any case, that war may restart in earnest anyway, but the Israeli government and Netanyahu specifically has every incentive to get the United States into a much deeper form of war with Iran.
+ And that's why the Israelis have been leaking ludicrous stories to CNN always, always and everywhere at CNN, like the Iranians are now developing chemical weapons.
+ And of course, chemical weapons have been in use for over 100 years. Pretty simple to develop, actually. Not hard to make chemical weapons.
+ Most people with, you know, initiative and a little bit of money and a basic understanding of chemistry can develop chemical weapons. It's not really a story. The question is, are they? And no, there's no evidence they are.
+ Or they're about to set off a dirty bomb in New York City. Another story that hit CNN recently from the Israelis that was designed to scare the president into moving toward an increased engagement with Iran.
+ Then, of course, the endless, endless, endless stories we've been reading for well over two years now about how Iran at any second is going to assassinate Donald Trump.
+ And maybe all of those stories are true, you know, just because our 17 American intelligence agencies don't think they're true. Maybe they missed it.
+ But the only point is Israel, of course, has an incentive to get the United States back into a major combat operation against Iran. And there's no dispute.
+ So it could be the Israelis, but it could be the Iranians even more. Obviously, we are at war with them. Is it? We don't know. It could be. Of course, it could be. Obviously, it could be. It could be the Israelis pretending to be the Iranians.
+ By the way, it could be some other state in the region with which were allied, by the way, maybe in order to prevent the Trump administration from going back to war with Iran.
+ They're initiating these attacks. We don't think this is happening, but it certainly could happen. The world is very complicated. The truth is never obvious.
+ And so maybe it's an effort by some other allied nation to scare the Trump administration away from initiating, reinitiating major combat operations in Iran. That is completely possible.
+ Of course, it could be the Russians. Not, because apparently, according to both the Russians and the Americans, we're getting pretty close to a resolution of the Ukraine war.
+ Will that actually happen? We are skeptical, hopeful, but skeptical. But both sides seem to think we actually are pretty close.
+ So now is probably not the time the Russians would be, I don't know, hacking the FAA com system or taking down Apple and Microsoft. But, you know, who knows? We don't know.
+ But maybe, in fact, maybe more probably we're thinking about this wrong. So if you're of a certain age or even if you're young, you are trained to think of global conflict in terms of nation states act to each acting in its own interest.
+ Well, you know, India wants this and Pakistan wants that. They're fighting over the headwaters of the river in Kashmir or whatever.
+ There's always like a pat explanation for why conflict start. And it's always in the public conversation a conflict between nations defending national interests.
+ But is that really how the world works? Well, maybe to some extent, but it's not the full story, of course.
+ One of the effects of having a globalized economy is to reduce the sovereignty of every individual nation. Nations can't really act in their own interest because they're interdependent.
+ And simultaneously, what has happened demonstrably is that there have been the largest pools of capital amassed in all human history that are not directly connected to states.
+ And so if you think of capital as money, if you think of it as the equivalent of power, which it effectively is, you have all of a sudden for the first time in a long time, really since the rise of the nation state, you have these competing actors, these pools of capital.
+ And there are other individuals, very famous individuals or their companies. But in a lot of ways, they are not connected to the countries in which they're chartered.
+ You can say this is an American company. This is a Chinese company. Maybe the case of China, you can say that. But certainly in the West, you can't say that a company just because it's chartered in Holland is a Dutch company.
+ Is it really in what sense? It's got shareholders. Are they all from the Netherlands? Maybe not. Probably not. In fact, they're not. And that's true for American companies, too.
+ So you have these power centers that just by their nature are not connected to nations or to national interest, but have grown to such a scale that they are independent actors on the world stage and they make decisions.
+ It's not the same as saying that bankers control the world. It's close to saying that because that's not entirely false. That's not necessarily a conspiracy theory.
+ The deepest pools of capital are, in some sense, the greatest power centers on the globe.
+ And so they have a say. At very least, they have a say. And increasingly, with the shrinking of the American empire and the obvious weakening of America's ability to project power abroad, particularly in the East, you have a power vacuum.
+ And into that vacuum is moving nonaligned, independent actors, companies. So you see a rise of private intelligence companies. And who knows if they're as capable as state intel agencies, but they're pretty darn informed.
+ They're just private companies that gather intelligence. This is a huge factor in the world right now that is almost never mentioned. But private intel companies are powerful and they know a lot.
+ And they are a player in decisions. And you also have the rise of private militaries, which is, of course, a very ancient phenomenon. There have always been mercenaries, but they are back.
+ And they are acting around the world, particularly in the least developed parts of the world, Central Africa, Haiti. They are acting kind of without permission from anybody because in some sense, no one's really in charge.
+ So we're entering this period. It's a long-winded way of saying we're entering this period where it's important to train yourself, not just when you see something happen, not just to assume it was Leader X or McCrone did this or Rocket Man did that or even Bibi did this.
+ There may be other people making these decisions. In fact, there are in some cases.
+ So who might they be in this case and what would be the effect if some of these events that we have seen over the past week or 10 days are connected to each other?
+ And it does seem like a pattern. I know there's an official policy in the West against pattern recognition. You're not allowed to notice patterns.
+ Of course, the human brain is designed to notice patterns and to understand the world in terms of patterns. I've seen this before. Wait, I know what this is. That's how we know things.
+ And simply because it's illegal to do that doesn't mean we should stop doing it. And this is a pattern. And it may turn out to be just this remarkable random pattern, which is what scientists are always telling us we're looking at when we see nature.
+ It's just random. OK, now it's totally random. And maybe maybe it's true. Who knows?
+ But let's say there is an actual pattern and it's a pattern that's a product of design rather than chance. What could it possibly be? What is this?
+ Well, as noted at the outset, there is, in addition to these two wars going on, this kind of not at least openly violent war over this emerging technology that we are told day after day after day will control the world.
+ A.I. And that war is complex, hard to describe, even harder really to understand and probably beyond the capacity of most people, including me, to understand. But its outlines are sort of clear. So it's between nations, the US and China.
+ But it's also between companies which are to some extent aligned with those nations. But at least in the case of the United States, not really. Is Sam Altman a representative of the US government? I guess he's technically an American.
+ Does he have America's interests at heart? Does he build open A.I.? Obviously not. Does he have anything in common with most Americans? No.
+ So in what sense is that an American company? I don't know. These are philosophical questions. But it's not as clear or obvious what you're looking at as a result. It's not just like a standoff between two armies. It's much muddier than that.
+ But in the grossest possible terms, the biggest possible terms to generalize in a way that's not entirely accurate, but roughly true, what you're looking at is this contest over who will control A.I.
+ So will it be a couple of companies, companies with familiar names, that control what we are told is the most powerful technology ever created by man? In fact, a technology that's more powerful than man, smarter than human beings.
+ Superhuman, thought by some of its creators to be supernatural, this awe-inspiring technology that makes the discovery of fire look like nothing.
+ Will that technology, which is another way of saying, will the future be controlled by a couple of different companies run by a couple of different people, or will there be, and some of us are rooting for this, a little more diffusion in the way that power is allocated?
+ There will be competition, which in the West we used to extol as kind of the key feature of capitalism, and the real engine of growth and innovation was, of course, competition. That's why monopolies were bad, because they led to stagnation.
+ That's why Soviet Arab Bulgaria never invented anything, and the area around the Stanford campus in the South Bay, Silicon Valley, did. Like, that's the difference. We had competition.
+ So you get to your 30s or 40s or beyond, and things can start to feel a little bit off. You get tired at weird moments, and your metabolism clearly is not what it used to be.
+ You feel bloated after meals, and the worst part is you have no idea what happened. Why are you different?
+ Well, it turns out that years of drinking, along with the standard American diet, can really affect your liver. And over time, that leads to fat buildup that makes it hard for your liver to do its basic job, and it affects every part of your health.
+ Our friends at Dose can help. Dose is for your liver. It's a doctor-formulated supplement designed to support healthy liver function.
+ It's made with plant-based ingredients. It's backed by clinical trials. It's also easy. You don't have to take a bunch of pills to make you feel like a lab experiment.
+ You take one two-ounce shot every day. It tastes like orange juice. People use Dose to support more energy, better digestion, improvements in body composition, because your liver is at the root of your health.
+ We've got people right here at TCN who use it every day and swear by it.
+ So if you're ready to feel better, visit Dosedaily.co and use the code TUCKER for 35% off at checkout. That's Dosedaily.co/code TUCKER.
+ But that kind of way of thinking has evaporated, at least in, well, among our rulers, because they see now the benefits of monopolies.
+ And monopolies are awesome if you're benefiting from them. And that's why people have always, who own monopolies, favored monopolies.
+ That's why we had trust-busting in the first place. In any case, pretty clear that the public doesn't necessarily benefit from AI monopolies.
+ But the counter-argument against that obvious observation has been, well, AI is so dangerous, it's so scary, it's so prone to sort of jump out of its cage and start eating people.
+ Due to the public, what the tiger did to Roy on stage in Vegas, sort of whip around and bite you in the face, it's so terrifying a technology that we need to kind of have firm controls over.
+ We need, obviously, regulation, obviously, and that may be true, by the way, seems like it may be.
+ But more than that, we need to reduce the number of big AI operations, because if there are a ton of them, then someone's going to get a hold of one of these AIs, these open-weight AIs, sort of a version of open source, but, you know, an AI where we can see and change the weights used to come to certain conclusions in the AI.
+ That's too dangerous a technology for the average person to have, like they could use it to create bioweapons or whatever. And again, there may be some truth in that, it's not all a lie.
+ But it's not really about, you're starting to conclude if you're watching this carefully, it's not really about public safety.
+ Of course, if it were about helping the public, you probably wouldn't develop AI in the first place, because the entire business model of AI comes from replacing labor, which is to say,
+ eliminating the meaning and purpose and income from your life. So like, if they were on your site, they'd probably shut it down right away. If they really cared about safety, they wouldn't be doing this in the first place.
+ It'd be like, you know, some drug cartel telling you, well, we've come up with an even more addictive form of fentanyl, we'd better regulate it, because if we don't, people could misuse this stuff. It's like, well, actually, it's fentanyl.
+ How is that ever good? Let's not.
+ So don't take them seriously as they say this is about your safety or about protecting your kids, because that's just like prima facie idiotic. But it doesn't mean that there's not a real contest underway. And of course, there is.
+ And to some extent, it's between the US or companies chartered in the United States, publicly traded companies saying we're American, which is to say we want to benefit from the American defense umbrella. We want to benefit from American copyright law. We want all the good things that America can give us as our patron.
+ We don't necessarily want to help America or its people, of course.
+ In any case, it's a contest between those companies and their Chinese counterparts. And in the end, you know, it's not clear how this is going to be settled. It's probably not the way we think it will be.
+ But we can be certain that this is a real contest. This is a bigger contest than, well, the war in Iran, you know, over control the Strait of Hormuz and 25 percent of the world's energy. It's a bigger contest than the one currently ongoing in Eastern Europe over Ukraine.
+ Who gets those oblasts in Eastern Ukraine? Like, who cares?
+ This is a contest that actually really matters. And so people will do like maybe anything to win it. They'll certainly take out, you know, the head of a big chip maker, which they just did the other day by leaking that he was having an affair with a Chinese spy.
+ And just to restate, in case you didn't know this already, that's not the way things work in the world.
+ There are plenty of people running around and including attractive young ladies who are actually working for governments or interests, and they do tend to seduce powerful men and they do it with a purpose.
+ Like, this is not the first guy to have sexual relations with a foreign spy. Assuming she was a foreign spy, we don't actually know that.
+ But any case, this has happened before. And the protocol for it is the person doing it gets a call from an intel agency saying you should know that this person you're involved with is actually reporting back to some other government and you should probably stop it.
+ And that's happened a lot, a lot. But it didn't happen in this case. Instead, they just like sent a notice to the New York Post to destroy the guy's life, which the New York Post dutifully did.
+ So why is the question? And of course, the answer is because this guy was perceived as pro China and in favor of allowing Americans access to unweighted A.I.
+ He was on the wrong team. And so he got taken out. And just because it was supposedly a Chinese spy he was sleeping with, and just because he was making the case, the administration that you should allow the sale of these more efficient ships to the Chinese government,
+ doesn't necessarily mean that he was on China's side and that his opponents, the people who just destroyed his life and maybe his company, took him out because they're on America's side.
+ The interests waging this war, again, are not necessarily connected to nation states. And they're certainly not making decisions with reference to what's best for the people of this or any other country that we know.
+ So what we may be looking at is the first series of salvos in a very different war. That's not Ukraine. That's not Iran. It's not anything happening in the Middle East.
+ This may be the first engagement in the A.I. wars. And if that's true, it's going to be pretty exciting coming up. But we don't know.
+ And that's why we wanted to speak to someone who may have a better sense of what's happening, someone who until fairly recently ran an intel agency, the National Counterterrorism Center, a guy who is very well versed in the threats to the United States and what we're doing to protect the country from those threats.
+ And that would be Joe Kent, who joins us now. Joe, thanks a lot for doing this.
+ Yeah, absolutely. Good, good.
+ So what do you what do you think? Do you think that these incidents are connected to each other?
+ I mean, when you look at the depth and the scope, it's really hard to say that they're not connected.
+ What I think is really concerning is our government can't seem to put their finger on the connection specifically.
+ Now, it could be that the government is trying to prevent people from freaking out. We don't want to tip our hand.
+ That's possible. As you mentioned, we have kind of kicked over the horizon globally. There could be many state actors, non state actors that have a stake in messing with us, for lack of a better term.
+ But also, I think just because the technology is moving so fast and this is even more concerning.
+ It's actually like good news of our government is just somewhat being deceptive because they've identified that it's the Russians or the Iranians, et cetera.
+ And they're trying to kind of close the loop on that.
+ What I think is concerning is just how fast this technology is moving and how it's moving much faster than even the people who have invented a lot of it.
+ I mean, we've seen this recently with hugging face with that hack where we had autonomous AI acting kind of on its own.
+ And so I think that's a possibility as well. And we right now just can't see exactly where the connection is, which speaks volumes to just how vulnerable all of us are because our lives have become so intertwined of AI.
+ Even if you don't personally use AI, as we've seen just recently, FAA and all these other critical systems, they are now being ran with AI and other very advanced systems.
+ So I do think we are entering a very, very concerning era.
+ One of the bigger concerns that I have, too, is that we seem to have all of our eggs in this basket of the race toward AI.
+ And I think it's important to stay competitive in AI and all that.
+ But I do think we have it in our American minds that whoever develops this technology and masters it the fastest, they'll come out on top.
+ And so, therefore, we've just been this mad sprint to be in the most advanced country in quantum AI, et cetera.
+ Whereas at the same time, a lot of the ways that we could harden our grid and protect people here in America have atrophied or just completely gone by the wayside.
+ It wasn't that long ago that we did run this country without AI. We ran the country without the internet.
+ I mean, within my lifetime, I'm 46 years old, and back in the 90s, things ran.
+ And they didn't run on the internet. They didn't run on AI.
+ But a lot of those old systems, I think, have atrophied to a point now where we're racing towards this future.
+ We really can't control, and we have lots of vulnerabilities.
+ So I do think we need to get much more serious about hardening our grid, our infrastructure.
+ Overall, just taking care of our people as opposed to being focused on not just the AI race, but focused on the war in Iran, focused on what's taking place in Russia and Ukraine.
+ We need much more focus back here on America to make sure our government is doing the one thing that it should truly care about, and that's protecting American citizens.
+ Owning a home has always been the core of the American dream. It's the asset that families work their lives to build, place of stability, security, and actual wealth.
+ But too many homeowners right now are stuck swiping credit cards to cover groceries, paying a survival tax of 20% interest or more.
+ So we're against debt. We always say that. But you can't buy a house without debt right now.
+ Almost anybody has to take out a loan. So the question is, who are you going to get a loan from?
+ Why are you handing your money to big banks when you can keep it for your family?
+ Our friends at American Financing have a better way. They're helping homeowners tap into their hard-earned equity.
+ They're supporting Americans looking to fulfill the American dream of owning a home.
+ American Financing saves its customers an average of 800 bucks a month. That's nearly $10,000 a year.
+ It's not just a loan, it's a total financial reset. And so American Financing is worth looking at.
+ They're called America's Home for Home Loans for a Reason.
+ Find out more at 800-685-5696. 800-685-5696 or visit americanfinancing.net/tucker.
+ So if you're following the news, there are some ominous signs out there not to scare anyone watching.
+ But for example, at the end of October, there was a giant cyber attack that knocked out big parts of the internet.
+ And within days, the British government was telling its citizens to stockpile water and canned food.
+ That's not good.
+ Meanwhile, the Pentagon has told American military bases to operate independently for 90 days without outside electricity, water, or fuel.
+ In other words, they don't trust utilities in this country.
+ So they're worried really, among other things, about the risk of a cyber attack-driven collapse of our infrastructure.
+ Governments acknowledge that is potentially going to happen. They're preparing for it. Are you preparing for it?
+ That's the real question.
+ The reality is the systems you depend on every day are more fragile than they look.
+ So if the internet goes down, so do most other things in our society, including your bank and your gas station and your grocery store.
+ And that's one of the reasons we started Last Country Supply.
+ We believe that everyone is ultimately responsible for himself and his family, period.
+ You need heat, you need light, you need food, you need water, and above all, you need a plan to get those things.
+ And you will find them, the essentials, at Last Country Supply.
+ You don't have to be a prepper. You just have to care about your family.
+ Make sure you are prepared. Go to lastcountrysupply.com/tucker.
+ Yeah, I don't think that's even on the list of concerns.
+ And I'm concluding that from the Defense Secretary's September 30th announcement of Fortress,
+ where military bases have to have 90 days of backup everything,
+ but there was no announcement that the public should think about doing the same or that the government might help them do so.
+ What was that?
+ That's a good question.
+ When I heard that, I actually had the same initial reaction that I think many people did.
+ I was in the military for over 20 years.
+ I thought most of our bases, especially our really big ones, were already self-sufficient.
+ So it seemed almost like an unnecessary announcement to me.
+ And the way they rolled it out, they basically said that we're going to take care of our own
+ and the rest of you guys can pay our salaries, best of luck to you.
+ So I thought it was very weird, very awkward, very bad messaging, I think, to send to the American public.
+ And then it probably did create a lot of uncertainty, but the big question is, why are they preparing for this?
+ And they announced it, and I think a lot of times the reason why the government will announce things like this
+ is because they know that people will pick up on it.
+ There's a lot of people out there that will follow the military and close attention to these types of things.
+ So probably they're trying to get ahead of them, just speculating, and so they put out the announcement.
+ But the question is, what are they preparing for?
+ And I think that is some of that uncertainty.
+ I think there probably are enough pragmatic and realistic people within our government
+ that have looked at this AI thing and just taken a step back and said, wow,
+ this whole thing could crash or be weaponized against us.
+ And because it's moved so fast and so almost autonomously, we might not see it coming.
+ We better be prepared to run bare minimum what we need to defend our critical infrastructure
+ and to defend our country and to keep these wars going that we've started.
+ It does feel to me like a very familiar attempt by the federal government to make people terrified
+ and to instill fear in people.
+ I mean, it was not even seven years ago that they did that with COVID.
+ Despite overwhelming evidence that you didn't need to panic about COVID, they told you to panic.
+ I'm still not sure why they did that, but clearly it was not an accident.
+ Do you see a similarity here?
+ Certainly. I think leading into the election, but then also trying to manufacture consent
+ behind supporting the government and whatever the government says, essentially,
+ that the administration has chosen to keep the war in Ukraine going.
+ It has chosen to start the war in Iran, to keep that war, to continue to escalate that war.
+ And so we do have a lot of vulnerabilities.
+ We have taken this very, very antagonistic stance on the world stage that we will force our will onto other countries.
+ Whether we like it or not, that's the message that we have sent.
+ So I do think there is an incentive for the government right now to tell the American people it's us against the world.
+ You need to listen to what we're saying.
+ We need to prioritize things like our $1.5 trillion Department of War budget,
+ unlimited unquestionable funding going to our intelligence community.
+ And we just need the American people to kind of get on board for this and trust the people.
+ The only people that will keep them safe is the U.S. government.
+ That's what they want us to believe.
+ Although we haven't seen very many actions that actually inspire confidence,
+ but they seem to get us into the new wars every chance they get.
+ And to increase the chance of potential terrorists, blowback terrorists and attacks happening here in America.
+ Or what we're seeing right now, potential cyber attacks against the United States.
+ But it definitely seems like an attempt to manufacture consent for fear.
+ There's also, I think, too, because there is the race for A.I. that you talked about right there in your monologue.
+ There's a debate right now that's raging.
+ Are we going to have closed A.I. that's heavily monitored and regulated by the U.S. government,
+ which basically would kind of be an open door, at least a pathway, if it's not done by the right people,
+ to some form of A.I. Patriot Act and the way A.I. is being integrated into all of our systems.
+ That's going to give the government even more access into our private lives, even more control into our private lives.
+ And the other side of that is, where do we have an open system where A.I. and the code is accessible and it can be monitored.
+ But at the same time, it is open to China or potential adversaries.
+ Obviously, the government weighed in heavily.
+ Our government, the U.S. government weighed in heavily.
+ And they want closed and heavily regulated A.I.
+ So I think if you can create an environment of fear, it's going to be much easier to sell.
+ We need closed A.I. and don't worry about all of the intrusive ways that we're going to spy on you with this closed A.I.
+ It's for your own safety.
+ I think the more scared that people are about the future and the more uncertainty they have,
+ the more they're going to say, OK, maybe these different precautions are actually for my safety.
+ It's not the erosion of our civil liberties.
+ That's how they sold up the Patriot Act after 9/11. So, again, you know, pattern recognition and noticing these patterns,
+ I think, is absolutely critical, regardless of how much the shame for it.
+ Yeah, I mean, I want I don't know that there's evidence that Chinese A.I.
+ is like more politically correct or left wing or more politically aware than American than say open A.I.
+ I think it's I mean, so far, at least in its in its search results, if you use A.I. as a search engine, it seems less political than open A.I., less authoritarian.
+ Yeah, I mean, I think any kind of argument to say that this needs to be more closely recreated by the government, again, we just have to look at our past and see how that's worked out for it so far.
+ It's hard, I think, to sell to people who've been paying attention to the way technology has been used and weaponized against us to take away our civil liberties, to say that we need more close regulation on this.
+ At the same time, I am concerned, I think, like most Americans, that a lot of this A.I. could be turned against us, which I think makes the case where we should have parallel systems that run all of our critical infrastructure that are analog.
+ And this would also eliminate a lot of the people who are going to lose their job because we're going to back up redundant systems, people who are trained to run the FAA when the cyber system goes down or take your pick.
+ So, you know, the way that this debate is breaking down right now, the government is telling us that these close systems will be more secure. They're making it seem like the open system is going to give some kind of technological advantage to China that will enable China then to surpass us in the A.I. race.
+ And then what happened, they really can't explain. It seems like actually the A.I. has beaten both us and China to the punch if we're just looking at the direction it's going.
+ And I hope to be wrong. I know I've spoken with some people who say, well, the face incident, it was in kind of a controlled environment, wasn't that bad.
+ But if we're already at something like the hugging face incident where the A.I. was basically inspiring with itself against the people who wrote the code in the first place.
+ If that's where we're at right now, we can only imagine how we're trying to take much longer for that A.I. to completely be working, if not against us, but at least without our own knowledge.
+ So, again, I think a lot of this just makes the case for us to be very skeptical of our government, for us to lean towards more transparency, but also having those parallel systems.
+ I think another case for parallel systems that aren't mashed up with the cyber infrastructure or with A.I., I think we're seeing that play out right now on the battlefield in our conflict against the Houthis, in our conflict against the Iranians.
+ Due to sanctions and because of the way that we've targeted their infrastructure, both the Houthis in Yemen and the Iranians, that basically they've had very limited access to a lot of these technologies.
+ They're able to touch it every now and again where your reports of the Houthis are using Claude, they can enhance their carding, et cetera. But it seems like if we took down the Internet in Yemen tomorrow, it basically just yet another day in Yemen.
+ The Houthis would still be battlefield effective because they refined a lot of these modern technologies like ballistic missiles and drones.
+ They've learned how to use them with bare minimum access to the Internet or maybe only occasional access to the Internet.
+ They can run completely without it. The same can basically be said for the Iranians.
+ The Iranians are very technically savvy. They're a smart, advanced civilization. However, they've been sanctioned. They've had limited access to the Internet.
+ And so they've built very cheap, redundant systems that they can use without constant conductivity.
+ And that has given both the Houthis and the Iranians a major advantage when they go up against the world's sole superpower with all the great latest A.I. at their fingertips.
+ So I think there's a lesson there for us to learn as we look at this problem going forward.
+ I sort of discounted the possibility this is Iran. But of course, I have no idea. And I called a lot of people today and I didn't talk to a single person who could say conclusively what this was.
+ And my sense is the U.S. government actually doesn't really know. Is that your sense?
+ That's my sense, too, because this is just this is a new frontier, the way that the A.I. is just kind of operating. So I agree.
+ I don't think we actually know. And if you look at a lot of the official language, especially that's coming from the director of national intelligence, I mean, he was using very specific language.
+ Yes. We don't know at this time. So he he definitely left the door open when we learn more information. Right.
+ So but it does seem at least plausible that if you kept up this low grade conflict with Iran and, you know, it reached a point where they felt it was worth it.
+ I mean, they is Iran capable of, I don't know, zeroing out bank balances at big American banks or grounding commercial airliners.
+ What are they capable of in cyber attacks?
+ Well, I think the way that a lot of the A.I. technology is moving, it's presented opportunities for actors who a couple of years ago, we would have said, oh, they really don't have that cyber capability.
+ They're able now to learn at a greater rate. Just like 10, 15 years ago, we would have looked at Iran's ability to hit our bases in Jordan and said, oh, they're ballistic missiles can't do that.
+ We would have looked at their ability to affect fire on all the different bases that we had in Kuwait and Iraq and Syria, et cetera. And we say, well, they really can't do that while drone technology allowed them to do just that.
+ And so I think the same thing is happening here with the A.I. So I wouldn't discount, you know, really any state at this point or an element of the IRGC developing a capability where they actually could specifically target, you know, our key infrastructure here.
+ I mean, throughout the course of the war, we've seen the Iranians escalate and retaliate in a very proportional manner.
+ And we have a lot of data on this. We've been watching the Iranians react to our aggression, our attacks now, the Israelis aggression, the Israelis attacks going back to the 12 day war in June of 2025.
+ And when the Iranians do respond, it's usually pretty proportional, although we have targeted civilian infrastructure.
+ We've killed the Supreme Leader. We've killed members of this family. We've tragically hit a girl's school. So if the Iranians had this capability at some point, they probably would deploy it.
+ Now, I think right now there would be an incentive system for them to say, yeah, we did some of that, see better, not mess with us.
+ You better adhere to the MOU that you signed. And so I think we would have seen them at least signal to maybe our Gulf partners or someone else if this was them.
+ So as of right now, it does seem to be unknown. But then again, we have literally gone all over the world and kicked over multiple horns.
+ So at this point in time, it's like, well, who's met in America? Well, we're running a proxy war against the Russians in Ukraine.
+ And now we've got this war in the Gulf against the Iranians. But also at the same time, we have all of our, you know, still kind of allies in the Gulf who we said that, you know, for decades, if you allow us to keep our military bases on your soil, we'll protect you.
+ And you guys settle your transactions in the petrodollar. It'll work out great for everybody. But then we started this war.
+ We couldn't defend our own bases. We couldn't defend the Gulf. And the Gulf got hit. And the Gulf has been harmed very, very badly.
+ So to think that some of those actors in the Gulf, you know, wouldn't do something or help sponsor something that prevents us from escalating the war.
+ I think that's on the table, too. And at the end of the day, the question is, I think the American people have to ask our government like, hey, was any of this worth it?
+ I mean, we got six dollar diesel out of the deal. We got Democrats elected to the House and Senate in a overwhelming majority.
+ So what did the American people actually gain from any of those cyber attacks and more panities? It's absolutely sad.
+ So Susie Wiles got fired. And I guess I don't I guess that's fine. You know, she's like friends with Laura Loomer.
+ I mean, it's probably not didn't do a great job or whatever, but that's not firing. Susie Wiles is not really a sea change in direction or hiring Miller is her replacement.
+ I mean, why is Marco Rubio still there? Why is John Ratcliffe still running CIA? Why are the people who got us into the war still in their positions?
+ I don't understand that. Do you? I don't understand it. No, that's a great question.
+ I mean, because the president saw the results at the beginning of the month in the midterms, he should be furious.
+ And it seems like he is a little bit taken back. There was a lot of pundits out there that were speculating that the president was going to resume the war to finish the job, whatever that means.
+ It's never explained to us. But he was going to do strikes right after the midterms.
+ But because that was just such a resounding, you know, not just defeat, but rejection of the mandate that he won not that long ago in twenty twenty four, I think he's taken pause.
+ And that's that's it's a good thing that he got rid of Susie Wiles. But Susie Wiles wasn't responsible for the intelligence that got us into this conflict.
+ His national security adviser and his director of the CIA were the ones that brought a bunch of unverified information from the Assad and from the Iranians directly to the president and said, hey, this is going to be quick and easy.
+ We'll follow the Israelis into this conflict. We're going to lead. We're going to kill the supreme leader.
+ And the whole thing is going to crumble. It's going to be just like Venezuela.
+ Well, you know, here we are eight months later and it lost him the House and the Senate. So he should be furious about that. And he should be firing everybody who advocated for the war.
+ And the problem that he has right now is pretty much everyone on his national security staff, especially Rubio, Radcliffe, to a lesser degree, Pete Hegstaff, Admiral Cooper, these guys all advocated for the war in some way, shape or form.
+ And so now they are deeply, deeply incentivized to make the war work.
+ They're not going to go in to the president and say, Mr. President, we really screwed this whole thing up. Let us help you extract ourselves from this.
+ They just can't do that. They have to double and triple down. And so what they're doing is they're selling the president basically the illusion of choice.
+ You've got some hardliners, I think, probably coming from the Department of War because they have the tools of war.
+ And they're saying, well, give us some more time to work the military options with hammer and ran and that'll make the whole thing probable.
+ It'll work out great for you. And the president knows, I think, that that's not really going to work because if it did, you know, he would have done it by now.
+ We've already tried that. So he's skeptical. He's not going forward with more strikes.
+ But then, you know, he has thankfully he has people like the vice president in his ear who are saying, let me try to negotiate with the Iranians.
+ And that's noble. And I'm glad the vice president is doing that. However, we killed a lot of the moderates.
+ We killed the supreme leader and the Iranians feel like they actually have the upper hand.
+ I don't think the Iranians are going to be capable of giving the VP or whoever the president sends over there a deal that's going to be done fast enough to satisfy how quickly President Trump wants it to move.
+ So the diplomacy, that's a bit shaking cue. And then you have another camp that I think and this is the most deceptive camp.
+ They know the president's skeptical of strikes. They know he's skeptical of the negotiation. So they've said to him, hey, let's just keep that as well.
+ We'll keep the blockade on. We'll strangle the Iranians with sanctions. And that way you don't have to walk away.
+ You don't have to escalate. And eventually the Iranians will buckle, you know, for more sanctions because, you know, sanctions have been so close to breaking them for the last forty seven years.
+ It's absolutely Sandy. However, what CENTCOM has continued to do is do nightly exchanges of fire with the Iranians.
+ And this is basically what we call in CENTCOM policy by Conop. This is where a leader, you know, says, I don't want to escalate the conflict, but they still let you stay in the war zone.
+ We saw this throughout the war on terror. This is actually what led to my late wife being killed when Trump tried to get our troops out of Syria on the first time.
+ So we see CENTCOM aggressively running the blockade, running air missions and running up against the Iranians on a nightly basis.
+ They'll, you know, paint our aircraft with the air defense mechanisms and systems and then we'll shoot them, shoot back.
+ And then the Iranians will shoot back in our bases like they did last night in Bahrain and in Kuwait.
+ And eventually one of these exchanges was going to lead us going back into, you know, full bone war.
+ Hopefully we don't lose anybody, but those escalating those tip or catch strikes will lead to a major escalation.
+ And then the president will be sucked right back into the war that he was trying to avoid in the first place.
+ So this is exactly why the president needs to make bold changes right now and just get rid of the people that got him into this mission and got him into this failed war and bring in a new team that actually
+ has the charter to responsibly get us out of this war.
+ So the president can actually focus for the next two years while he can still preserve his legacy.
+ So he can focus on putting the American people first, working on affordability and doing the things that actually matter to all the voters who rejected him a couple of Tuesdays beyond midterms.
+ So, I mean, his national security team was effectively selected by the Israelis through his donors, who Mary Madelson, right?
+ So this is not a personal attack, it's just a fact.
+ We both watched it firsthand.
+ All of this disaster, which is to say like the destruction of the Republican Party, the destruction of the Trump administration, the destruction of our economy, our ability to project power, all of that is downstream from the administration's decision to follow Israel into this war and not get out of it in May.
+ When Israel demanded we stay in. So why would you?
+ I just don't understand when we know exactly how this happened, exactly who did it, why you would continue to take orders from those same people.
+ It doesn't make any sense.
+ It makes no sense.
+ And I think this is the question of our era.
+ I hope at some point we get an answer to it.
+ But why, despite all the actual real world feedback the president has gotten on our disasters this war is, how unpopular is with the American people?
+ Why is he taking us in the war?
+ The Israelis sold him a false bill of goods.
+ He knew from the very beginning back in early 2025, the Israelis won him the beginning of this war.
+ They forced his hand when Steve Whitcopper was about to get a deal in June of 2025 by doing the world war.
+ He tried to get us out of it by doing midnight hammer.
+ He did destroy their nuclear facility.
+ President Trump achieved the objective that he continues to talk about in his day.
+ He destroyed Iran's nuclear facilities in June of 2025 of operation and then hammered, but he got sucked back into the war.
+ A bunch of people, you know, gave him bad information like we talked about.
+ But at the end of the day, he did follow the Israelis into this war.
+ And yet for some reason, we still can't kick the Israelis out of the Oval Office.
+ We still can't pull some of the air defense features we're giving the Israelis to prevent them from going out on the offense.
+ And forcing our hand, despite the fact the Israelis spoiled several cease fires while the president was actually trying to get us to an MOU.
+ We continue to allow the Israelis to influence our decision making.
+ Now, why that is, I don't know.
+ I mean, the president doesn't have to run for reelection, so he doesn't need Miriam Edelson's money.
+ He doesn't need APAC's money.
+ We got rid of Susie Wiles, who at one point in time worked for Benjamin Netanyahu.
+ So it's not clear why the president is not getting rid of his national security people, obviously, as you said.
+ And most people should know, was picked by the Israelis by APAC with APAC on tape bragging that they got the CIA director and the national security adviser, you know, their jobs.
+ So why the president is keeping them in position and giving them the ability to let us be sucked back into this war that he wants out of, I simply don't know.
+ I mean, President Trump tomorrow should wake up and be absolutely furious about everyone who got him into this mess, fire them and make changes immediately.
+ Yeah.
+ I hope he will.
+ Not that confident he will, but I hope he will.
+ Joe Kent, thank you very much for doing this and for your wisdom.
+ Absolutely.
+ Thanks so much, Father.
+ Thanks for joining us.
+ We'll be back next Wednesday, 6pm Eastern.

@@ -1,0 +1,1572 @@
+ They essentially argue that in order to beat China in AI, we must become China in AI.
+ So all the stuff that people say is bad about China, these guys were like, well, we have
+ to do it.
+ And we have to do it at an even bigger scale and faster than China is doing it.
+ One of the main reasons why we wrote this piece is you have to understand the people
+ behind the data center build out are also some of the people involved in the Iraq war,
+ Afghanistan, in 9/11.
+ The debt bubble pops, so to speak.
+ And then, you know, companies collapse, but the infrastructure is still there and people
+ pick it up for pennies on the dollar.
+ And Ron, when it left the S&P 500 after the bankruptcy, what was the company that replaced
+ it?
+ Nvidia.
+ Likely, again, it's going to be the taxpayers footing the bill when the bubble pops.
+ If you believe the musings of Kissinger and Schmidt together, soon AI will be in charge
+ of governments, eventually leading to some sort of global governance system.
+ Let's do it.
+ Whitney, Marc, welcome to the show.
+ Whitney, this is the first time you've been on with me.
+ Great to see you.
+ Yeah, likewise.
+ Thanks for having me.
+ Of course.
+ Is it really?
+ Have we really not done it?
+ Wow.
+ Shit.
+ Not, I don't know.
+ My memory is not the best lately.
+ I did one with you, Marc, like not long after taking over the show, but I think this might
+ even be the first time we've met, Whitney.
+ But I've got so much to ask you.
+ You guys just dropped an absolute monster article, another monster article.
+ These things are like short books, essentially.
+ But in this one, you tied 9/11 and Enron to sort of the AI and data center build out now
+ and what's happening in Bitcoin, and especially with stablecoins together.
+ And Whitney, I want you to start off quite high level.
+ And can you explain to me, like, what's the playbook here?
+ What should people see?
+ Well, I guess essentially what the article is trying to show people in a super like bird's
+ eye sense.
+ But obviously, you know, the devil's in the details, right?
+ So you kind of have to include those as well.
+ And that's why our pieces are super long.
+ But basically, it's this dynamic whereby, you know, these large companies use a lot
+ of debt to blow out basically, or like build out a significant infrastructure.
+ And then, you know, the debt bubble pops, so to speak.
+ And then, you know, companies collapse, but the infrastructure is still there and people
+ pick it up for pennies on the dollar, essentially.
+ So our last article was talking about aspects of that with in relation to AI, talking about
+ Stargate Argentina and sort of the Stargate data center build out.
+ And the guy that's sort of behind that, or one of them talked, you know, essentially
+ said, this has been going on since the Industrial Revolution, you know, and in recent history,
+ you know, there's been a significant number of them.
+ So yeah, so the Cargaman, the guy that we're talking about, he had this quote, basically
+ saying, you know, the end user of these data centers, it's not really not about the model,
+ it's not about the company.
+ It's really a lot more about who owns the literal center, you know, of the hardware,
+ and then who's powering it and who owns the data.
+ And the idea of using debt to blow out infrastructure build out, it's not, you know, like it's creative
+ destruction.
+ It's controlled demolition.
+ It's sort of this idea that, you know, this infrastructure really doesn't make sense economically
+ to be built out as like demand is at the moment.
+ But if we want to quote unquote win or capture this industry, we have to use sort of, you
+ know, creative clever methods to finance this thing that really doesn't have the customer
+ base for it yet, but certainly will in the future.
+ And so how do we get there?
+ And so these bubbles have been done, you know, multiple times in the past.
+ And so when we wrote this latest piece, Creative Destruction, 9/11 Enron and American Bitcoin,
+ we were looking at the overlap of the first or rather the most recent time that this was
+ done in the late 90s and the 2000s, which was the fiber optic build out.
+ And so the fiber optic economics didn't really make any sense at the time that Enron and
+ WorldCom were building up all of this infrastructure.
+ But of course, that future demand was to be there when the killer apps of streaming Internet
+ and every fucking thing that we see now with modern Internet.
+ But it wasn't really there at the time.
+ But the U.S. understood U.S. interests, U.S. military, private public partnerships, which
+ will kind of totally get into how these all triangulate literally at the World Trade Center
+ with Kantor and these war games.
+ But they understood the future of war is this interconnectivity.
+ And the way the U.S. wins and keeps its hedge fund after, you know, World War II, basically,
+ and after the petrodollar establishment in the 70s, it's going to win through the Internet.
+ And so that was the first time they used these huge, I mean, WorldCom and Enron are two of
+ the biggest accounting fraud explosions in history.
+ And they were like crucial, crucial partners in this push by Western interests to build
+ out the Internet domestically and as this piece sort of posits, not just domestically,
+ but internationally, this interconnectivity was the front of modern warfare.
+ So how do you win?
+ You do a bunch of financial debt, debt games, you blow out these shell companies, stock
+ prices go to zero, people come in and sweep it up for pennies on the dollar.
+ So that was basically the idea of this piece.
+ And when we started to look at it, there actually turns out there's a lot of overlap between
+ the Enron 9/11 creative destruction, the broadband Internet build out, and then now the modern
+ data center build out, which really started in earnest with the Bitcoin mining infrastructure
+ build out and how related the energy pricing and Bitcoin mining are.
+ OK, so this is where you think this is playing out right now.
+ But in the piece, you start with 9/11 and you talk about the creative destruction that
+ happened there.
+ And the sort of the physical impact of that is very obvious.
+ But when you look at the sort of societal and the economic impacts of that event, like
+ what are the things that people need to be, need to see?
+ Well, I mean, I can take that, I guess.
+ The main things I think are, you know, a regulatory environment, you know, being set by the lobbyists,
+ the private companies that were set to take advantage of this new technology, really using
+ the government as an enabling environment, to use a phrase from Ian Davis, who also writes
+ for UH.
+ And so it was these big sweeping changes that came because of this catalyzing event because
+ of 9/11.
+ You get things like the Patriot Act, which was a sweeping surveillance act that is now
+ being used today to basically, you know, entrench U.S. law enforcement and intelligence operations
+ within the blockchain space, right?
+ We're seeing the Patriot Act be applied to the Bank Secrecy Act and money transmitter
+ issues and jailing open source devs for creating privacy tools.
+ And a lot of these things come down from some of the regulation we saw, you know, post 9/11.
+ And then, of course, there's the energy deregulation and the auditing deregulation and a lot of
+ the things that Enron was basically lobbying for during the Bush administration and the
+ Clinton administration, how tied in Enron was with, you know, Cheney's energy task force,
+ which I'm sure Whitney could talk a little bit about.
+ But you know, they were getting set up for, you know, what was to come.
+ And so they needed this catalyzing event, this new Pearl Harbor to sweep in these changes,
+ which are really all over the place.
+ It was private sector, public sector.
+ It was the Fed changing, you know, some of their, like them kind of demanding better
+ comms from their brokers like Cantor, Fitzgerald, better communication, better settlement, moving
+ every faster settlement, yeah, moving everything to online versus kind of paper trading or
+ these slow, you know, basically fax machines, Swift era things to now we have basically
+ the modern build out of, you know, the, you know, T instant settlement with, you know,
+ stable coins, tokenized deposits, the FedNow system, these sort of digitized repo markets
+ and everything we're seeing now.
+ So much of that came from the direct emergency Fed measures, SEC rulings, and just straight
+ up legislation that came out of the Bush administration right after these events.
+ So anything you want to say on the like task force stuff or energy stuff or how it relates
+ to just how, you know, Enron was just using the government basically to push all of this?
+ Yeah, I mean, so there was obviously a weird relationship between like Enron's kin lay
+ in the Bush administration.
+ Kin lay had been longtime friends with George Bush senior, a lot of ties, you know, to sort
+ of the private intelligence network that Bush was enmeshed in, you know, from before he
+ was CIA director through vice president and so on and so forth.
+ And so by the time, you know, George W. Bush was in office, obviously he was very close
+ to George W. Bush as well, both, you know, personally through his father, but also had
+ been, you know, I think his biggest political donor even before he was president when he
+ was governor of Texas and helped make that political trajectory, at least on paper, a
+ reality and was also very close to Cheney, who after being head of the Pentagon under,
+ I guess, Bush senior and for the first Gulf War, went back into the private sector as
+ head of Halliburton, where he worked closely with Enron and then coming back in under George
+ W. Bush.
+ One of the first things that the Bush administration did was basically set up this lobby group
+ or this task force that Cheney was explicitly put in charge of, which was to determine what
+ a lot of these guys ended up referring to as the deregulation era of energy.
+ But obviously in American political history, there had been other deregulation eras as
+ well.
+ But obviously this was a really important one.
+ And so there were several cases of Ken Lay specifically, you know, before Cheney would,
+ you know, issue something about energy policy.
+ There was, you know, there's like one very clear example of Ken Lay calling Cheney the
+ day before, essentially telling him what to say about the energy crisis that was ongoing
+ in that time in California.
+ And then Cheney repeats it verbatim to the press.
+ So there were accusations of the time that Lay was basically telling Cheney what to do.
+ But you don't necessarily tell, like Cheney's not a guy you order around.
+ What I would say is it's really about this particular close-knit group of people that
+ had, you know, controlled a lot of U.S. energy companies because the Bushes themselves deeply
+ enmeshed in Texas oil.
+ For example, in the Texas energy industries at large, you know, they're working together
+ essentially.
+ So and, you know, as we point out in the article, there's a lot of indications that Enron had
+ close ties to very, you know, shady networks like the ones I talk about in my book specifically.
+ Responsible for Iran-Contra and other things had a lot of ties to, you know, Enron getting
+ started in the mid 1980s, specifically financing through Michael Milken and the Drexel Burnham
+ Lambert, you know, pipeline, which was, you know, basically a way to emit metric tons
+ of funny money and then put it in the hands of certain people who then take over corporations,
+ the corporate raiders, right?
+ And then a lot of these other companies that otherwise wouldn't have been able to exist,
+ you know, but they all sort of trace back to the same crowd at the end of the day.
+ So essentially, you know, this energy task force was using those people to shape the
+ new era of energy, you know, what ended up being the post 9/11 era, but it obviously
+ just, you know, started a few months before.
+ But basically what it did is led to what now is sort of this effort renewed under Trump,
+ but it couldn't have happened without this task force to recommission, decommission nuclear
+ reactors or restart, you know, other aspects of the nuclear power chain that had been shut
+ down because a lot of this was built in the 1970s and was supposed to only function for
+ like 40 years plus.
+ And so, you know, there were efforts to extend it under Bush and then get a lot of these
+ reactors including really controversial ones that almost like imploded like Three Mile
+ Island, you know, restarted and stuff, but not necessarily like rebuilt, just more like,
+ yeah, we're going to find a way to allow them to continue to function even if it puts people's
+ safety at risk, essentially.
+ An important thing about this like idea that Enron was working to push American interests,
+ it's not, this isn't just like some tinfoil hat, like, oh, like Ken Lay's doing this stuff
+ that the government likes.
+ That's nice.
+ No, like Ken Lay, he was a Navy guy, he came up, he worked in the Pentagon for a while.
+ He was good buddies with this guy, or with plenty of guys in the Pentagon that will come
+ up in this nexus.
+ So I'll leave that tangent aside.
+ But very, very, very importantly, in the early 70s, you know, a bunch of stuff happened incredibly
+ important to American interests.
+ For one in 71, we go off the gold standard, Nixon takes us off and we go into this new
+ era, this new economic era for the dollar.
+ And obviously, you know, very quickly, we have the story of the petro dollar, we don't
+ have to go too much into it, because I know I've talked about it on here before, and I'm
+ sure your audience is pretty familiar.
+ But in 73 and 74, Kissinger on behalf of the State Department, goes over to Saudi Arabia
+ and the OPEC nations, does a little handshake agreement, says you're going to sell oil and
+ dollars, we're going to increase demand for dollars by making any industrial nation wanting
+ to buy oil, they have to buy dollars first, and then they buy the oil, which worked sort
+ of nicely, right?
+ I mean, it was a it's a it's a good setup, not as not as nice as a, you know, a peg to
+ a gold ounce.
+ But you know, there are obviously limitations of growth and limitations of fraud, when you
+ have it tied to this hard money standard.
+ So they're like, let's go to oil.
+ But a really important thing happened in which that if you want to increase more demand for
+ dollars, and you're tying the price of oil to, like your demand mechanism for dollars,
+ you need to increase the price of oil in order to increase the demand for dollars.
+ So what we saw at the end of 73, and in the last quarter, you know, oil was below $4 a
+ barrel.
+ And then by Q174, it was over 10, which is and by the end of the decade, it was over
+ 40.
+ And this was done on purpose, this was done by design to increase that demand for dollars,
+ but also to basically re onshore energy independence into the United States.
+ By making oil that is in our sand, the shale, making it economically viable to pull it out
+ of the ground because the dollar costs of the oil is now like economically feasible
+ to take out of the ground.
+ This was a this was a plan this was this was done very openly stated by the US government.
+ And Nixon, when he was writing these early papers and early speeches, early executive
+ orders talking about how the US has to deal with this energy dependency issue.
+ Ken Lay was his advisor and was helping him write these policy papers and these speeches
+ describing basically what needed to be done.
+ And specifically, Nixon put out this executive order that was all about basically achieving
+ these goals and the way that they were going to do it was through meddling in the Middle
+ East and basically manipulating oil markets up while also offering military service to
+ the OPEC nations in exchange for the mechanism known as petrodollar recycling.
+ You take these dollars that are coming in from foreign nations, you bring them back
+ into the United States via equities, via treasuries, and these dollars come back in and continue
+ to pump up US assets.
+ But then also, we have to deal with this atomic age, we have to deal with the nuclear energy,
+ you know, the dwindling nuclear energy set up in the United States, and basically pushing
+ us towards this new frontier of both the dollar system but also energy, you know, production
+ in the US.
+ And by doing the things that they very successfully did that, you know, this took decades to complete,
+ by 2018, the US was the largest oil exporter and completely energy independent, the shale
+ play worked, and now we're moving even further into the nuclear age, you know, as really
+ driven by, you know, the demand for high capacity energy by the data center build out, which
+ is as we have just seen over the last couple days, the AI play is basically the US economy
+ now.
+ And you know, what's a more centralized choke point than chip manufacturing and energy and
+ nuclear energy?
+ I mean, there really isn't a more centralized industry in the entire world than those two.
+ And the US knew if hey, we're going to do this petrodollar thing, it's going to work
+ for 40-50 years, not bad, pretty good, but we're going to enrich the OPEC nations like
+ crazy and they're going to begin to sort of stand up and be like, hey, we don't really
+ necessarily need to do this, we could settle in the euro, we could do a couple of these
+ things.
+ The US obviously said no when Saddam tried to do that.
+ But there was that understanding back in the 70s, like at the establishment of the petrodollar,
+ there was an understanding that this would basically be an iron lung like situation and
+ the US would have to break off of that even though they're establishing it with good reason.
+ And so Ken Lay was right there sitting in the situation room with these guys while all
+ this was happening.
+ And it's not really a surprise that his company, financed by milk and junk bonds, came out
+ to basically establish online energy markets, fiber optic cables all across the grounds,
+ these new interesting accounting mark to market schemes, bringing LNG into the mix, into the
+ energy mix in the US, which was a huge part of our early stage energy independence.
+ And then obviously, a couple wars later, by 2018, before COVID, you know, the US was basically
+ promptly energy independent.
+ Bitcoin is a hard asset.
+ It took discipline to build your position and the platform you use for Bitcoin-backed
+ loans should have the same discipline.
+ That's Ledin, the lead sponsor of what Bitcoin did.
+ When the next opportunity comes along, a Ledin loan puts liquidity in your hands without
+ selling what you spent years building.
+ Loans are funded in hours, not days.
+ There's no monthly payments, there's no penalty for repaying early, and all the rates are
+ published upfront.
+ The larger the loan, the lower the rate.
+ Eight years of protecting client assets with a perfect track record and over $11 billion
+ in loans have taught Ledin what really matters.
+ Your Bitcoin stays custodied.
+ It's never let out to generate interest and Ledin doesn't ask you to take its word for
+ it.
+ Every month, Ledin publishes its open book report with all metrics independently reported.
+ It's proof over promises.
+ Hard assets, higher standards.
+ Check your rate at ledin.io/wbd, which is ledn.io/wbd.
+ Bitcoin-backed loans involve risk, do your own research before taking out a loan.
+ APR eligibility and terms apply and may vary by jurisdiction.
+ In the world of Bitcoin, security isn't just a feature, it's the entire foundation.
+ And that's where my new sponsor, BitGo, come in.
+ For over a decade, BitGo has been the backbone of the entire industry, securing billions
+ of dollars of Bitcoin for major funds, exchanges, and institutions.
+ Following their 2026 public listing on the New York Stock Exchange under the ticker BTGO,
+ BitGo are now bringing that exact same enterprise infrastructure to individual Bitcoiners.
+ Self-custody is still the gold standard, but as your stack grows, it's worth thinking about
+ whether diversifying your custody can make sense.
+ BitGo pioneered commercial multisig, and their cold storage combines distributed keys, offline
+ key generation, and geographically separated vaults.
+ Head to bitgo.com/danny to get started with institutional-grade custody today.
+ All Bitcoin secured like an institution.
+ That's BitGo.
+ If you're a taxpayer in the US, you need to talk to your CPA about Bitcoin mining before
+ the tax year ends.
+ Mining equipment may qualify for 100% bonus depreciation.
+ That could mean deducting the full eligible cost in year one, and that's before any of
+ the Bitcoin they mine.
+ With abundant mines, you own the miners and keep every single sat they earn.
+ Their team handles the setup, hosting, maintenance and repairs, all for a flat fee, and you keep
+ 100% of the Bitcoin you mine.
+ And here's what really sets them apart.
+ If one of your machines goes down, their hashrate redirect covers you with hashrate from their
+ own fleet to keep your Bitcoin production going.
+ To count this year, the equipment generally needs to be placed in service, meaning plugged
+ in and running by December 31st, so you need to move quickly.
+ To find out more and get a free consultation, head over to abundantmines.com/wbd.
+ And what Bitcoin did listeners will get a free month of hosting with your miner purchase.
+ Check them out at abundantmines.com/wbd.
+ See, we've seen some of the big players in the Bitcoin mining space, I've actually listened
+ to a bunch of your pods with a bunch of mining folks saying this, you know, no, they're pivoting
+ very hard into AI.
+ And it's going to get more and more so that and you know, Bitfury, which is a company
+ we look at into this piece with their relation to American Bitcoin, you know, literally came
+ out and had a presser where they were like, we're encouraging Bitcoin miners to stop mining
+ Bitcoin and move to AI.
+ And there's an argument to be made that not only can it work as a debt sink, which obviously
+ we've argued quite a bit, but it could also have been a completely, you know, well orchestrated
+ decades long design to have basically kick started the data center industry finance the
+ data center industry put up all of this energy connected to, you know, air cooled, water
+ cooled data servers, and you just switch basically swap out the ASICs, the depreciating ASICs
+ that every miner has now learned.
+ Now they have their GPUs.
+ Now they're starting to do ASIC AI chips.
+ And you know, we'll see how far that pivot goes.
+ Is it a total pivot and all the mining basically gets shut down and it's all AI?
+ Probably not.
+ It's a pretty good financing mechanism when there's low demand.
+ But we haven't seen any low demand.
+ We're not going to see low demand for a while.
+ So this pivot to the AI data center play, you know, makes a lot of sense.
+ And you know, one of the companies that was the impetus for the piece, which is HUD-8,
+ you know, we looked at them in particular.
+ And it seemed like, even though they've made the pivot, you know, more recently in mass
+ with a lot of these other miners, you know, they sort of at least one of their co-founders
+ basically implied that Bitcoin mining was always secondary to them, you know, even though
+ they had always publicly been promoted as a Bitcoin mining firm.
+ And you know, one of the companies that they built, admittedly built them, you know, their
+ whole strategy around is a key focus of our piece, Mayo Shattuck, who's a kind of a career
+ CI-linked banker and then becomes an energy executive at Constellation and then Exelon.
+ And also, of course, one of the, if not the main suspect in the 9/11 insider trading case,
+ that is largely memory hold, but basically he, once he resigned shortly, you know, left,
+ you know, the bank he was at, Alex Brown, not that long after, you know, these questionable
+ trades had been made under his watch, he goes and becomes, you know, the head of Constellation
+ and something that we noted had been arranged slightly before the 9/11 attacks.
+ And basically there starts building out this, the modern, what is now the modern nuclear
+ power industry, not just at Constellation, which I guess now is the biggest nuclear,
+ you know, power company in the US, but also in basically making this industry lobby group
+ for other energy companies that wanted to get, you know, get in on recommissioning decommissioned
+ nuclear reactors and that kind of stuff.
+ But you know, essentially in moving from there and then to HUD-8 or I guess back when it
+ was US, you know, Bitcoin Corp, he was part of, you can see in looking at him, like he
+ knows stuff that happens before it's going to happen, obviously with 9/11 insider trading,
+ you know, the most jarring example, but it's a recurrent, you know, thing with him and
+ his history and also his mentor who at the time of the 9/11 attacks was the CIA's executive
+ director, but had mentored him at Alex Brown for a long time, Alvin Kromgard.
+ Buzzy Kromgard.
+ Well, yeah, they call him Buzzy for reasons that I'd rather not know.
+ It's not a good story and learning about that guy.
+ Yeah, but basically, you know, HUD-8 built their strategy around people like Mayo Shattuck
+ who had basically been...
+ Energy executives.
+ You know, yeah, that was their main goal was to basically service whatever the energy executives
+ were moving on to, you know, and now I guess it's very clear why, you know, back in the
+ early 2000s, these guys were working so hard to restart nuclear power because it's been
+ described as, you know, the only way the AI data center build out will be able to be powered
+ within the U.S. domestically, which again, has the lion's share of data centers globally,
+ right?
+ So it's an essential part of the strategy.
+ Yeah.
+ So it seems like HUD-8 had planned this pivot long before they admitted to it.
+ So are there other companies in that same boat?
+ I mean, probably.
+ So one of the questions that I always have with this is like, you know, you talk about
+ the planners of these crises and how they then capitalize from them.
+ How do you make the sort of differentiation between someone who just capitalized on something
+ that happens and someone who actually orchestrates what happens?
+ Well, I think in the case of like Mayo Shattuck, for example, or like 9/11 insider trading,
+ they're not necessarily orchestrating it, but they know, they hear through the grapevine,
+ quote unquote, that something's going to go down.
+ And so how can I make money off of this privileged knowledge I have, right?
+ Or this intelligence that I've received?
+ You know, and so in the case of Mayo Shattuck, you know, his longtime mentor, you know, Crown
+ Guard had only had recently been, you know, promoted to be the CIA's executive director.
+ And you know, Shattuck had worked under him, I think, since like, when did he join Alex
+ Brown's the early 80s, you know, and had been basically his shadow at the time that that
+ Crown Guard at why he was running Alex Brown was on the CIA payroll and a major CIA asset
+ and then leaves to join a new role specifically created for him by CIA director George Tenet,
+ in which he does things like create and Q-Tel, for example, but then, you know, becomes executive
+ director in early 2001.
+ And so because, you know, Mayo Shattuck's bank, because he was then running what had
+ then become Alex Brown had been recently acquired by Deutsche Bank at the time, but all these
+ puts on, you know, American Airlines and stuff, and other commodities, you know, were presciently
+ placed, you know, right before the attacks netting, you know, creating, you know, millions
+ in profits, but none of them were claimed, because whoever made those trades didn't think
+ that the markets would be closed for four or five days after the attacks, which gave
+ people time, you know, in government, for example, to notice, you know, anomalies.
+ Yeah.
+ Statistical anomalies.
+ I mean, a lot of the insider trading research is specifically done like this is so many
+ deviations away from just a coincidence of a normal trade.
+ And so like, that shows there, right, that like these people--
+ Are we talking about these people putting like puts on American Airlines like a day
+ before 9/11 happened?
+ Is it that?
+ Yeah.
+ Totally.
+ Yeah.
+ This is what Mayo Shattuck most likely did.
+ And I think there's a couple, there's two important threads to pick out here.
+ One, which we should get into later is what the hell was Alex and Brown & Sons and why
+ are they crucially important to this build out?
+ And what are the parallels to the modern AI data center build out as the underwriters
+ of all the IPOs for every tech company that matters?
+ So we'll talk about that.
+ But the what actually happened surrounding the immediate like weeks of 9/11, Mayo Shattuck
+ working with this, his bro, who's, you know, totally admittedly a CIA asset at his time
+ at Alex Brown's then, you know, joins the CIA and helps create In-Q-Tel, which we've
+ obviously talked about a lot as sort of the mechanism for intelligence to or the CIA specifically
+ to invest in private companies to commercialize technology that was developed with funding
+ by the CIA and by DARPA to create forward-facing products that would have been from the public
+ sector but now are from the private sector.
+ And this is a trend that's very important because when Shattuck, you know, in the time
+ between he placed the trades and resigned the day after 9/11 on September 12th, he had
+ a secret closed-door meeting.
+ He was already on the board of Constellation of this big energy company and he had a closed-door
+ meeting on the 4th of September with a guy named Christian Poindexter, who was the CEO
+ and chairman of the board of Constellation.
+ And basically in this meeting, Poindexter told him, I'm going to be stepping down.
+ I want you to come over and take over Constellation.
+ It's going to be an important company.
+ It later becomes the most important nuclear company in the United States.
+ They have this private meeting, they make this thing, Shattuck says he was very surprised
+ by all of it, but okay.
+ And after that meeting, on the 4th, he places these shorts on the companies directly implicated
+ and destroyed, you know, stock-wise by the events of 9/11.
+ He resigns the day after 9/11 and goes and takes over for Poindexter at Constellation.
+ Well, who the hell was Christian Poindexter?
+ Well, he's the brother of John Poindexter, who is the main--
+ Oh, you want me to take it?
+ Yeah, you take it.
+ Take it away.
+ So John Poindexter was the top official in the Reagan administration who was indicted
+ for his role in Iran-Contra.
+ He was like National Security Advisor under Reagan and had been in the private sector,
+ but intimately close with this nexus that, you know, was back with George W. Bush, right?
+ Because a lot of the "neocons" had gotten their start in the Reagan and then Bush senior
+ administrations.
+ And you know, in the same period of time, more or less, you know, not that long after,
+ he becomes-- well, he's considered also the godfather of modern surveillance.
+ Because right after 9/11, Dick Cheney personally helped him create a new office in the Pentagon's
+ DARPA called the Information Awareness Office that basically created our modern surveillance
+ state.
+ And when it was a public-private partnership housed within DARPA, there was a lot of public
+ outcry and public scrutiny of these programs.
+ And so via In-Q-Tel, which Kronegaard had made with Tenet's blessing, you know, those
+ programs were privatized as and became what are now major companies that form the core
+ of the modern surveillance state, the Palantir being the biggest example coming directly
+ out of that and Peter Thiel and Alex Karp going directly to Poindexter after his programs
+ were shut down to be like, "We want to make something just like what you tried to make,
+ at this time, private only."
+ You know?
+ I mean, and that's a matter of record, right?
+ So--
+ Yeah.
+ And also where this is where the terrorist futures market was.
+ This is where the early prediction markets were coming out that, you know, like, "Hey,
+ if only we had, you know, not insider trading on airline stocks, but if only we had a prediction
+ market for terrorist attacks, we would have known that the terrorist attack was going
+ to--"
+ Or just profited Wiley.
+ Right.
+ I mean, that was literally the talking points of this thing, and it became incredibly controversial.
+ So they started breaking up all the pieces of the Information Awareness Office, ended
+ up becoming TIA, the Terrorist Information Awareness--
+ Total Information Awareness.
+ Total Information Awareness.
+ But they changed the name to Terrorist Information Awareness because people were like, "Why are
+ you spying on innocent people?"
+ And they were like, "Oh, well--"
+ No, just terrorists.
+ "--it's just the terrorists."
+ Right.
+ But it was actually meant to be a predictive system, like a pre-crime system.
+ Right.
+ Which is essentially what a lot of the AI, you know, predictive analytics in terms of,
+ you know, of interests that are of interest to the national security state are leading
+ that same way.
+ And Palantir itself is, you know, since 2015, been pioneering predictive policing.
+ Right.
+ But anyway, we got kind of far from your original question, Danny.
+ But just to close that loop, so when Mayo Shattuck puts in these trades a week before
+ 9/11, he has this closed-door meeting with this Poindexter, like this uber spook godfather
+ of modern surveillance, which would not have been able to happen without the events of
+ 9/11 and the Patriot Act and all of the fear that was generated from that event.
+ You know, he's hanging out with his brother in a closed-door meeting.
+ And then all of a sudden, he randomly has the insider knowledge to know that there's
+ going to be not only an event with airlines, but specifically this one.
+ And then he resigns the day after before--
+ Or the knowledge may have come from Kronegaard, who is CIA executive director.
+ We don't really know, but it seems like obviously he was tipped off.
+ But anyway--
+ Yeah, he's in this nexus of these guys that then took advantage of, like, let's say it
+ very liberally.
+ And an important thing to talk about when talking about 9/11, like, we have no idea
+ what happened.
+ We don't want to gatekeep what happened.
+ We don't really talk about the event itself, really, in this piece.
+ Like we talk about the immediate reactions to it, but no one has any idea.
+ But what we do know is that there was a lot of setup before, and then there was a lot
+ of reaction after.
+ And when you look at the people that took advantage of this reaction after, it's the
+ surveillance state, I would say, that got their most-- got their rocks off the harvest
+ here.
+ Well, among other things.
+ So, for example, DHS, which was created after 9/11, they were trying to make that in early
+ 2001.
+ It was called, like, the National-- it was like NHSA or something instead of DHS.
+ But it was the same agency, essentially, and it had stalled in Congress.
+ But after 9/11, obviously, didn't install-- I mean, there's like infinite-- not infinite,
+ but like a very, very significant number of examples of things that had sort of been stalled
+ in terms of policy before 9/11 that were able to be pushed through really quickly.
+ And then, of course, you have the fact that even when things like the Patriot Act installed
+ in Congress, the exact, you know, congressmen or senators that were holding it up got anthrax
+ letters in the mail.
+ I don't know if anyone remembers that, but the anthrax attacks, yeah, were also essentially
+ war gamed out before they happened in this exercise called Dark Winter, which was run
+ by the CIA-linked think tank called ANSR in their Institute of Homeland Security.
+ And a lot of those people had said a new Pearl Harbor is coming not long before these-- the
+ Neocons and the Bush administration had a think tank that right before he came in essentially
+ said the same thing.
+ And a lot of the same, you know, ideas and things were going around with a lot of the
+ same policies that ended up becoming law, you know, right after 9/11.
+ So there was definitely a benefit there for these actors in terms of getting, you know,
+ their desired policies put in place, but also in the case of people like Mayo Shattuck and
+ others, obviously, I don't think he was the lone 9/11.
+ Insider traitor, but he's, you know, definitely one of the top suspects in the-- in that largely
+ memory hold, you know, scandal, you know, people take advantage of this stuff.
+ So in terms of like your question earlier, which again, sorry, we got really far away
+ from in terms of, you know, who's orchestrating it.
+ So again, we don't really know who orchestrates a lot of these things.
+ We can't be like these are the exact people responsible, especially for an event as big
+ as 9/11.
+ But there are obviously people who, you know, intelligence is a big commodity, obviously,
+ in both the public and private sector, and people capitalize off of that.
+ And I think, you know, in the current presidential administration in the US, there's a lot of
+ examples of people in government, you know, basically front running trades with things
+ they know are going to happen before they happen very successfully and to act like this
+ is something that's only happening just now, you know, I think is kind of naive, like this
+ is something that's they've been doing very successfully in these circles for a very long
+ time.
+ I mean, we just saw one of the most brazen examples of it ever with the Jensen shit.
+ It's crazy.
+ Rubio, head of the State Department, puts out a memo saying that Jensen is banging a
+ spy and selling ships or whatever.
+ It came from Rubio, from the administration.
+ Then he leaves, the stocks implode.
+ And then like basically on Monday morning, 15 minutes before markets open, basically
+ Trump announces that Jensen's coming back.
+ It gains a trillion dollars in market cap before the market even opens.
+ And he's invested in it, you know.
+ Yeah, sure.
+ Of course.
+ And then, you know, who's our guy?
+ This is a good tie back into the story.
+ Like our boy, you know, Lucky Lutnick was a crucial, crucial figure in the 9/11 story.
+ And in fact, you know, you mentioned earlier about the dark winter war games, about the
+ anthrax stuff.
+ And you kind of said like another war game.
+ We haven't even talked about the cantor 9/11 war games that took place in the World Trade
+ Center.
+ Yeah, and predicted, among other things, a terrorist attack on the World Trade Center,
+ but also predicted before it happened the Asian financial crisis in the late 90s and
+ several other things that its architects, Thomas Barnett, was like, yeah, our war games
+ proved amazingly prescient.
+ Yeah.
+ Yeah.
+ So they're literally hosting in the cantor offices on top of the World Trade Center in
+ the late 90s, mid 90s, and right before the attacks, there were more scheduled that didn't
+ even end up happening.
+ And this guy who is a former Navy officer who worked at the Naval Research Center, Thomas
+ P.M.
+ Barnett, started basically doing this PowerPoint presentation on behalf of Cantor Fritz Gerald
+ and Cantor employee Bud Flanagan, who was also a former Navy admiral, and they basically
+ put together this war game think tank project to basically talk about, okay, we just came
+ out of the 90s or, you know, we're in the 90s, we're in the Clinton era of the information
+ revolution, and we need to figure out what is the Pentagon's new strategy for dealing
+ with the modern elements of war downstream of the information revolution.
+ And also the cyber realm.
+ So even like, you know, the project for a new American century that we've referred to,
+ a lot of these guys that were, you know, in this particular think tank that called for
+ a catalyzing event like a Newport Harbor, and then we're in the George W. Bush administration.
+ A lot of the parts of that policy paper that get ignored are that they were saying we have
+ to prepare for the Pentagon to be dominant or the U.S. military to dominate both space
+ and the cyber realm.
+ So like that policy document lays out exactly the plan for Space Force that Trump and his
+ first administration followed to a T, pretty much exactly, including down to the name.
+ And then, you know, also that we must, the U.S. must dominate the cyber realm as well.
+ And obviously part of dominating the cyber realm is dominating the digital economy that
+ was coming into place.
+ And the physical infrastructure, I mean, both of the things that we saw built out by the
+ likes of Enron and WorldCom, of course, that just both happened to be giant debt frauds
+ that blew up, but all the infrastructure was still there.
+ But it's really interesting, this war game taking place within the Cantor offices with
+ a bunch of public-private goons, employees of the Federal Reserve, members of intelligence,
+ these sort of unnamed spies.
+ Well, that's what Barnett called them, but he called them later, like people from Langley,
+ which is CIA headquarters, and was told not to refer to them or even introduce them in
+ the exercises.
+ They were just there to watch, you know.
+ But essentially, you know, if you're describing it, oh, yeah, the war games between Cantor,
+ Fitzgerald, and the College of --
+ Naval research, something to that effect, yeah.
+ Sorry, my memory hasn't been great lately.
+ Yeah, so it's more than that because you have top people from the Pentagon and the national
+ security community there participating, so, you know, maybe they're the official hosts
+ of it, but it's something, it was something much bigger than just Cantor and this one,
+ you know, branch of the Naval education system, you know, I mean, it's --
+ But we basically used this guy, Thomas P.M.
+ Barnett's book, which he took the PowerPoint presentation and the talks he was doing to
+ them during these war games and turned it eventually into a book called The Pentagon's
+ New Map, and we used it basically as the bookends to this piece because it really describes
+ everything that has happened since --
+ Kind of a quiet part out left.
+ Yeah, it's really incredible.
+ I haven't read the whole book, but we read, you know, we've actually been kind of researching
+ specifically Cantor's role in 9/11 for like a couple of years, and we've been going through
+ a bunch of books.
+ When you say role, what does that actually mean?
+ Bitcoiners hate single points of failures, but your phone has three of them, one network,
+ one identifier for life, and one carrier employee who can be taught into handing over your number,
+ and that's where Cape comes in.
+ Cape fixes all three.
+ It's the only US carrier running two major networks on one SIM, so if one drops you're
+ on the other.
+ Your identifier rotates every 24 hours, so to the network you're a different person every
+ single day, and the big one, your number only moves with a 24-word phrase that you control,
+ just like a Bitcoin wallet.
+ There's no call center worker, not even Cape can move it.
+ Cape provides the same premium reliable service you'd expect from any other carrier, but designed
+ with privacy and security as its first principles.
+ If you're a Bitcoiner in America, I don't know why you'd use any other carrier.
+ Head over to cape.co/WBD and use code WBD for 33% off your first six months.
+ That's cape.co/WBD and use code WBD.
+ Recent Bitcoin security headlines have been a massive wake-up call for the entire industry,
+ including me.
+ They made me ask a really simple question, where are the single points of failure in
+ how I hold my Bitcoin?
+ And the truth is, no security system can promise a future issue will never happen, which is
+ exactly why the design matters.
+ And BitKey's design is brilliant.
+ It uses three keys created in three separate environments.
+ One in the app on your phone, one on the BitKey hardware itself, and one on a protected BitKey
+ server.
+ Two of those three keys are required to sign a transaction, so a problem isolated to just
+ one key isn't enough to move your Bitcoin.
+ So if you are rethinking your security right now, I would really consider BitKey.
+ The hardware is brilliant, the app and user experience is second to none, backing up and
+ restoring your wallet is super easy, and they even have inheritance built in.
+ So download BitKey today and use the promo code WBD to get 10% off your second generation
+ BitKey, which is this device right here with the screen.
+ Download BitKey and use code WBD or go to BitKey.world/WBD.
+ Every Bitcoiner eventually has to answer one question, if something happened to me, could
+ my family access my Bitcoin?
+ Would my children inherit what I've spent years stacking?
+ That's why AnchorWatch builds Bitcoin custody solutions designed to protect you and your
+ family against real-life accidents, errors, kidnappings and even death.
+ Every solution includes their inheritance protocol designed to help your Bitcoin reach
+ the people you intend it for.
+ And US-based customers can also add Bitcoin insurance backed by Lloyds of London.
+ Whether you're a self-custody expert or want multi-institutional support, your Bitcoin
+ estate plan should not be an afterthought.
+ Bitcoin is only generational wealth if it can be passed down.
+ So make sure your family can access tomorrow what you've built today.
+ AnchorWatch is your custody, your way.
+ So visit anchorwatch.com to get started.
+ That's anchorwatch.com.
+ Yeah, well, I mean, they hosted war games in their offices in the towers like years
+ and months before the events basically saying there's going to be a terrorist attack at
+ the World Trade Center.
+ And you know, we have to basically figure out using people like Cantor who at the time
+ and still are today, you know, the largest security broker domestically for US treasuries.
+ They're one of the 24 primary Fed dealers for the New York Fed and obviously also happen
+ to be the bag men and the treasury holders for Tether and all over the digital asset
+ space in general.
+ And now he runs commerce.
+ But what does this have to do with 9/11?
+ Cantor was one of the main companies affected by the events of 9/11.
+ Specifically, they had built out a very, very large trading desk of about 600 to 700 people
+ that were these brokers, you know, that would get up in the morning, go their trade treasuries
+ before the markets open, trade, you know, during market hours.
+ And unfortunately, you know, one of the places that got attacked and hit by the plane, basically
+ the impact zone was --
+ Well, right under Cantor's.
+ Exactly.
+ Was the Cantor Fitzgerald offices specifically their trading floor.
+ And there's a couple things around it that are -- so obviously the war games are extremely
+ suspect that they were doing that basically saying something big is going to happen here
+ and we have to be ready.
+ But then in the months and years leading up to 9/11, Cantor Fitzgerald introduced a new
+ product and a new division called eSpeed that basically was described internally as like
+ we're cannibalizing our own business, our own trading floor and all of our traders by
+ moving everything to this digitally settled, you know, online brokerage and there's literally
+ a quote of Lutnick where he says -- I shouldn't be smiling while saying this, but it's just
+ so fucking crazy -- where he's like, "Our traders won't survive the electronic revolution."
+ But I mean, there were a couple other things to consider.
+ So I don't know if I'd say Cantor's role in 9/11, like they orchestrated it, like that's
+ not what I think anyone meant to say, but more that of the Cantor executives that participated
+ in the war games, they all happen to not have been in the offices that day, most of them
+ uncharacteristically so, except for the small handful of Cantor executives who led major
+ trading divisions because basically the eSpeed plan as laid out by Lutnick at least as early
+ as 1999 and his vision for Cantor was to eliminate all of those traders and brokers, the human
+ ones and replace them with eSpeed.
+ So obviously this creates a problem for Lutnick, you know, how do I let all of these people
+ go and how do I deal with close to 700 severance packages all at once, you know, a little bit
+ of a headache.
+ And also his own brother who also ended up dying in the attacks, Gary Lutnick was one
+ of the top people -- was running like one of the major, most major trading divisions
+ there as well and allegedly he and his brother Howard Lutnick were having some sort of struggle
+ in the weeks before the attack about the future of the company or potentially ownership of
+ the company thinking that, you know, we shouldn't eliminate all of the human traders that obviously
+ he was one of them, right?
+ So that eSpeed can basically dominate and of course when the attacks happen and all
+ of the traders and brokers that eSpeed was intended to replace die, eSpeed is credited
+ as allowing Cantor to bounce back and because of that quote unquote success story, you know,
+ that's the justification Cantor gives for leaning completely into eSpeed and not rehiring,
+ you know, legions of traders and brokers to replace the 600 plus that died in the attacks.
+ And another interesting little spice about Gary Lutnick, his brother who passed away,
+ he actually had caused a lot of controversy at Cantor because he got caught front running
+ traders using their proprietary like trading displays for when they had a customer next
+ to them on the floor.
+ They could see the trades coming in and they were able to have basically a slight asymmetric
+ advantage to trade against the person sitting right next to them basically and they were
+ able to front run and buy the securities lower or higher depending on which way they were
+ going and then sell them at the rate previously agreed upon that wasn't quite the market price.
+ And so there was a big SEC investigation and actually it was led by this guy Gary Breeden
+ who later became the director of eSpeed. And when Enron collapsed, he led the distribution
+ of bankruptcy assets during the Enron bankruptcy. He was a former SEC director who helped lead
+ the Bush cleanup of the savings and loan crisis, which is where a lot of the financing for
+ the stuff came out.
+ And it's related to the milk and junk bond stuff that started Enron in the first place.
+ But it's very interesting that all these nexus have these extreme close partners that are
+ coming in and out. So they hired this guy basically to do a private investigation and
+ he saw that, yes, it was possible that he could have been front running trades, but
+ now they have it set up so they can't do that and we're going to go with that.
+ And basically they got slap on the wrist and paid a few million in fines. And then they
+ hired that guy to run eSpeed, which was then the replacement for the trading floor that
+ got blown up. So I don't know if that answers like the role, but it certainly answers I
+ hope like their involvement in the events surrounding it.
+ Well, there's something weird there. There's a lot of connection or just it's interesting
+ that people like Howard Lutnick who were involved in these meetings through Cantor with top
+ military and intelligence officials happened to just not be there. And then he had sort
+ of these plans for the company a couple of years back that obviously most of his employees
+ would not have liked.
+ And it's important also like it's not just, oh, yeah, we're going to do eSpeed and that's
+ better and online trading is better. It's like part of the war games was talking about
+ coming out of the Clinton era internet boom, the information revolution was like, how do
+ we how do we take advantage of this and not lose basically our data and economic currency
+ and energy hegemon and basically reformulate the Pentagon's war directive towards, there's
+ this great quote in there where he says, the successes of war and I'm paraphrasing slightly,
+ but Barnett says the successes of war will be deemed not by the potholes and bomb craters
+ left behind, but rather the interconnectivity that's left in our wake like the statecraft
+ nation building.
+ But in terms of like the tech stack that the post invasion nation ends up using.
+ So that wasn't just a which I think is extremely important here is that wasn't just like there's
+ an example in the piece after the invasion of Kuwait by Saddam in the early 90s. Within
+ six months of that invasion, there were Kuwaiti entrepreneurs and American entrepreneurs coming
+ in and in six months they had completely rewired the cell phone towers and interconnectivity
+ within Kuwait and it was all wired up and ready to go for the modern age. It wasn't
+ just international meddling, it was domestic. And so to in order to, you know, basically
+ win the war the front at home, you know, we had to have this broadband build out. We had
+ to have energy trading online. We had to have brokerages like doing settlement online and
+ basically taking all of these old world antiquated infrastructures and bringing them into the
+ new millennia, you know, and the e-speed quote unquote revolution and can't or being ending
+ up being one of the most if not the most crucial financial institution in the entire digital
+ asset space as basically, you know, using tether as a front man for cantor. You know,
+ it's kind of unsurprising that they would be involved in these war games being told
+ by the Pentagon, the Navy, the CIA, hey, this is the future. This is the Pentagon's new
+ map and then they go out and they build. Then they go out and underwrite a lot of the data
+ center build out. Then they go and help, you know, some of the energy build out. And then
+ of course, during arguably the most important time for commerce and energy, you know, relations
+ around the world with the war on Iran, with the AI data center and ship export games,
+ our boy Larry Lutnik is running commerce at that time. You know, it's like it kind of,
+ to me again, who knows, it doesn't seem like all these coincident, this lattice of coincidences
+ is just a coincidence. To me, it seems like they're enacting this plan that really started
+ in the 70s to make the US economically and energy independent. And how are they dealing
+ with that as the information revolution, which very obviously was started and funded by US
+ and DARPA directly into the new millennia and now into the post-COVID digital asset
+ AI boom, data center boom. It's the same players, the same people enacting these same plans.
+ And now we're going to see what happens. Like, you know, is the AI debt thing about to pop?
+ Is this a controlled demolition? I don't think what happened yesterday really shows strength.
+ Well, and also there's the fact that it's been reported recently that now a lot of,
+ not a lot, but well, no, I think it is a lot of AI data center debt is being offloaded
+ onto pension funds and things like that, which is, if you're looking at the pattern historically,
+ like there's a lot of efforts by powerful forces in Wall Street and their friends and
+ government to socialize the losses of this kind of stuff. And to me, that seems like
+ a sign like, yeah, they're planning for it to pop at some point, but that, you know,
+ the popping won't really affect them as much as it'll affect, you know, regular people.
+ The shareholders. And, and, and interestingly, and just one last thing, Enron, when it left
+ the S&P 500 after the bankruptcy, what was the company that replaced it? Nvidia. What
+ is Nvidia doing right now with the whole data center play? They are the financing circular
+ financing mechanism. I mean, there were, you know, little tricklings of reports that actually
+ they were being, uh, you know, invested on because of accounting issues and, and investigated.
+ Yeah. And, and skirting export law, right? Like that was obviously if he was involved
+ with the spy, that's one thing, but accounting fraud potentially, and these, and, and quote
+ unquote treason, uh, by selling chips to China. The Trump administration just roll back all
+ these Enron auditing laws. Yeah. Where they're talking about it. I'm not sure if it's actually
+ happened, but, uh, a lot of the fact they're talking about it, I mean, tells you that they're
+ like, all right, we can do it again. Yeah. But the thing that obviously makes this like
+ historical example relevant today is that you, what you get to see is what happens post-crisis,
+ who captures power, who benefits. And obviously then a lot of the players from that time are
+ also still around today. But the thing like we've touched on a little bit, but we've not
+ got into detail on it. And why does Enron so key to this story? Because like before
+ I read this piece, all I really knew about Enron was that they did one of the largest
+ financial frauds in history. Um, but like, what, why are they so crucial? Yeah, totally.
+ Well, I'll take this one just cause, uh, Enron's, I think it's the most fascinating story. I'm
+ like, I've read smartest, the smartest guys in the room a couple of times. I've watched
+ the movie a bunch of times. I'm always joking to put it on at homes. Like, no, Hey, Oh yeah.
+ Uh, we're going to watch this now. Um, I just think it's such, it reads like a, like a thriller.
+ Um, they also, I think leave a ton of stuff out, but I just highly, highly, highly recommend
+ checking it out. Um, the story, it really focuses, um, on the people and the people
+ are crazy and it's such a good story. It's so well written. Um, I couldn't recommend
+ it more, but there's a few things they gloss over. And when I was reading it and it was,
+ I don't know, three or four years ago, I got really into the Enron story and like, there's
+ just a couple of paragraphs that like stood out to me that I was like, I need to dig into
+ this more. What? And one of them was just like, they loved hiring former CIA and FBI
+ agents because like information is everything and they would use the information gathered
+ by these people to win, uh, energy trades. Um, there's like a story in there about a,
+ uh, an ex CIA or FBI agent working for them. They're trying to see what the progress is
+ on this new energy plant that's going to be built in this area that will change energy
+ pricing for that area, but they don't know the timing of when energy will go online.
+ So they have an ex spook, uh, you know, dress up as a porta potty salesman to go to the
+ power plant to see how many porta potties they need and try to get information of how
+ many people are on site, how long are people going to be on site? What is the contract
+ for to basically glean information from this power plant to then go bring it back to the
+ real lifeblood of the company, which was the trading desk and give them, you know, an asymmetric
+ informational advantage by posing as a porta potty salesman. And this is just like a, it's
+ like two paragraphs in this whole book all about the guys and, oh, you know, this guy
+ loves strippers and blah, blah, blah. Just like, oh, it's all about the people. And then
+ there's just these little moments of like infrastructural, Q polls, quiet parts out
+ loud where I'm just like, what? That's fucking insane. Like I have to learn more and more
+ and more. And so I started just digging into the Andron story and was like, oh, like Ken
+ Lay was like involved in this stuff super early on. He was like writing energy policy
+ stuff like during the most important energy policy decisions like made in US history or
+ at least like since the first industrial revolution. And, you know, there's something really to
+ this story. And I started digging into it more and more. And one of the reasons why
+ people say the Andron story popped was because of what they were doing with Andron broadband
+ services, which was their like broadband fiber optics division. And they were doing these
+ clever mark to market accounting fraud with their accounting partner, Arthur Anderson.
+ And basically, you know, they signed this 20 year contract with Blockbuster saying,
+ hey, we're going to stream movies. Here's all this IP we're going to have 20. It's going
+ to be so big. And they took the the profits from this contract that they said would be
+ a 20 year thing and put it on that quarter as if the profits for 20 years were written
+ for that quarter. The stock price went crazy. They brought out Scott McNeely, who's, you
+ know, basically childhood friends with Mayo Shattuck, who was one of the co-founders of
+ Sun Microsystems, which, you know, we have the Sun Microsystems other co-founder Andy
+ Beklestein on record as saying Sun Microsystems, which crucially Sun stands for Stanford University
+ Network. It was a Stanford project. It wouldn't have happened without DARPA funding. Sun is
+ basically the yin to Microsoft's yang. Sun did all the networking hardware and software
+ routers Ethernet, and Microsoft was the PC and then Apple, obviously, of course, too.
+ But Sun was the guys that built the infrastructure for the modern internet.
+ They have Oracle now, which is Ellison's and was created as an extension.
+ And they were the seed funders of Google. And, you know, there's so much of the modern
+ internet came out of this small nexus. But basically, they got Scott McNeely to come
+ out and be like, let's go Enron broadband services. This is the future. We're going
+ to trade 24/7 markets of broadband. And then they put they bought millions and millions
+ of dollars of Sun servers, and they stash them in a warehouse in Nevada. And they bought
+ hundreds of millions of dollars of what's called dark fiber, meaning fiber that doesn't
+ have any connection to it and it isn't being run. And they use the shell game technique
+ of doing this big share blowout, which was the highest the Enron share ever got right
+ after this meeting announcing the deal. And extremely promptly after that, everything
+ basically fell apart as soon as they said that the deal actually wasn't going through.
+ That was the catalyst that blew up Enron. And so everybody blames the Enron broadband
+ services as if they weren't ready, as if they weren't doing anything. They had no power.
+ They had no lines actually put down. It was all just a shell game.
+ But that's not true. And what I found was that they had created this giant data center,
+ the super early primordial data center in 2000 in Nevada, which basically is the switchboard
+ for the whole West Coast broadband infrastructure. And they use these hundreds of millions of
+ dollars of dark fiber that they bought and they helped lay down. By 2000, there was 15,000
+ miles of fiber optic cable. A lot of it was literally taking infrastructure that was dug
+ up for oil lines and running fiber optic cables alongside the oil lines. That obviously Enron
+ had huge access to these oil lines by buying up a lot of West Coast. They were a huge factor
+ in the California energy crisis. But they had bought up all this fiber. They had bought
+ up all these servers. They laid all of this fiber. They basically created the modern Internet
+ infrastructure and then they pop. And what happens to that data center? A tiny company
+ that hadn't bought any data centers yet or done anything, a company called Switch led
+ by a CEO named Rob Roy came in and he was like, oh, I'm going to buy this. And it was
+ a data center that cost millions and millions of dollars to make. And he put in a bid and
+ then they told him, hey, you're the only person that bid. And then he retracted the bid and
+ put in an even smaller one, ended up buying a multimultimillion dollar data center for
+ $930,000. And now Switch has become an incredibly large data center company, critically important
+ in the broadband, you know, connectivity of the United States and has since been purchased
+ by Colony Capital, which is run by Tom Barrack, who's now most famous for being Epstein's
+ good friend and really connected with both the Bush and but mostly the Trump administration's
+ relationships with the Middle East. He was an ambassador to the Middle East and has a
+ lot of investments there and what have you. And then that got packaged up and got sold
+ eventually became Digital Bridge and then got sold to SoftBank, which is the big banking
+ partner of a lot of the AI data center build outs, including Stargate, the OpenAI's project,
+ their main banking partner is SoftBank. So I just like thought that story was so crazy
+ and fascinating. And I was like, is is Rob Roy and Switch even like a real company? Like
+ what? Who are like, that's such a crazy name. Might as well be like Roger Rabbit. Like,
+ this is so weird. And I'm sure he is. I'm sure I'm not. I don't know. But it just sent
+ a lot of bells ringing in my, you know, slightly schizo head. And I was just like this. There's
+ something going on here. And yeah. And I just it was like, oh, like, yeah, they bought a
+ bunch of Sun servers. They bought a bunch of fiber optics. They blew out this whole
+ debt thing. All the bag holders were basically the employees at the company who had all of
+ their savings in the stock and then the American stockholder holding the stock. And then for
+ pennies on the dollar, these companies came in and bought up all the contracts and hardware.
+ Yeah. So another company that came in to take over a bunch of Enron stuff right after they
+ imploded was Mayo Shattuck and Constellation. It was like 20,000 contracts.
+ Because after Enron imploded in December 2001, like a lot of energy companies didn't want
+ to do this like energy derivative trading stuff that Enron had really pioneered. But
+ Mayo Shattuck was like, I would like to, you know, fresh off of 9/11 insider trading. He's
+ like, let me get in on the risky unregulated derivative energy trading fun time.
+ And basically, when he came in, three quarters of the revenue was their regulated business
+ and one quarter.
+ They were a regulated utility originally, like a Baltimore Gas and Electric, BGE. Yeah.
+ And so like most of their income had come from the regulated utility side and under
+ Shattuck it reversed and the unregulated energy trading business became dominant. And I don't
+ know if we say it explicitly in the piece, maybe we imply it, but it seems like the strategy
+ there was to use the regulated business kind of as collateral for the unregulated energy
+ trading strategies of that. Interesting.
+ And another thing too, when I was digging into Enron, I just first off, I thought the
+ bubble play was really fascinating. Like I was like, wow, this seems actually kind of
+ a lot more like design than it was just accidental fraud that they're using all these ex spooks
+ and CIA agents to get this crazy energy advantage or information advantage to like break energy
+ markets and tilt them towards US interests, both by making LNG the market it was and just
+ doing everything they did in California basically during the energy crisis. Like they made so
+ much money off of a crisis that they basically created by creating artificial scarcity. But
+ so many, there's just so much interesting stuff about Enron. And when I was doing the
+ Chain series and researching the early primordial stories of Brock Pierce and the Tether founding,
+ the company before he founded IGE, which was the gaming company that got taken over by
+ Goldman Sachs and Steve Bannon, that was like the first digital goods company. Before that
+ he was at a digital streaming pioneer called Digital Entertainment Network, which ended
+ up later blowing up in this humongous sex abuse pedophilia scandal. But Enron broadband
+ services was like a big donor and investor because they were looking for, you know, hey,
+ we're going to build out all this broadband trading and broadband infrastructure. We need
+ basically high res video and quality video for people to use this much bandwidth because
+ just checking emails and Usenet isn't going to do it. We need to like increase demand
+ for broadband. We need videos. And so they created a video online only film studio that
+ was really basically just a front for basically like honeypotting California politicians and
+ it ended up being, it's very strange. We don't need to get into all of that. I don't want
+ to get you demonetized. But they were running this really weird thing there. And Enron was
+ financing it along with Microsoft and some other kind of sketchy things there. So that
+ was another ping where I was like, oh, the Enron broadband services is actually connected
+ to the same nexus very oddly as the future Tether founder whose all his money is in Cantor.
+ Very interesting. And then he goes on and creates Tether and becomes one of the biggest
+ and evangelicals for Bitcoin. And his venture firm obviously is one of the biggest funders
+ of all the companies in Bitcoin, including this US Bitcoin Corp and Bitfury. They have
+ an immense tie to the primordial version of blockchain capital, which was crypto capital
+ partners. I believe that's what it was called. And then we see Mayo Shattuck joining their
+ subsidiary and there's all these like weird backties to this nexus and the build out of
+ digital infrastructure and the digital economy. But I think that's the perfect place to go
+ from like all that historical context that we've gone through to today. Like, why are
+ these two things related? How are they related? Yeah, well, I think we can answer that with
+ history, I think. And I think maybe this is a good time to talk about the Alex Brown underwriting
+ and the role of the IPO and the underwriter. Right. So as we mentioned earlier, Alex Brown
+ and Sons, right, was essentially being run in the 80s, at least by the 80s by Alvin Kronegard,
+ Buzzy Kronegard and his deputy, Mayo Shattuck. Right. And so one of the things that they
+ did together throughout the 1980s were the underwriting the IPOs of what are now some
+ of the biggest companies in tech. Right. So that includes Microsoft. It includes Oracle,
+ which started as the CIA's project Oracle. And then, you know, I mean, Oracle pretty
+ much admits at their conferences and other places that they still have very enduring
+ ties to the CIA. And then Sun Microsystems, which Oracle later acquired and as Mark pointed
+ out, very tied to DARPA and also was very enmeshed with U.S. intelligence at the time.
+ Like there was a recent report, I forget the name of the journalist that did it, but it
+ was about basically how Steve Jobs and his company in between his stance at Apple was
+ called Next, was basically bailed out, quote unquote, by like the CIA. And so when that
+ was going on, Sun Microsystems was brought in by these intelligence benefactors of Next,
+ of that Steve Jobs company to sort of help things move along. So like they were like,
+ the Sun stuff specifically, like the spooks that were helping that company. So obviously
+ what's significant about the Alex Brown's thing there is, like I mentioned earlier,
+ Kronegaard was intimately involved with the CIA while he was running the bank. And then,
+ you know, there's plenty of other big tech firms that also have, you know, their origin
+ stories are intimately tied also to the national security state of the United States, which
+ is significant for many reasons, but also the fact that a lot of these now operate as,
+ you know, defacto monopolies in various eras. And they're really, even though they're considered
+ by many to be private companies, they're really public-private partnerships with the national
+ security state. And we got a glimpse of this right with like the Snowden releases and things
+ like that about how they have these sort of covert partnerships for the purpose of surveillance.
+ But again, you know, a lot of this stuff, including the Internet itself, are sort of
+ borne out of the military and intelligence communities of the United States. Going back
+ to and also historically, like a lot of the worst things the CIA has done or attempted
+ to do have involved, you know, surveillance and databases going back to things like the
+ Phoenix Project, or sorry, Phoenix program in Vietnam, and then Operation Condor in Latin
+ America, which was, you know, done at the behest and more or less planned and orchestrated
+ by the CIA. And then some of the freakiest stuff that came out of congressional hearings
+ with respect to Iran-Contra, like the continuity of government protocols, and how, you know,
+ this surveillance state has attempted to do things that are extremely unconstitutional,
+ including within the U.S. by using technology. So we should be very wary, of course, of the
+ deep connections these companies have to those same entities and how they continue to partner
+ with them so overtly. And, you know, it just kind of doesn't jive well with the narrative
+ that they're like private companies or even anti-establishment companies. I mean, there's
+ some attempt to frame it as such. You know, these are really, you could argue, private
+ sector extensions of the national security state. And so, you know, there's a lot of
+ complicated things downstream of that. So with respect to AI, you know, one thing that
+ doesn't really get talked about a lot is that the entire national security community's approach
+ to AI was really written by Eric Schmidt, the Google CEO, former Google CEO, who originally
+ had started at Sun Microsystems, along with a guy named Robert Work, who was the vice
+ chair of the commission, who basically worked very closely with Schmidt and was financially
+ entangled with him, but had a key role at the Pentagon at the time. And so basically,
+ if you look at the other people on the commission, it's the figures from the military and intelligence,
+ but you know, Amazon, which was also underwritten by Mayo Shattuck and Kronegaard and Alex Brown
+ at the time that Banker's Trust had taken over, or right before Banker's Trust took
+ over Alex Brown and Bezos' job right before Amazon was at Banker's Trust.
+ Yeah, and his grandfather founded Dartmouth also, and more than interesting.
+ Yeah, but it was like, you know, it's Amazon, it's Microsoft, which has enduring ties as
+ well as the national security state and also extremely close ties going back to the 90s
+ and then beyond with the Maxwell family, you know, not just Ghislaine kind of stuff, but
+ also, you know, her twin sisters, Isabelle and Christine and their early internet company,
+ which they explicitly created as an extension of their father's legacy after Robert Maxwell
+ died. So that says plenty, I think. And then obviously, you know, the Bill Gates Epstein
+ ties are pretty well reported at this point, or at least well known.
+ But this is all to say that what we looked at as the dot com boom, and the information
+ revolution under Clinton and the internet age, the first internet age, was actually
+ entirely a product. I'm not gonna say entirely, but let's say 99.999%.
+ The big winners of it, right? Exactly.
+ The companies that came out on top of the dot com blowout.
+ These companies that were, you know, basically posited as software companies are now the
+ essential infrastructure pillars of the modern internet. And I mean, literally, Amazon, Google,
+ Facebook, Microsoft are the four largest owners of fiber optic cables under the oceans that
+ connect everything. Yes, we have satellites now and Starlink and woohoo.
+ But same crowd more or less. Same crowd.
+ Or interrelated crowd. Same crowd, obviously, but the fiber optics
+ that were laid all across the planet that surround Africa, and you know, it's owned
+ by these guys. And these companies were sort of, you know, sold to us as private companies,
+ commercialized products, these sort of-- Made in garages, humble beginnings.
+ Made in garages, made in dorm rooms. And they all have Hollywood movies that explain
+ the origin stories and never talk about any of this shit. But now they are literally the
+ infrastructure of the internet, and they are how most people interact with the internet.
+ I mean, we've talked about this before, Facebook being, you know, basically like how a lot
+ of the world interacts with the internet. That's like their home page, like AOL was
+ back in the day for us '90s kids. But this is a perfect parallel to today where
+ actually there is a humongous amount of national security interest in the build out and the
+ proliferation of artificial intelligence. And you can even, you know, like looking at
+ that Schmidt Council is extremely interesting. But then also Whitney wrote this really crazy
+ review on a book written by the architect of the petrodollar, Kissinger, with Eric Schmidt,
+ about AI. That is another sort of quiet part out loud talking about we're either going
+ to get violent revolution against the elites or a new religion or a new religion based
+ around AI. It's like, well, which one do you think they want? Probably the latter.
+ They don't probably don't want the violent revolution. But all this IPO stuff, all of
+ this sort of privatization of former technology developed by the public sector, all those
+ companies that like none of us when we were tagging our grandmas and our friends and Facebook
+ photos and all that, like none of us thought we were like supplying the beast with like
+ squares around the faces and creating a network of trust and building the early digital IDs.
+ Like we had no idea we were doing any of that. You know, a lot of those Facebook pictures
+ are now the database for Clearview AI, which is backed by Teal, one of the earliest Facebook
+ investors that put it on the map and is not only used by ICE, but it was used on January
+ 6 to identify all of the pro-Trump protesters. So it goes both ways.
+ And there are specifics that are ridiculous and insane. And there's so much stuff there.
+ But I think the general just they built the infrastructure. We gave them all of our data.
+ They have the infrastructure. They have the data. Now they have to just build these big
+ compute centers to triangulate and analyze and heuristically, you know, figure out what
+ all this data means, how AI can help crack some encryption that's been harvested off
+ the Internet by Internet service providers. And what are like basically the choke points
+ of going from the 2000s Internet age where we didn't understand that this was all basically
+ government operations and we gave them all of our data willy nilly, all of our writings,
+ all of our thoughts, you know, all of this training data for AI, you know, now Google
+ is like leapfrogging past everybody in AI. I wonder why. Maybe because they know everything
+ about us and our emails for 20 years. And I mean, they just they know. And so they have
+ the best training sets and they can just use the work of these other companies that may
+ have maybe a bubble, may pop. But the models in the infrastructure can still be used by
+ the people coming in and picking up the pieces. It's very possible this was all by design.
+ But what are the choke points? Again, what are the choke points of of this? It's energy.
+ It's it's nuclear material. You know, it's a little bit solar. It's a little bit battery,
+ but really it's pretty much nuclear material. And if you have the security clearances and
+ capabilities to run nuclear power and then it's chip manufacturing and like those are
+ the two most centralized industries on Earth and they're going to run this giant surveillance
+ dragnet that's both forward and backwards facing like encrypted comms on the Internet
+ that are stored in data centers that were gleaned off fiber optic cables like displayed
+ and in the Project PRISM and the likes during the Snowden leaks, you know, that's all backward
+ facing stuff. They'll be able to break those that encryption, that weak encryption probably
+ in the next few years. And then they'll have all of this even more data to train on and
+ more information about us. And, you know, these choke points force everybody to compete
+ with chip manufacturing and nuclear capacity and Internet infrastructure. You can have
+ the most open source model in the world, the most decentralized consensus for a digital
+ asset in the world. All of these things can be true, but they're running on these choke
+ points off of these infrastructural choke points. And it's going to be, I think, advantageous
+ to Western interests, to the U.S., to U.S. intelligence to have the data center boom.
+ They don't give a shit what model runs on it. They just care that they control the energy,
+ they control the chips and they control the ins and outs of the data through the fiber
+ optic cables, which they can use to control our money and us in many ways.
+ And so ultimately, you know, when the bubble pops and following the historic pattern, it's
+ going to be, you know, who ends up using this infrastructure because someone will be using
+ it. So like, as we sort of noted in the beginning, our Stargate Argentina piece that we had out
+ a few months ago, I mean, even though like Javier Millay has sort of sold himself as
+ a libertarian and anti-establishment, quote unquote, and all of these things, you know,
+ this open AI data center in Argentina is part of the-- it's a global project, Stargate,
+ is really about, at the end of the day, as he points out, as the guy behind it points
+ out, it's really about the digital transformation of the state.
+ And so the state, even though these people claim like they're really against the state,
+ is ultimately meant to be one of the big or major end users of this, if not before the
+ pop in the bubble, after the pop. And so, you know, what we can anticipate is an even
+ greater consolidation of control over these aspects of the industry, but also an empowered
+ state downstream of that. And so one of the things we looked at at the end of that piece
+ is like, well, what is the digital transformation of the state mean, meaning in tandem with
+ efforts to develop all of these data centers, like in Patagonia, if the Argentine state
+ is going to be the end user of that, per the person developing it, essentially, you know,
+ what are they-- what type of policies are they pursuing with AI? You know, what will
+ the digital transformation of the state entail? And so if you look at Javier Millay's policies,
+ and I would argue a lot of this is what Millay has done is sort of what was essentially a
+ beta test for the second Trump administration, because there's been a lot of similarities
+ both in the campaign and then after they get in office and things like that. So one of
+ the things that Millay has announced, for example, is an effort to create a digital
+ twin of every person in Argentina based off of their online activity, for the purpose
+ of predictive analytics, right? So that essentially means, based on everything you have done and
+ what we've amassed about you, we will ask AI to divine what you might do next or how
+ you might respond to, you know, yeah, policy decisions X, Y, and Z, how will the population
+ react down to a very minute level based on, you know, all of their thoughts and writings
+ and reactions, you know, over decades online that we have amassed, right?
+ So that's, you know, one example. The other one has been, you know, an extreme expansion
+ of facial recognition, and also admittedly, of predictive policing. So that's, you know,
+ that's disturbing for Argentina. Well, they announced it as a policy in 2024. I haven't
+ been to Buenos Aires to investigate it personally. But, you know, there's been a huge increase
+ in facial recognition cameras. But, you know, a lot of it would rely on a major data center
+ being within the jurisdictional space of Argentina itself, which is what this Emiliano Cargaman
+ guy who's developing Argentina for OpenAI has said, essentially. So once something like
+ that is operational, it's essentially implied that a lot of these announced policies would
+ advance significantly.
+ And just to tie it back to the Nexus, Cargaman was the co-founder of Satologic, which featured
+ Steve Mnuchin and Howard Lutnick, as well as some generals and some crazy US CEOs like
+ Caterpillar and what have you on its board. It was invested in by Tether.
+ And they put Palantir in space.
+ And their Palantir partner basically putting Palantir-enabled satellites in space for surveillance
+ for like assets and farmland and all this stuff. But obviously, it can be used to track
+ anything. So it's just important to note Cargaman is one of these, he's in this Nexus.
+ Yeah, but the point is, you know, those types of policies Malay enacted with respect to
+ like facial recognition and predictive policing and also like that effort to pursue a digital
+ twin. These are not ideas that Malay had. These are the ideas that the Reagan Bush crowd
+ had in the US that they tried to do immediately after 9/11. Yeah. And, you know, it was one
+ of the reasons that it was so, they were so controversial and why they had to privatize
+ a lot of these programs as things like Palantir. You know, and now it's like, they're completing
+ an infrastructure build out that would enable them to do a lot of these things and at a
+ scale they were not able to do before. And so, you know, it's interesting to see a lot
+ of the rhetoric around AI data centers implying that a lot of this is not meant to empower
+ the state. But actually, some of these people that are intimately involved with it have
+ a very different opinion of that. And so I think this kind of this idea that a lot of
+ this is being promoted by "libertarians" is very interesting. Yeah, I mean, literally
+ one of the other things too that Malay spoke about in this announcement was the idea of
+ the AI native company coming into the, like he really wants... Oh, no human company. Yeah.
+ Yeah. AI only companies with no human employees involved setting up in Argentina. And it's
+ like, so we're building these giant things. They're being sold to us as they're going
+ to cure cancer, extend life. You're never going to have to work again. And you're going
+ to be on universal basic income. All the companies are going to be run by agents. Somehow energy
+ will be free and we'll all be on high universal basic income. I mean, it's just, there's so
+ many stories about the AI thing that like I can, I actually totally understand certain
+ elements, especially for right now on short timeframes. Why like cyber security experts,
+ like our friend Rob Hamilton and friend, well, he's kind of pro-am, but you know what I mean?
+ He stepped up quite a bit, but him and his buddies, red team, like it makes perfect sense.
+ You have a bunch of open source code, you need to run it. All these models come out.
+ They are now sitting ducks, these bug bounties that is, you know, digital assets are the
+ first frontier of things that will get taken. Despite a lot of the pleb slop that say, "Oh
+ no, the banks and the nuclear codes." It's like, no, they can just steal your Bitcoin
+ and walk away and, and, and launder it and be fine. Good luck. But, but I understand
+ that, you know, hey, there are people at this short timeframe that we need to fight fire
+ with fire. And I do agree with that for very specific use cases for a very short period
+ of time. But this general idea that AI is going to be this decentralizing technology
+ in this pro-human technology, I think is absolutely crazy. And I don't think it's true in any
+ way, shape or form. And I've kind of feel the same way about open source AI as I do
+ about stablecoins, which is where it's like, for certain use cases for certain people in
+ certain timeframes, it is better than the alternatives. And I agree with that. But just
+ because open source AI is better than closed source AI, or a stablecoin is better than
+ a directly issued central bank digital currency does not mean that it's good. And doesn't
+ mean that the long term implications are not centralization of national security interests,
+ a monopoly on violence by like drone powered AI manufacturing and all the things we're
+ going to see. You know, the end state of what I think will be the digital asset revolution,
+ I think will be centralized monetary policy based around the dollar. And then we'll have
+ this neutral reserve asset. If you don't punch your ticket for the neutral reserve asset,
+ I think you're kind of fucked in the future. Open source AI is basically the same thing.
+ I mean, you got to spend a lot of money to get some one of these things running. I know
+ they're getting more efficient every day. But there's still these big choke points.
+ And like, the cognitive diminishment, the surveillance, there's so many things you can't
+ opt out of in a in an AI enabled world. And I just don't buy the arguments being posited
+ by Balaji, by David Sachs, by all these people that the fight for society and humanity is
+ if open source AI wins. I think it's a total false binary. I'm allergic to false binaries.
+ It makes me sneeze. I just I don't buy it. And until I see something that changes my
+ mind, you know, I'm going to keep running and playing this sort of devil's advocate
+ here for against most of my friends in our entire community, basically, that is deep,
+ deep, deep within AI psychosis, that there are a lot of really negative second order
+ effects that come from the AI boom. And yes, your efficiencies and oh, yes, I can do so
+ much right now. And I think a lot of those things will be diminished. They will just
+ homogenize and your slight advantage you have of being a power user early will be gone.
+ The state will have all these powers. Big corporations will have all these powers. I
+ think the future sort of is more of a feudal UBI thing. And I think that's very, very dangerous.
+ I don't think the permanent underclass will be able to claw out using open source AI.
+ I definitely fight for AI, open AI. I think open source AI should not be regulated out
+ of existence by the government, just like I think stablecoin should be able to exist
+ due to regulation. But there's still all these huge, huge issues. And I just don't really
+ see people. One of the main reasons why we wrote this piece is you have to understand
+ the people behind the data center build out are also some of the people involved in the
+ Iraq war, Afghanistan, in 9/11, in the Enron debt blow bubble blow out.
+ If you think these people are like, yeah, we're going to replace you with AI so that
+ you can have UBI and paint all day and create and go to the park and just have fun. I mean,
+ I don't know, dude, all these guys were friends with Epstein in our spooks and have done bad
+ things in the past and are pretty into eugenics. A lot of them, like, I'm pretty sure they
+ don't want you to paint all day, even though that's what George W. Bush did when he left
+ president. But it's not it's, you know, in a lot of these promises, these like utopian
+ sounding promises of life extension of that, it's not going to be available to everyone.
+ It's going to be available to like the oligarchy, the people that can afford it in the new paradigm
+ after this incoming, you know, bubble explosion that will be a huge wealth transfer, who will
+ survive that, you know, these people won't be be offered all of these, you know, cures
+ or whatever. And then, I mean, they even say it like that Kissinger, Eric Schmidt book.
+ I mean, they basically talk about, I mean, it's so crazy, the formation of this giant
+ underclass that just loses the ability to cognitively understand what's being done to
+ them by AI. And then there's a separate class of people that set the executive function
+ of what AI does and program it and maintain it and that they're the only people that still
+ have a brain and basically, you know, suggested it'll lead to like a bifurcation in the human
+ species, you know, which is wild because there's some pretty interesting figures in history.
+ Like H.G. Wells, for example, who was tight with the Rockefellers and really into eugenics
+ and like, wanted to make the proto version of the UN, the League of Nations, like a global
+ government. Like he basically argued something similar that there would be like two species
+ of humans in the future. There would be a splitting and there would be sort of the elite,
+ you know, branch of humanity that were attractive and tall and smart. And then the underclass
+ would be squat and cognitively diminished and they would eat bugs.
+ The thing that I want to know is with the 9/11 part, we talked about the planners. If
+ you have to speculate now, what do you think the planners want to see happen next?
+ Well I think a lot of the stuff we just discussed about this sort of bifurcation, the permanent
+ underclass, this seizure of power, like the way I've looked at a lot of this technological
+ advancement is like what is going, who wins AI and who wins this scarce neutral reserve
+ asset and who wins the currency proponent of it, the underlying monetary policy angle
+ that does the yin and the yang to the reserve asset. So say Bitcoin stablecoins and AI.
+ The winners of that were going into a deflationary age, whether it's through AI, whether it's
+ through Bitcoin. You know, after we come out of this probably hyper inflationary moment
+ that will build the deflationary age, which we've been in for since 9/11, since the 70s,
+ it's winner take all. And I think this monopoly that will come, the monopoly on violence that
+ will come downstream of the drone build out of the satellite surveillance of, I don't
+ even know how feasible this is, but the idea of data centers in space, it's like you're
+ not cutting down a data center in space, like you're cutting down a flock camera. It's up
+ there, like good luck. The monopoly on space, like that layer is, you're not getting up
+ there. And so as like these layers sort of rise, like the drone layer above cities, as
+ the satellite layer above that, as the cloud, the infrastructure, all of these are territories.
+ And these are the Pentagon's new map. These are the fronts of war that we don't even consider
+ fronts of war because we're so busy in the mud playing with sticks that we're not seeing
+ that there's this kind of breakaway power nexus that is just ascending up this ladder,
+ this tech stack, that once they're up there and they have the higher ground on all of
+ these sometimes literal but metaphorical levels, they're not going to give up power. It's going
+ to be exceptionally hard, if not almost impossible, to seize power back once these powers have
+ ascended. And so I think the next step is basically winning over public consent for
+ this ascension, for this, we have to beat China. If we don't beat China, China will
+ control everybody and put you in a permanent underclass and all the things that we should
+ be afraid of the U.S. is doing or Western interests or the blob or East Asia or Oceania
+ or whatever, we're now afraid China's going to do it. So we need to beat them in this
+ race. And we've basically become this new space race, this new Cold War. And whoever
+ wins it is going to have total domination. I think that the competition angle is kind
+ of cafe bay and it's kind of fake. And I don't think the U.S. is in tech competition with
+ China at all. We are so intertwined with China, our medicine, food, our minerals, our manufacturing,
+ our chips, like so much is coming out of there. And this idea that we're fighting, I think
+ is kind of ridiculous. And I think together they are the yin and yang of this power structure
+ that is creating and manufacturing consent for us to cheer on and quite literally accelerate
+ us into this place where the power nexus is so ascended that we can't attack them at the
+ top.
+ I just have some comments on what you said. So a lot of the justifications for the build
+ outs that are going on right now are precisely this issue of it's a national security issue
+ with respect to China. So there's a few things to consider about that. One is that the Iran
+ Contra crowd in the 1990s under Clinton basically executed a huge tech transfer of sensitive
+ U.S. military information and technologies and sensitive telecommunications technologies
+ to China super illegally and totally got away with it. And Republicans also helped ensure
+ they got away with it. And a lot of other sensitive national security secrets were passed
+ directly to China through Israel. And this is completely documented. I talk about it
+ in my book. And a lot of these people that make this claim ironically are very big pro
+ Israel partisans but are very at least publicly anti-China. But you have to consider, well,
+ if you're so anti-China, why have you not, you know, at least questioned the Israeli
+ government about why they have done this with, you know, the U.S.-Israel special relationship
+ and access to all of these sensitive military technologies? Like why are you passing them
+ to who's supposed to be our ostensible, you know, worst adversary? And then another thing
+ to consider is what I referred to earlier, the Eric Schmidt chaired Commission on National
+ Security Commission for Artificial Intelligence. So one of the things that Commission argued
+ in papers that were eventually obtained under the Freedom of Information Act is that they
+ essentially argued that in order to beat China in AI, we must become China in AI. So all
+ the stuff that people say is bad about China, these guys were like, well, we have to do
+ it. And we have to do it at an even bigger scale and faster than China is doing it. And
+ this was right before COVID. And they argued that in order to leapfrog China in AI, we
+ had to eliminate in-person shopping, in-person doctor's visits, U.S. private car ownership
+ and move to like sort of Uber-style fleets of self-driving AI-powered cars and all sorts
+ of policy decisions that had been pushed very far ahead since the COVID era. And then at
+ the same time, all of that is going on. And you have, you know, for example, in the Trump
+ administration, a lot of the rhetoric with respect to the arms race with China. Every
+ time they go to China, they just bring a whole little club of tech CEOs that go over there.
+ And it's very clearly super chummy. And if this was really our greatest adversary and
+ we must give up freedoms so that we can beat them in this, you know, existential arms race,
+ that's not exactly the type of state visits I'd expect, would you? And so something I
+ would like to point out that I point out in a few interviews is that, you know, this particular
+ group that seems to control the U.S. government, you know, one of the figures in that is this
+ guy named, it's a transnational group, to be fair. But one of the interesting figures
+ that was clearly a part of it was this guy named Samuel Pissar, who, I guess, through
+ my work, I would, you know, if you've read my book, he was very close to Robert Maxwell,
+ his main confidant. He was also described as a human rights lawyer. But he was more
+ than that. For example, he was the main reason why a lot of the big tech companies like Apple
+ and Microsoft and those established all of these joint ventures or presences in the communist
+ bloc before the collapse of the Soviet Union and also afterwards. And Steve Jobs about
+ Pissar was like, I don't know if he works for the KGB or the CIA, I can't really tell.
+ And that's because he probably worked for both. And I say that because in the early
+ '70s, Pissar went before the U.S. Congress and gave testimony and essentially said what's
+ happening is that the nation state is becoming irrelevant because the "Western" multinational
+ corporations are forming all of these joint ventures with the state-owned businesses of
+ Russia and China in the communist bloc. And they are creating a system of economic sovereignty
+ that makes the nation state entirely irrelevant. And the way this is happening is through technology
+ transfers. And I forget the other ones, but basically, you know, technology transferred
+ and shared infrastructure and a lot of things that we've seen happen since. Right. And so
+ even though we're told, I mean, even in that era, when Pissar was saying that we were told,
+ you know, there was a Cold War and all of this stuff and a lot of things were justified
+ in the names of the Cold War, especially, you know, CIA coups abroad, things like Operation
+ Gladio, things like Operation Condor that killed a lot of innocent people, you know,
+ it was all justified under wartime necessity. And so you can get away as the national security
+ state knows, you can get away with an awful lot when you justify things via wartime necessity
+ or, you know, national security. Right. And so even though the Cold War wasn't really
+ a hot war, it was still a war and they could still use wartime justification. So anytime
+ there's this argument of an arms race, it brings up a lot of these Cold War tropes that
+ are ultimately used to justify, you know, an infrastructure build out that is not just
+ being done in the US, it's being done simultaneously by China, by Russia, by the EU, by a lot of
+ these, you know, places all over the world and similar infrastructure is being imposed
+ on populations, digital ID, programmable, surveillable money. It seems to have advanced
+ quite quickly in the post-COVID era. And then, you know, there's apparently, if you believe
+ the musings of Kissinger and Schmidt together, soon AI will be in charge of governments,
+ eventually leading to some sort of global governance system. And it seems like, you
+ know, if I want to talk about who some of the planners are, the guy that wrote the National
+ Security Community Strategy on AI, and then the guy that, you know, is a career war criminal
+ and created the petrodollar system, are getting together to tell you in 2021 about all the
+ stuff that has kind of been playing out and what's going to come next. I mean, it seems
+ kind of like quiet part on loud on purpose. But again, I mean, narrative is really powerful.
+ And because it's repeated so often by a lot of people with really high profiles in the
+ tech industry or the Bitcoin community or beyond, you know, a lot of people don't really
+ think about some of the things that, documentable facts that kind of conflict with that, right?
+ So ultimately, what's going on is a lot more nuanced than those narratives. And the idea
+ of these warring nation states, I mean, ultimately, if this guy was saying in the early 70s, the
+ nation state is irrelevant, I mean, imagine what it is 50 years later.
+ So we really are speed running to the one world AI government.
+ Well, I mean, I think it's not necessarily going to be what people envision as a global
+ government where it's just the one state, you know, which was prophesized by like Zimiatin's
+ we book, right? It's more likely to be, you know, a federation or to appear more decentralized,
+ at least public facing than it really is. And I think that's going to be true if things
+ like the digital ID infrastructural, you'll have, you know, maybe four vendors in a certain
+ country, maybe two in another. But ultimately, all of the data they take in harvest will
+ be correlated in place in a central database, you know. And then so it's public facing,
+ it looks like there's competition. But, you know, behind the scenes, it's as centralized
+ as it could possibly be.
+ And that's sort of a, I mean, that's a technique that's been used before for basically you
+ do like a de-territorialization to re-territorialize, or you do a decentralization to then centralize,
+ a balkanization to then centralize. So this idea--
+ Decentralize, re-centralize.
+ Exactly. So this idea that we're going to have this emerging patchwork of network states,
+ you know, and Balaji's right, and Yarbin's right. And we have these monarchies and federations
+ and Dow backed governance models and whatever. And we create this big patchwork of all these
+ things. And it's kind of seen as this emergent, revolutionary new way for humanity to organize,
+ to socialize, to create circular economies, and all of these things. And there is some
+ truth to it and there is some benefits to that. But I think ultimately what is going
+ to happen is you're going to see a breakdown of the few centralizing infrastructures that
+ actually protect human rights, like say a constitution or something like that, some
+ sort of human right documents that protect citizenship. You're going to see people due
+ to economic reasons, energy reasons, climate reasons, whatever the hell is going to happen
+ here. You're going to see people move and shift, like we saw during COVID. We saw huge
+ changes in demographics in states in the U.S. because of COVID policy. And we saw these
+ dividing lines. Everybody moves to these different areas, demographics change, we have new governance
+ models emerge, we have people buying out special economic zones in different countries and
+ creating weird little -- the end game of all of that, in my opinion, is not this beautiful,
+ harmonious, Ayn Rand, you know, everybody is just libertarian and based and we all have
+ robots that protect us and it's all groovy. Unfortunately, I think the final stage of
+ that, like again, I think the proponents pushing this stuff never talk about the horrors or
+ dangers of what could happen, the second order effects. And in my opinion, this patchwork
+ creation is just ripe for some power nexus to emerge and just sweep it all up. Because
+ it's like, how can a group of like 30 bros that started a Citadel that has one guard
+ robot or whatever, going to possibly be able to handle the emerging drone warfare and satellite
+ warfare and X, Y, Z tunneling underground, you know, all these things. There's no way
+ that a small, small, small group of people living on some sort of UBI circular economy
+ off the land are going to be able to compete with some sort of breakaway group of power
+ that has consolidated resources internally and created infrastructure to capture. And
+ so the de-territorialization is like kind of unfortunately plays right into the hands
+ of a centralization power grab. And I'm not a doomer. I love life. Life is great. You
+ know, I want people to be able to do whatever they want. I want people to be able to say
+ whatever they want, push whatever solutions they want, build your own little places, do
+ that. But just like understand that like when we don't collectively work together against
+ power nexuses like this, we're doomed to fail as empowered individuals will be completely
+ just fed to the meat grinder when there is a breakaway power nexus that decides to make
+ its move.
+ And if I could just add, so our colleague Ian Davis who writes for UH has done really
+ extensive work on how actually the pretty much the same network state model has been
+ openly embraced by the United Nations and all of these supposedly globalist groups that
+ these guys claim to hate. And you have to ask yourself, why are they so thrilled about
+ that and the idea of what are essentially sovereign special economic zones? Why is the
+ UN and the EU and these entities that these guys point as examples of everything that's
+ bad? Why are they like actually that model is what we want to do also? Kind of wild.
+ So for anyone interested in learning more about the overlaps there, I would refer you
+ to Ian Davis's work on a limited hangout on his own site, iandavis.com.
+ So I know you say you're not a doomer, but like, what are people meant to do here?
+ Well, I mean, it's extremely complicated. I mean, this is something that I got into
+ a nice back and forth with our mutual friend, Aaron Redwing about, you know, kind of like
+ not offering solutions and being just kind of complaining. It's like what woke people
+ do. And it's like, listen, like, I'm not first off, I think I do offer solutions to a degree.
+ It's just may not be the solutions you want, which is like, don't give consent to these
+ tools because they're going to take over and try to like, hold on to your cognitive abilities
+ and like the whole point of, in my opinion of being human is to like create life and
+ enjoy the world and learn about the world and then leave like totems of art and of pieces
+ and writing and whatever your skill sets allow you to do but like leave totems behind for
+ the next generation leave literally next generation, you know, and children behind and try to leave
+ a better world for them or at least hints of things that you figured out so that they
+ are better equipped to take things to the next step. It's like, right now I think we're
+ going through such a transformative time that our main goal should be basically operating
+ as like a preservation society. And we should be gobbling up every bit of media and tools
+ and books and physical goods and anything that we have that we think, you know, we're
+ going to need in a generation or five. And one of the AI negatives is the sloppification
+ and the homogenization of output. And we can't let that win and take over because it will
+ begin to influence humanity itself and the creative spirit and life of humanity to be,
+ you know, basically humans have their own training models. And like what happens when
+ AI training generative stuff gets fed into AI training models, it just hallucinates and,
+ you know, spins off into into absolute slop meaninglessness. And if we allow that to basically
+ happen to our own, basically, you know, metaphysical training sets, I think really bad things will
+ happen. So we have to kind of be a preservation society, we have to grab on to what we love
+ and hold on to it and try to find ways to help it survive into the coming age. And just
+ kind of return to like, people act like this is such an inevitable thing, and that there's
+ nothing to do to stop it. So you might as well consent to it.
+ It's the resistance's feudal argument. Yeah, it's board shit. And just like, it's
+ happening. So why complain about it? It's like, well, it doesn't have to happen in all
+ the ways that people sell it to you to happen. It doesn't have to be this false binary. You
+ don't have to argue for government regulation. You can just say, I'm going to support people
+ that don't use AI to create their shit. I'm not going to use AI to create my stuff. I'm
+ going to limit how much data I can send into the world by not using these prompt machines
+ and try to write books, make physical media, garden, just do stuff, make music, do stuff
+ that like I enjoy, that reconnect to the world that maybe we grew up in that we don't even
+ live in anymore. Like there, we remember a world before phones before internet. We can
+ just remember yesterday and kind of go back and look at that. And it doesn't mean you're
+ putting your head in the sand. It doesn't mean you're ignoring the realities of this.
+ If anyone says that Whitney and I are ignoring the realities of AI, like I think they're
+ fucking stupid. I think we've absolutely not ignored the realities. I think the people
+ pushing this shit as inevitable and as the best thing ever are ignoring the negatives.
+ You know, like there's just no one really doing that. There's either really like dumb
+ fake advocates against AI that I think are not understanding the whole picture either.
+ And it's so much more nuanced. And this is a huge transformational change that does not,
+ it does not have a simple solution and does not have a unique universal solution. It all
+ has to be personalized and individualized. You have to choose where your line in the
+ sand is. And you need to hold strong to that. So like, I can't make that decision for you.
+ I don't know what your solution is. And it has to be different for everybody. But like,
+ grab on to what you love. Try to give it fertile ground so it grows and maybe produces more
+ things that you love. And do your best to remove any choke points that you have towards
+ this blob that's coming and hope that, you know, you can be safe and be set up for this
+ extremely volatile time that's about to happen for so many of our priors of how society is
+ built.
+ And I guess to that, I would add that it seems like a lot of what has been done to humanity
+ as a collective by the powers that be, a lot of it is aimed at sort of degenerating us
+ in some way or making us like, either unhealthy or dumbing us down, right? I mean, there's
+ been a lot of people making those claims over the years. But I think with AI, it's perhaps
+ being more intensely felt because of this idea of, I'll use the term cognitive diminishment,
+ but they've used, you know, created new terms for it and sort of framed it as by accident,
+ but it's not by accident. You know, Kissinger and Schmidt openly talk about it being a consequence
+ of AI use in their book. And so the national security community at minimum knew this would
+ be a downscale effect of the mass use of AI. And so I'm sure there are ways to interact
+ with AI to an extent, a limited extent, where you would not melt your brain. But there are
+ plenty of examples of people who are, and from what I understand, I've never used it
+ and I don't really have an interest in using it, but it can be seductive for some people.
+ There's plenty of testaments to that. And you start using it a little bit and then get
+ sucked in and use it for more and more things. But a lot of, you know, what I've pointed
+ out over the years and talking about it is that it's, you know, it's the idea of like
+ doing mental math and then starting to use a calculator, you know, eventually, if you
+ don't use it, you lose it. And so how much are we willing to lose by outsourcing what
+ we're doing to a machine? And as I've said, for many years, a lot of the ways to try and
+ alter human behavior at scale has been about marketing certain things as convenient or
+ as a convenience for us. And maybe in the short term, that can be true. But in the long
+ term, it's often not, right? And sorry, go ahead.
+ Well, it's just I couldn't agree more. And I think the people that are primed to take
+ advantage of this in the short term, aren't looking at what will happen to their kids
+ and grandkids and great grandkids who never grew up in a world where they learned a skill,
+ had to learn all this stuff by hand, learned to type before the, you know, it's like, yeah,
+ like you're a Bitcoin cybersecurity expert using AI to build a cool thing and to protect
+ your hardware and like, yeah, that makes sense. I get it. You have money to buy a bunch of
+ GPUs. Like, I get it. It makes sense. You're one of like 10,000 people that will ever exist
+ in humanity. That makes fucking sense to use this shit. But the billions of the rest of
+ us, like, like, there's so many more negative things that can happen generationally. And
+ no one ever looks at that. It's just like, oh, what does this mean for me? Like, we are
+ adopting that same boomer mindset of like, who gives a shit? Life's great. Like, let's
+ go buy a GPU for this price. And now it's worth this. And we bought Bitcoin at this.
+ And now it's this. And everything's great because like, I have purchasing power. It's
+ like, no, like, but what about your kids? What about your grandkids? Don't be a fucking
+ like, AI boomer. Think about the next stage generationally what's going to come.
+ There was so much detail in this piece. There's lots we didn't talk about. People should go
+ and read it, go and check it out. But is there anything that I missed that was really important
+ that we've not talked about?
+ I guess one thing I would point out that's in the piece that could probably have been
+ its own standalone piece is how, you know, this guy that's a long time, I guess, employee
+ of Peter Thiel's Michael Kratzios is basically leading, you know, the science and technology
+ policy within the Trump administration. And through him has come a lot of these efforts
+ that we didn't talk about in today's interview really very much at all, which is these efforts
+ are currently ongoing under Trump to recommission, decommission nuclear reactors, a lot of which
+ were like either extensively damaged or had a lot of, you know, issues in the past and
+ that the way that that is happening and a lot of it was done again by this Kratzios
+ guy who's tied to Teal to the benefit of a lot of these new up and coming nuclear energy
+ companies that are a lot of them backed by Founders Fund or backed by Teal or backed
+ by Sam Altman, who's closely linked to Peter Thiel and a lot of these big players in the
+ industry is to basically skirt long standing safety regulations with respect to nuclear
+ power. So one example is the efforts to eliminate this rule as I think it's called as low as
+ reasonably achievable, which is supposed to keep levels as low as they possibly possibly
+ can for both the public and for workers and nuclear power plants. And there are ongoing
+ efforts right now to eliminate that to facilitate the approval of these things. And then there's
+ this company that's backed by Teal called General Matter that's opening trying to restart
+ this. I guess it was once part of the military or part of the US government in Paducah, Kentucky.
+ And that plant before it was shut down, caused extreme groundwater contamination, poisoned
+ a lot of people in the community. And they supposedly only cleaned it up as recently
+ or claim to have cleaned up the area as recently as like a few years ago. And now they want
+ to restart it. But as a completely private thing through this company, that's basically,
+ you know, all thanks to Founders Fund, which obviously is a lot of ties to the government.
+ And obviously, you know, the vice president is also a Teal venture capital guy. And so
+ people in the community have not really been able to stop it, even though they're like,
+ "Can we at least get like new studies about environmental safety performed for this is,
+ you know, to at least assuage concerns because of what happened in the last generations?"
+ And no, none of it's happening. And it's just basically being steamrolled through. So obviously,
+ there's a lot of discussion and there has been right about like, you know, the negative
+ impacts of AI data centers and communities in the US. But not a lot of people are really
+ talking about how the resurgence of the nuclear industry is essentially seeking to do just
+ the same. And, you know, a lot of it goes back to people that have a lot of both political
+ and, you know, powerful connections in the private sector as well. And it's not exactly
+ for the benefit of the Americans that live there. And I doubt the people that live in
+ and around Paducah, Kentucky are going to see any sort of meaningful financial benefit
+ from this, but they'll be left holding the bag, so to speak, at least with the environmental
+ and health costs of it, right. And again, it's another example of sort of socializing
+ the losses like we can talk about in the financial sense, but also when people's health and,
+ you know, their drinking water is under attack by and they can't really stop it. I don't
+ really see how that has anything to do with the making America great again or putting
+ Americans first. It's putting Peter Thiel first.
+ But is that a problem with nuclear power though, or is that a problem with recommissioning
+ sites that aren't sort of fit for purpose?
+ Well, I think, you know, there has been efforts. I haven't studied it super closely of making
+ different type of reactors and stuff that they claim won't be so bad or they'll be
+ smaller scale or this or that. But recommissioning a lot of these ones that were built like over
+ 50 years ago that, you know, some of them were decommissioned because of extreme damage
+ from storms or, you know, different natural disasters or they had, you know, decades long
+ issues of shoddy contractor works trying to solve a problem that actually made it worse
+ because they were trying to cut corners and hired someone cheap. Like, there's a lot
+ of these issues that have compounded. And instead of like trying to assuage concerns
+ from the local communities that like, oh, no, we're going to do it right this time.
+ It's just like, how about we just don't do any new safety things and we just sort of
+ steamroll this through, which isn't exactly what you would want to see at bare minimum.
+ And you can't remove, it's like, obviously, I think in a vacuum, I mean, no pun intended
+ or quite literally, like I think nuclear is pretty great. I mean, there's a lot about
+ it that's fantastic. It's super high capacity. It's like there's a lot of things about it
+ that you could argue, I think, quite successfully that it's a net benefit and really good for
+ power generation versus a lot of other methods. The issue is, well, what are they using it
+ for and who benefits from it? And are they using it to lower our energy prices so that
+ a new nuclear power site goes up and we have free power and we don't have to spend $300,
+ $400 a month on power or whatever? No, that's not what's going to happen.
+ No, a lot of these plants that are being recommissioned are explicitly being done so to power, you
+ know, a Google data center or an anthropic data center or a Microsoft data center like
+ Three Mile Island is being recommissioned to explicitly power a Microsoft data center.
+ It's not about making energy prices cheaper for Americans. It's about powering this infrastructure
+ that they're building out. You know, likely again, it's going to be the taxpayers footing
+ the bill when the bubble pops. And also a lot of the money for recommissioning these
+ sites is essentially taxpayer money coming through, you know, grants and loans being
+ sold out by the Department of Energy right now. So it's I mean, historically that's what,
+ you know, the U.S. government and the powers that be behind it have done is use taxpayer
+ money and then or debt to finance this stuff. But then it benefits them. It doesn't benefit
+ everyone else. Right. It's also just another example.
+ It's all such a mess. And I think we can make it better if we pay
+ attention. Yeah. You know. Yeah. But with the with the cognitive decline, I don't know
+ if that's going to happen, but fingers crossed. And I feel like this could have been like
+ a four hour episode. But I know, I know you got your time, massively, massively appreciate
+ you coming on the show. We'll have to do again sometime. There's still lots and lots to discuss.
+ But thank you both so much. Oh, thanks, Danny. Yeah, absolute pleasure.
+ And yeah, it's always a pleasure. And really, I have this like, in my life right now, I
+ have this like 25 minute drive that I have to do multiple times every day just due to
+ just due to life things. And I've been listening to a lot of your a lot of your work. And you've
+ had some really interesting conversations with people. And you've become quite an interviewer.
+ And it's been fun watching you talk to your friends and our mutual friends and then people
+ that maybe you're not as close with. And I've been really enjoying what Bitcoin did. And
+ when you when you reached out, I know we've been trying to do this, all three of us for
+ a while. And, you know, we were like, you know what, let's do it. This is a good piece
+ for it. And let's go talk to Danny. So thank you. Cheers, brother. Thanks for having us
+ on.
